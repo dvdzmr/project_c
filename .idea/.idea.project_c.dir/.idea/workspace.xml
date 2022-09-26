@@ -7,27 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="692c8e82-38bb-4e7a-9d63-1055f27b73de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Frontend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Frontend.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/wwwroot/assets/imgs/gun.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/wwwroot/assets/imgs/jeep.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.project_c.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_c.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/Frontend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Frontend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/Frontend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Frontend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/wwwroot/assets/css/ollie.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/wwwroot/assets/css/ollie.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +27,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FAIe1VGRlR49nJhZtBFYcQNP8p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -127,5 +120,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

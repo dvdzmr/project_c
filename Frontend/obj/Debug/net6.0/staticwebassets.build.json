@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bpzIu0CQ1oe3h9WhFX96F+B6H+RKetgp1Hj7QvYpHgg=",
+  "Hash": "+E9k/dsYEtd30wXbxSXVe8DFsstwFDfcpVldbXKc/9c=",
   "Source": "Frontend",
   "BasePath": "_content/Frontend",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/projectbundle/Frontend.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/assets/.DS_Store",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/.DS_Store"
     },
     {
       "Identity": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/assets/css/ollie.css",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/imgs/brand.svg"
+    },
+    {
+      "Identity": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/gun.jpg",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/imgs/gun.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/imgs/gun.jpg"
     },
     {
       "Identity": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/header.jpg",
@@ -304,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/imgs/img-9.jpg"
+    },
+    {
+      "Identity": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/jeep.jpg",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/imgs/jeep.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/imgs/jeep.jpg"
     },
     {
       "Identity": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/wwwroot/assets/js/ollie.js",
