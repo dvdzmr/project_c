@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/dvd/.nuget/packages/": {}
+    "/Users/davidzmr/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dvd/Documents/GitHub/project_c/Frontend/Frontend.csproj",
+      "projectUniqueName": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/Frontend.csproj",
       "projectName": "Frontend",
-      "projectPath": "/Users/dvd/Documents/GitHub/project_c/Frontend/Frontend.csproj",
-      "packagesPath": "/Users/dvd/.nuget/packages/",
-      "outputPath": "/Users/dvd/Documents/GitHub/project_c/Frontend/obj/",
+      "projectPath": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/Frontend.csproj",
+      "packagesPath": "/Users/davidzmr/.nuget/packages/",
+      "outputPath": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dvd/.nuget/NuGet/NuGet.Config"
+        "/Users/davidzmr/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/davidzmr/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
