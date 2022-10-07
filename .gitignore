@@ -1,0 +1,11 @@
+.idea/*
+postgres-data/*
+.DS_Store
+.idea/.idea.project_c.dir/.idea/workspace.xml
+*.cache
+Frontend/obj/Debug/net6.0/project.razor.json
+Frontend/obj/rider.project.restore.info
+Backend/obj/rider.project.restore.info
+.idea/.idea.project_c.dir/.idea/workspace.xml
+/postgres-data/
+/.idea/
