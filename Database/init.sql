@@ -6,7 +6,11 @@ CREATE TABLE userdata.logins (
 
 CREATE SCHEMA chengeta;
 CREATE TABLE chengeta.sounds (
-    name VARCHAR(200) NOT NULL,
-    value INT NOT NULL,
-    timestamp timestamptz NOT NULL
+    time timestamp NOT NULL,
+    nodeid INT NOT NULL,
+    latitude INT NOT NULL,
+    longitude INT NOT NULL,
+    soundtype VARCHAR(200) NOT NULL,
+    probability INT NOT NULL,
+    soundfile VARCHAR(500) NOT NULL                         
 );
