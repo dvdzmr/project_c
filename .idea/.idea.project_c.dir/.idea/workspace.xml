@@ -6,47 +6,31 @@
     <projectFile profileName="IIS Express">Frontend/Frontend.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="692c8e82-38bb-4e7a-9d63-1055f27b73de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Configuration.FileExtensions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Configuration.UserSecrets.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Physical.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/ref/Backend.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/refint/Backend.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dotnetsecretsadder.sh" afterDir="false" />
+    <list default="true" id="692c8e82-38bb-4e7a-9d63-1055f27b73de" name="Changes" comment="Added methods that hook into database for easy access by other methods.">
+      <change afterPath="$PROJECT_DIR$/Backend/DBconnection/encryption.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/M2Mqtt.Net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Newtonsoft.Json.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project_c.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_c.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/Backend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Backend.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/DBconnection/DBconnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/DBconnection/DBconnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Events/eventlistener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Events/eventlistener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/ref/Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/ref/Backend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/refint/Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/refint/Backend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Database/init.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +39,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0f498b903ed9490e9718f3f579c8c9b3cc00/9e/094fa13b/MqttClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/19f6ed36f08aea39a767e15a3395f6c8272d8ea61e1f3e6c5b128fa4f340cd/UserSecretsConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/35234c4686895ab73d4bf9acadd6faf584c5b390ce562edf38838ae596b/ConfigurationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -69,20 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.Backend">
     <configuration name="Backend" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -158,8 +144,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Shell Script.dotnetsecretsadder.sh" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Shell Script.dotnetsecretsadder.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -172,8 +158,17 @@
       <option name="presentableId" value="Default" />
       <updated>1663928556518</updated>
       <workItem from="1663928559343" duration="2658000" />
-      <workItem from="1665159828330" duration="7556000" />
+      <workItem from="1665159828330" duration="9113000" />
+      <workItem from="1665237848050" duration="4138000" />
     </task>
+    <task id="LOCAL-00001" summary="Added methods that hook into database for easy access by other methods.">
+      <created>1665167425026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665167425026</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,5 +189,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added methods that hook into database for easy access by other methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods that hook into database for easy access by other methods." />
   </component>
 </project>
