@@ -26,3 +26,5 @@
 /Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Npgsql.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/M2Mqtt.Net.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Newtonsoft.Json.dll
