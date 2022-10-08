@@ -1,0 +1,72 @@
+@page
+@model Frontend.Views.Login.login
+@namespace LoginFunctions.cs
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+<div class="center">
+    <div class="header">
+        Login 
+    </div>
+    <form>
+        <input type="text" placeholder="Email or Username" id = "UsernameLogin">
+        <i id="1" class="far fa-envelope"></i>
+        <input type="password" placeholder="Password" id ="CurrentInputPassword">
+        <span class="eye" onclick="FunctionShow()">
+            <i id="hide1" class="fas fa-eye" ></i>
+            <i id="hide2" class="fas fa-eye-slash" ></i>
+        </span>
+        
+        <input type="submit" value="Sign in" class = "submit-btn" onclick="LoginChecker()"/>
+        <a href="#">Forgot Password?</a>
+    </form>
+</div>
+
+<script>
+    function LoginChecker(){
+        var x = document.getElementById("UsernameLogin").value;
+        var y = document.getElementById("CurrentInputPassword").value;
+        if (x == "password123" && y == "ranger") {
+            window.location.replace("succesloginpage.cshtml");
+        }
+        else{
+            alert("ERROR: Invalid credentials!");
+            return;
+        }
+    }
+</script>
+
+<script>
+    function FunctionShow(){
+        var x = document.getElementById("CurrentInput");
+        var y = document.getElementById("hide1");
+        var z = document.getElementById("hide2");
+
+        if(x.type == "password"){
+            x.type = "CurrentInput";
+            y.style.display = "block";
+            z.style.display = "none";
+        }
+        else{
+            x.type = "password";
+            y.style.display = "none";
+            z.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
