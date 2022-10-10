@@ -24,3 +24,40 @@
 /Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.pdb
 /Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.genruntimeconfig.cache
 /Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/ref/Frontend.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\appsettings.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.deps.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.runtimeconfig.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.exe
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.staticwebassets.runtime.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.exe
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.deps.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.runtimeconfig.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.pdb
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\M2Mqtt.Net.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.pdb
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.csproj.AssemblyReference.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.AssemblyInfo.cs
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.RazorAssemblyInfo.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.RazorAssemblyInfo.cs
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\scopedcss\bundle\Frontend.styles.css
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\scopedcss\projectbundle\Frontend.bundle.scp.css
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.csproj.CopyComplete
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\refint\Frontend.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.pdb
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.genruntimeconfig.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\ref\Frontend.dll

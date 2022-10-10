@@ -28,3 +28,33 @@
 /Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Npgsql.dll
 /Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/M2Mqtt.Net.dll
 /Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Backend.exe
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Backend.deps.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Backend.runtimeconfig.json
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Backend.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Backend.pdb
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\M2Mqtt.Net.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.csproj.AssemblyReference.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.AssemblyInfo.cs
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.csproj.CopyComplete
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\refint\Backend.dll
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.pdb
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\Backend.genruntimeconfig.cache
+C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Backend\obj\Debug\net6.0\ref\Backend.dll

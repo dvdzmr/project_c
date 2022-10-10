@@ -1,6 +1,6 @@
 using Npgsql;
 
-namespace Backend.DBconnection;
+namespace Backend.DBconnection.CheckUserDB;
 
 public static class DBconnection
 {
@@ -49,8 +49,10 @@ public static class DBconnection
         await using var reader = await cmd.ExecuteReaderAsync();
     }
     
+    
     public static bool CheckUserDB(string username, string password)
     {
+        
         string query = "SELECT name,password FROM userdata.logins";
         string encryptedpass = encryption.encryptor(password); // Hashes work only 1 way, so we convert the given password to see if the hash matches the saved hash.
         

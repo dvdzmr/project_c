@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/davidzmr/Documents/GitHub/project_c/Backend/Backend.csproj": {}
+    "C:\\Users\\Gebruiker\\Desktop\\Schoolvakken\\Projecten\\Project C\\project_c-dev\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "/Users/davidzmr/Documents/GitHub/project_c/Backend/Backend.csproj": {
+    "C:\\Users\\Gebruiker\\Desktop\\Schoolvakken\\Projecten\\Project C\\project_c-dev\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/davidzmr/Documents/GitHub/project_c/Backend/Backend.csproj",
+        "projectUniqueName": "C:\\Users\\Gebruiker\\Desktop\\Schoolvakken\\Projecten\\Project C\\project_c-dev\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "/Users/davidzmr/Documents/GitHub/project_c/Backend/Backend.csproj",
-        "packagesPath": "/Users/davidzmr/.nuget/packages/",
-        "outputPath": "/Users/davidzmr/Documents/GitHub/project_c/Backend/obj/",
+        "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Schoolvakken\\Projecten\\Project C\\project_c-dev\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gebruiker\\Desktop\\Schoolvakken\\Projecten\\Project C\\project_c-dev\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/davidzmr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -79,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/davidzmr/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,7 +2,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Microsoft.Win32.SafeHandles;
 
-namespace Backend.DBconnection;
+namespace Backend.DBconnection.CheckUserDB;
 
 public class encryption
 {

@@ -154,6 +154,7 @@
       <None Include="wwwroot\assets\vendors\themify-icons\fonts\themify.svg" />
       <None Include="wwwroot\assets\vendors\themify-icons\fonts\themify.ttf" />
       <None Include="wwwroot\assets\vendors\themify-icons\fonts\themify.woff" />
+      <None Remove="Views\Login\loginstyle.css" />
     </ItemGroup>
 
     <ItemGroup>

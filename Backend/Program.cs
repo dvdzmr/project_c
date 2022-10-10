@@ -11,11 +11,12 @@ namespace Backend
             
             // EXAMPLE how to add new user to database
             // await DBconnection.DBconnection.AddUserDB("David", "test1234"); // adding user to database
-            // await DBconnection.DBconnection.AddUserDB("Peter", "pan8311"); // adding user to database
+          //  await DBconnection.DBconnection.AddUserDB("Peter", "pan8311"); // adding user to database
+            await DBconnection.CheckUserDB.DBconnection.AddUserDB("Peter","pan8311");
             // await DBconnection.DBconnection.AddUserDB("Cena", "wwwechamp"); // adding user to database
             
             //EXAMPLE how to check if password and username are correct / matching
-            // Console.WriteLine(DBconnection.DBconnection.CheckUserDB("Peter", "wwwechamp")); //false
+           // Console.WriteLine(DBconnection.CheckUserDB.DBconnection.CheckUserDB("Peter", "wwwechamp")); //false
             // Console.WriteLine(DBconnection.DBconnection.CheckUserDB("Cena", "wwwechamp")); //true
             
             //backend is responsible for receiving data from the API and putting it in the database
