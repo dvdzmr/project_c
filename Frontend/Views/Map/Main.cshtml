@@ -1,0 +1,242 @@
+@model List<Map>
+
+@using Frontend.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Map</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Ollie landing page.">
+    <meta name="author" content="Devcrud">
+    <title>PoacherHunter2000</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="~/assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.theme.default.css">
+
+    <!-- Bootstrap + Ollie main styles -->
+    <link rel="stylesheet" href="~/assets/css/ollie.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="~/assets/imgs/brand.svg" alt="" class="brand-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        @* <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a> *@
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testmonial">Testmonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Login" asp-action="login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ml-0 ml-lg-4">
+                        <a class="nav-link btn btn-primary" href="components.html">Components</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+@* test <h2>@Model.probability</h2> *@
+
+@* map *@
+<section class="section" id="about">
+        <div class="container">
+            <div class="row align-items-center mr-auto">
+                <div class="col-md-4">
+                    <h3 class="section-title">Live Tracking</h3>
+                    <p>Here we will put a container that will show on a map the current sightings as reported by the MQTT broker</p>
+                    @* <a href="javascript:void(0)">Read more...</a> *@
+                </div>
+        <div class="container">
+            <div id="googleMap" style="width:100%;height:400px"></div>
+        </div>
+        <script>
+            function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIhCB6jZXgL-QVL-6oq4hWQzyX6xDcWeo&callback=myMap"></script>
+            </div>
+        </div>
+    </section>
+
+@* events *@
+<section class="section">
+    <div class="container">
+        <h3 class="section-title mb-4"><i class="ti-rss-alt"></i> Recent Events</h3>
+        <p>Overview of the last 5 events with details such as who is responding, how long ago it was, probability, location, etc</p>
+        @for (var i = 0; i < 5; i++)
+        {
+            @if (Model[i].soundtype == "gun")
+            {
+                <div class="col">
+                    <a href="javascript:void(0)" class="card border-0 text-dark">
+                        <span class="card-body"><i class="ti-target"></i>
+                            <p class="xs-font"> @($"Probability : {Model[i].probability}% Time: {Model[i].time.ToShortTimeString()}") </p>
+                        </span>
+                    </a>
+                </div>
+            }
+            else if (Model[i].soundtype == "vehicle")
+            {
+                <div class="col">
+                    <a href="javascript:void(0)" class="card border-0 text-dark">
+                        <span class="card-body"><i class="ti-car"></i> 
+                            <p class="xs-font"> @($"Probability : {Model[i].probability}% Time: {Model[i].time.ToShortTimeString()}") </p>
+                        </span>
+                    </a>
+                </div>
+            }
+            else if (Model[i].soundtype == "animal")
+            {
+                <div class="col">
+                    <a href="javascript:void(0)" class="card border-0 text-dark">
+                        <span class="card-body"><i class="ti-linux"></i>
+                            <p class="xs-font"> @($"Probability : {Model[i].probability}% Time: {Model[i].time.ToShortTimeString()}") </p>
+                        </span>
+                    </a>
+                </div>
+            }
+            else if (Model[i].soundtype == "thunder")
+            {
+                <div class="col">
+                    <a href="javascript:void(0)" class="card border-0 text-dark">
+                        <span class="card-body"><i class="ti-bolt"></i>
+                            <p class="xs-font"> @($"Probability : {Model[i].probability}% Time: {Model[i].time.ToShortTimeString()}") </p>
+                        </span>
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="col">
+                    <a href="javascript:void(0)" class="card border-0 text-dark">
+                        <span class="card-body"><i class="ti-na"></i>
+                            <p class="xs-font"> @($"Probability : {Model[i].probability}% Time: {Model[i].time.ToShortTimeString()}") </p>
+                        </span>
+                    </a>
+                </div>
+            }
+        }
+        
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">85% Probability in the X region. No responders yet.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">53% Probability in the Y region. 3 people currently responding.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+    </div>
+</section>
+
+<section class="section bg-overlay">
+
+    <div class="container">
+        <div class="infos mb-4 mb-md-2">
+            <div class="title">
+                <h6 class="subtitle font-weight-normal">Are locking for</h6>
+                <h5>Lorem inpsum</h5>
+                <p class="font-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="socials">
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <a class="d-block subtitle"><i class="ti-microphone"></i> (123) 456-7890</a>
+                        <a class="d-block subtitle"><i class="ti-email"></i> info@website.com</a>
+                    </div>
+                    <div class="col">
+                        <h6 class="subtitle font-weight-normal mb-1">Social Media</h6>
+                        <div class="social-links">
+                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-facebook"></i></a>
+                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-twitter-alt"></i></a>
+                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-google"></i></a>
+                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-pinterest-alt"></i></a>
+                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-instagram"></i></a>
+                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-rss"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<!-- core  -->
+    <script src="~/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="~/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="~/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    
+    <!-- Owl carousel  -->
+    <script src="~/assets/vendors/owl-carousel/js/owl.carousel.js"></script>
+
+
+    <!-- Ollie js -->
+    <script src="~/assets/js/Ollie.js"></script>
+</body>
+</html>

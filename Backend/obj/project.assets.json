@@ -764,19 +764,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gebruiker\\.nuget\\packages\\": {}
+    "C:\\Users\\Min En\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gebruiker\\Desktop\\Schoolvakken\\Projecten\\Project C\\project_c-dev\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Min En\\source\\repos\\dvdzmr\\project_c\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Schoolvakken\\Projecten\\Project C\\project_c-dev\\Backend\\Backend.csproj",
-      "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gebruiker\\Desktop\\Schoolvakken\\Projecten\\Project C\\project_c-dev\\Backend\\obj\\",
+      "projectPath": "C:\\Users\\Min En\\source\\repos\\dvdzmr\\project_c\\Backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\Min En\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Min En\\source\\repos\\dvdzmr\\project_c\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Min En\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -843,7 +843,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   },

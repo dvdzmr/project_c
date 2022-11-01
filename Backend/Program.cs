@@ -18,9 +18,14 @@ namespace Backend
             //EXAMPLE how to check if password and username are correct / matching
            // Console.WriteLine(DBconnection.CheckUserDB.DBconnection.CheckUserDB("Peter", "wwwechamp")); //false
             // Console.WriteLine(DBconnection.DBconnection.CheckUserDB("Cena", "wwwechamp")); //true
-            
+
             //backend is responsible for receiving data from the API and putting it in the database
             //frontend gets updated by the database passively and the backend directly for push notifications
+            
+            //test run database checker
+            var test = DBconnection.CheckUserDB.DBconnection.DBChecker();
+            // Console.WriteLine(test[0].time);
+            // Console.WriteLine((test[test.Count-1].time));
         }
     }
 }

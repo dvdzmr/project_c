@@ -1,3 +1,5 @@
+using System.Data;
+using System.Security.Cryptography;
 using Npgsql;
 
 namespace Backend.DBconnection.CheckUserDB;
@@ -72,5 +74,65 @@ public static class DBconnection
             }
         }
         return false;
+    }
+
+    public static List<DBobjects> DBChecker()
+    {
+        string query = "SELECT time,latitude, longitude, soundtype, probability, soundfile FROM chengeta.sounds";
+        
+        using var conn = new NpgsqlConnection(DBconstring);
+        if (conn.State != ConnectionState.Open && conn.State != null)
+        {
+            conn.Close();
+        }
+        conn.Open();
+        
+        var allevent = new List<DBobjects>();
+        using (NpgsqlCommand command = new NpgsqlCommand(query, conn))
+        {
+            int i = 0;
+            var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                allevent.Add(new DBobjects()
+                    {
+                        id = i,
+                        time = DateTime.Parse(reader["time"].ToString()),
+                        latitude = Double.Parse(reader["latitude"].ToString()),
+                        longitude = Double.Parse(reader["latitude"].ToString()),
+                        soundtype = reader["soundtype"].ToString(),
+                        probability = int.Parse(reader["probability"].ToString()),
+                        soundfile = reader["soundfile"].ToString()
+                    }
+                );
+                Console.WriteLine(allevent);
+                i++;
+            }
+
+            return allevent;
+            // foreach (var item in allevent)
+            // {
+            //     if (item.soundtype == "animal")
+            //     {
+            //         item.imgtype = "animal.jpg";
+            //     }
+            //     else if (item.soundtype == "gun")
+            //     {
+            //         item.imgtype = "gun.jpg";
+            //     }
+            //     else if (item.soundtype == "vehicle")
+            //     {
+            //         item.imgtype = "vehicle.jpg";
+            //     }
+            //     else if (item.soundtype == "thunder")
+            //     {
+            //         item.imgtype = "thunder.jpg";
+            //     }
+            //     else
+            //     {
+            //         item.imgtype = "unknown.jpg";
+            //     }
+            // }
+        }
     }
 }
