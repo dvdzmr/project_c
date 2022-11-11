@@ -1,63 +1,66 @@
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/appsettings.Development.json
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/appsettings.json
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.staticwebassets.runtime.json
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.deps.json
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.runtimeconfig.json
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.dll
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.pdb
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.csproj.AssemblyReference.cache
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.GeneratedMSBuildEditorConfig.editorconfig
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.AssemblyInfoInputs.cache
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.AssemblyInfo.cs
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.csproj.CoreCompileInputs.cache
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.MvcApplicationPartsAssemblyInfo.cache
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.RazorAssemblyInfo.cache
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.RazorAssemblyInfo.cs
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets.build.json
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets.development.json
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/bundle/Frontend.styles.css
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/projectbundle/Frontend.bundle.scp.css
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.dll
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/refint/Frontend.dll
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.pdb
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.genruntimeconfig.cache
-/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/ref/Frontend.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\appsettings.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.deps.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.runtimeconfig.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.exe
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.staticwebassets.runtime.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.exe
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.deps.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.runtimeconfig.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Frontend.pdb
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\M2Mqtt.Net.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Npgsql.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\bin\Debug\net6.0\Backend.pdb
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.csproj.AssemblyReference.cache
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.AssemblyInfoInputs.cache
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.AssemblyInfo.cs
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.csproj.CoreCompileInputs.cache
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.RazorAssemblyInfo.cache
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.RazorAssemblyInfo.cs
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\scopedcss\bundle\Frontend.styles.css
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\scopedcss\projectbundle\Frontend.bundle.scp.css
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.csproj.CopyComplete
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\refint\Frontend.dll
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.pdb
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\Frontend.genruntimeconfig.cache
-C:\Users\Gebruiker\Desktop\Schoolvakken\Projecten\Project C\project_c-dev\Frontend\obj\Debug\net6.0\ref\Frontend.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.csproj.AssemblyReference.cache
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.GeneratedMSBuildEditorConfig.editorconfig
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.AssemblyInfoInputs.cache
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.AssemblyInfo.cs
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.csproj.CoreCompileInputs.cache
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.MvcApplicationPartsAssemblyInfo.cs
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.MvcApplicationPartsAssemblyInfo.cache
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.RazorAssemblyInfo.cache
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.RazorAssemblyInfo.cs
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/appsettings.Development.json
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/appsettings.json
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.staticwebassets.runtime.json
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.deps.json
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.runtimeconfig.json
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/ref/Frontend.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.pdb
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Humanizer.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.Data.Sqlite.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Npgsql.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/SQLitePCLRaw.batteries_v2.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/SQLitePCLRaw.core.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/alpine-x64/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/linux-arm/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/linux-arm64/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/linux-armel/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/linux-mips64/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/linux-s390x/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/linux-x64/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/linux-x86/native/libe_sqlite3.so
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/win-arm/native/e_sqlite3.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/win-arm64/native/e_sqlite3.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/win-x64/native/e_sqlite3.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets.build.json
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets.development.json
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/bundle/Frontend.styles.css
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/projectbundle/Frontend.bundle.scp.css
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.csproj.CopyComplete
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/ref/Frontend.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.pdb
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.genruntimeconfig.cache
