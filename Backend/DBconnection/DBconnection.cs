@@ -105,7 +105,6 @@ public static class DBconnection
                         soundfile = reader["soundfile"].ToString()
                     }
                 );
-                Console.WriteLine(allevent);
                 i++;
             }
 

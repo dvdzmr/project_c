@@ -1,0 +1,160 @@
+@model List<Map>
+
+<style type="text/css">
+        /*.box {*/
+        /*position: relative;*/
+        /*margin-left: 20px;*/
+        /*}*/
+        /*.box:before{*/
+        /*position: absolute;*/
+        /*left: -20px;*/
+        /*content: "";*/
+        /*height: 20px;*/
+        /*width: 20px;*/
+        /*margin-bottom: 15px;*/
+        /*border: 1px solid black;*/
+        /*}*/
+        /*.box.red:before{*/
+        /*background-color: #dc3545;*/
+        /*}*/
+        
+    </style>
+    <div class="container">
+        <h3 class="section-title mb-4"><i class="ti-rss-alt"></i> Recent Events</h3>
+        @* <p>Overview of the last 5 events with details such as who is responding, how long ago it was, probability, location, etc</p> *@
+        @foreach (var eventlisted in Model)
+        {
+            @if (eventlisted.soundtype == "gunshot")
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <i class="myIcon box-event ti-target"></i>
+                        </div>
+                        <div class="col">
+                            <p> @($"Probability : {eventlisted.probability}% Time: {eventlisted.time.ToShortTimeString()}") </p>
+                            <p> @($" Sound Type: {eventlisted.soundtype} Date: {eventlisted.time.ToShortDateString()}") </p>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:void(0)" class="card border-0 text-dark">
+                                <p class="viewdetails">View details</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+            else if (eventlisted.soundtype == "vehicle")
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <i class="myIcon box-event ti-car"></i>
+                        </div>
+                        <div class="col">
+                            <p> @($"Probability : {eventlisted.probability}% Time: {eventlisted.time.ToShortTimeString()}") </p>
+                            <p> @($" Sound Type: {eventlisted.soundtype} Date: {eventlisted.time.ToShortDateString()}") </p>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:void(0)" class="card border-0 text-dark">
+                                <p class="viewdetails">View details</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+            else if (eventlisted.soundtype == "animal")
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <i class="myIcon box-event ti-linux"></i>
+                        </div>
+                        <div class="col">
+                            <p> @($"Probability : {eventlisted.probability}% Time: {eventlisted.time.ToShortTimeString()}") </p>
+                            <p> @($" Sound Type: {eventlisted.soundtype} Date: {eventlisted.time.ToShortDateString()}") </p>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:void(0)" class="card border-0 text-dark">
+                                <p class="viewdetails">View details</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+            else if (eventlisted.soundtype == "thunder")
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <i class="myIcon box-event ti-bolt"></i>
+                        </div>
+                        <div class="col">
+                            <p> @($"Probability : {eventlisted.probability}% Time: {eventlisted.time.ToShortTimeString()}") </p>
+                            <p> @($" Sound Type: {eventlisted.soundtype} Date: {eventlisted.time.ToShortDateString()}") </p>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:void(0)" class="card border-0 text-dark">
+                                <p class="viewdetails">View details</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <i class="myIcon box-event ti-na"></i>
+                        </div>
+                        <div class="col">
+                            <p> @($"Probability : {eventlisted.probability}% Time: {eventlisted.time.ToShortTimeString()}") </p>
+                            <p> @($" Sound Type: {eventlisted.soundtype} Date: {eventlisted.time.ToShortDateString()}") </p>
+                        </div>
+                        <div class="col">
+                            <a href="javascript:void(0)" class="card border-0 text-dark">
+                                <p class="viewdetails">View details</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">85% Probability in the X region. No responders yet.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">53% Probability in the Y region. 3 people currently responding.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+        @* <div class="col"> *@
+        @*     <a href="javascript:void(0)" class="card border-0 text-dark"> *@
+        @*         <span class="card-body"> *@
+        @*             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> *@
+        @*         </span> *@
+        @*     </a> *@
+        @* </div> *@
+    </div>
+

@@ -23,7 +23,7 @@ namespace Backend
             //frontend gets updated by the database passively and the backend directly for push notifications
             
             //test run database checker
-            var test = DBconnection.CheckUserDB.DBconnection.DBChecker();
+            //var test = DBconnection.CheckUserDB.DBconnection.DBChecker();
             // Console.WriteLine(test[0].time);
             // Console.WriteLine((test[test.Count-1].time));
         }

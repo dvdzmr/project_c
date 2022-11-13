@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PjVWPVc9YWvYaiHJRmfdei2MjSOFaCUsPR56Ed/Nd1Q=",
+  "Hash": "1cUoF1Bq7H5QLfzTjj5x6iJqkWpHgviBYHSztS6NgVo=",
   "Source": "Frontend",
   "BasePath": "_content/Frontend",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\.DS_Store"
+    },
+    {
+      "Identity": "C:\\Users\\Min En\\source\\repos\\dvdzmr\\project_c\\Frontend\\wwwroot\\assets\\css\\events.css",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Min En\\source\\repos\\dvdzmr\\project_c\\Frontend\\wwwroot\\",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/css/events.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\events.css"
     },
     {
       "Identity": "C:\\Users\\Min En\\source\\repos\\dvdzmr\\project_c\\Frontend\\wwwroot\\assets\\css\\ollie.css",

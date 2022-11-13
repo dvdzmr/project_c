@@ -13,7 +13,7 @@ public class MapController : Controller
         // var allevent = new Map();
         var getdbevents = DBconnection.DBChecker();
         List<Map> test = new List<Map>();
-        for (int i = Math.Max(0, getdbevents.Count - 5); i< getdbevents.Count; i++)
+        for (int i = Math.Max(0, getdbevents.Count - 5); i< getdbevents.Count; i++) // getdbevent.count - 5, 5 veranderen naar variable voor filter later
         {
             var dbevent = getdbevents[i];
             var allevent = new Map()
@@ -28,6 +28,8 @@ public class MapController : Controller
                 };
             test.Add(allevent);
         }
+
+        test.Reverse();
         // var testing = new Map();
         // testing.mylist = new List<Test>()
         // {
@@ -62,7 +64,7 @@ public class MapController : Controller
         //         soundtype = "vehicle"
         //     },
         // };
-        
-        return View(test);
+        Console.WriteLine(test[0].ToString());
+        return PartialView(test);
     }
 }
