@@ -1,14 +1,15 @@
+using System.Data;
 using Npgsql;
 
 namespace Backend.DBconnection.CheckUserDB;
 
 public static class DBconnection
 {
-    private static string DBconstring = "Host=localhost;Username=postgres;Password=postgres;Database=postgres"; // This will be hidden in the future in ENV / dotnet secrets.
+    private static string _dBconstring = "Host=localhost;Username=postgres;Password=postgres;Database=postgres"; // This will be hidden in the future in ENV / dotnet secrets.
     
     public static async Task ChengetaInserter(long timeEpoch, long nodeid, double latitude, double longitude, string soundtype, int probability, string soundfile)
     {
-        await using var conn = new NpgsqlConnection(DBconstring);
+        await using var conn = new NpgsqlConnection(_dBconstring);
         await conn.OpenAsync();
         
         // convert epoch/unix timestamp to Datetime
@@ -31,10 +32,10 @@ public static class DBconnection
          await using var reader = await cmd.ExecuteReaderAsync();
     }
     
-    public static async Task AddUserDB(string username, string password)
+    public static async Task AddUserDb(string username, string password)
     {
-        string encryptedpass = encryption.encryptor(password); // stores password with SHA256 encryption to database.
-        await using var conn = new NpgsqlConnection(DBconstring);
+        string encryptedpass = Encryption.Encryptor(password); // stores password with SHA256 encryption to database.
+        await using var conn = new NpgsqlConnection(_dBconstring);
         await conn.OpenAsync();
 
         // Inserting data
@@ -50,13 +51,13 @@ public static class DBconnection
     }
     
     
-    public static bool CheckUserDB(string username, string password)
+    public static bool CheckUserDb(string username, string password)
     {
         
         string query = "SELECT name,password FROM userdata.logins";
-        string encryptedpass = encryption.encryptor(password); // Hashes work only 1 way, so we convert the given password to see if the hash matches the saved hash.
+        string encryptedpass = Encryption.Encryptor(password); // Hashes work only 1 way, so we convert the given password to see if the hash matches the saved hash.
         
-        using var conn = new NpgsqlConnection(DBconstring);
+        using var conn = new NpgsqlConnection(_dBconstring);
         conn.OpenAsync();
          
         // Reading data
@@ -72,5 +73,40 @@ public static class DBconnection
             }
         }
         return false;
+    }
+    
+    public static List<DBobjects> DbChecker()
+    {
+        string query = "SELECT time,latitude, longitude, soundtype, probability, soundfile FROM chengeta.sounds";
+        
+        using var conn = new NpgsqlConnection(_dBconstring);
+        if (conn.State != ConnectionState.Open && conn.State != null)
+        {
+            conn.Close();
+        }
+        conn.Open();
+        
+        var allevent = new List<DBobjects>();
+        using (NpgsqlCommand command = new NpgsqlCommand(query, conn))
+        {
+            int i = 0;
+            var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                allevent.Add(new DBobjects()
+                    {
+                        Id = i,
+                        Time = DateTime.Parse(reader["time"].ToString()),
+                        Latitude = Double.Parse(reader["latitude"].ToString()),
+                        Longitude = Double.Parse(reader["latitude"].ToString()),
+                        Soundtype = reader["soundtype"].ToString(),
+                        Probability = int.Parse(reader["probability"].ToString()),
+                        Soundfile = reader["soundfile"].ToString()
+                    }
+                );
+                i++;
+            }
+            return allevent;
+        }
     }
 }

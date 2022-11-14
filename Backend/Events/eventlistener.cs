@@ -5,17 +5,17 @@ using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace Backend.Events;
 
-public static class eventlistener
+public static class Eventlistener
 {
-    static MqttClient mqttClient = new ("65.108.249.175");
+    static MqttClient _mqttClient = new ("65.108.249.175");
     
-    public static async Task mqtt()
+    public static async Task Mqtt()
     {
-        mqttClient.MqttMsgPublishReceived += Mqtt_MsgPublishReceived;
-        mqttClient.Connect(Guid.NewGuid().ToString(), "chengeta2022", "chengetaALTENHR2022");
+        _mqttClient.MqttMsgPublishReceived += Mqtt_MsgPublishReceived;
+        _mqttClient.Connect(Guid.NewGuid().ToString(), "chengeta2022", "chengetaALTENHR2022");
         Console.WriteLine("Subscriber: chengeta/notifications");
-        mqttClient.Subscribe(new string[] { "chengeta/notifications" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE });
-        if (mqttClient.IsConnected)
+        _mqttClient.Subscribe(new string[] { "chengeta/notifications" }, new byte[] { MqttMsgBase.QOS_LEVEL_AT_MOST_ONCE });
+        if (_mqttClient.IsConnected)
         {
             Console.WriteLine("MQTT broker is connected");
         }
@@ -33,35 +33,35 @@ public static class eventlistener
         string soundtype = "";
         int probability = 0;
         string soundfile = "";
-        foreach (KeyValuePair<string, string> Types in data)
+        foreach (KeyValuePair<string, string> types in data)
         {
-            if (Types.Key == "time")
+            if (types.Key == "time")
             {
-                time = Int64.Parse(Types.Value);
+                time = Int64.Parse(types.Value);
             }
-            if (Types.Key == "nodeId")
+            if (types.Key == "nodeId")
             {
-                nodeId = Int64.Parse(Types.Value);
+                nodeId = Int64.Parse(types.Value);
             }
-            if (Types.Key == "latitude")
+            if (types.Key == "latitude")
             {
-                latitude = Convert.ToDouble(Types.Value);
+                latitude = Convert.ToDouble(types.Value);
             }
-            if (Types.Key == "longitude")
+            if (types.Key == "longitude")
             {
-                longitude = Convert.ToDouble(Types.Value);
+                longitude = Convert.ToDouble(types.Value);
             }
-            if (Types.Key == "sound_type")
+            if (types.Key == "sound_type")
             {
-                soundtype = Types.Value;
+                soundtype = types.Value;
             }
-            if (Types.Key == "probability")
+            if (types.Key == "probability")
             {
-                probability = Int32.Parse(Types.Value);
+                probability = Int32.Parse(types.Value);
             }
-            if (Types.Key == "sound")
+            if (types.Key == "sound")
             {
-                soundfile = Types.Value;
+                soundfile = types.Value;
             }
         }
         DBconnection.CheckUserDB.DBconnection.ChengetaInserter(time,nodeId,latitude,longitude, soundtype,probability,soundfile); // using these types, you can easily add things to database
