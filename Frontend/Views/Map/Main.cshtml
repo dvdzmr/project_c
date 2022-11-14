@@ -103,7 +103,9 @@
 
 @* events *@
 <section class="section" id="events">
-    <div>@Html.Partial("RecentEvents", Model)</div>
+    <div>
+        @Html.Partial("RecentEvents", Model)
+    </div>
     @* <style type="text/css"> *@
     @*     /*.box {*/ *@
     @*     /*position: relative;*/ *@
@@ -223,44 +225,7 @@
     @*                 </div> *@
     @*             </div> *@
     @*         } *@
-    @*     } *@
-    @* *@
-    @*     $1$ <div class="col"> #1# *@
-    @*     $1$     <a href="javascript:void(0)" class="card border-0 text-dark"> #1# *@
-    @*     $1$         <span class="card-body"> #1# *@
-    @*     $1$             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> #1# *@
-    @*     $1$         </span> #1# *@
-    @*     $1$     </a> #1# *@
-    @*     $1$ </div> #1# *@
-    @*     $1$ <div class="col"> #1# *@
-    @*     $1$     <a href="javascript:void(0)" class="card border-0 text-dark"> #1# *@
-    @*     $1$         <span class="card-body"> #1# *@
-    @*     $1$             <p class="xs-font">85% Probability in the X region. No responders yet.</p> #1# *@
-    @*     $1$         </span> #1# *@
-    @*     $1$     </a> #1# *@
-    @*     $1$ </div> #1# *@
-    @*     $1$ <div class="col"> #1# *@
-    @*     $1$     <a href="javascript:void(0)" class="card border-0 text-dark"> #1# *@
-    @*     $1$         <span class="card-body"> #1# *@
-    @*     $1$             <p class="xs-font">53% Probability in the Y region. 3 people currently responding.</p> #1# *@
-    @*     $1$         </span> #1# *@
-    @*     $1$     </a> #1# *@
-    @*     $1$ </div> #1# *@
-    @*     $1$ <div class="col"> #1# *@
-    @*     $1$     <a href="javascript:void(0)" class="card border-0 text-dark"> #1# *@
-    @*     $1$         <span class="card-body"> #1# *@
-    @*     $1$             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> #1# *@
-    @*     $1$         </span> #1# *@
-    @*     $1$     </a> #1# *@
-    @*     $1$ </div> #1# *@
-    @*     $1$ <div class="col"> #1# *@
-    @*     $1$     <a href="javascript:void(0)" class="card border-0 text-dark"> #1# *@
-    @*     $1$         <span class="card-body"> #1# *@
-    @*     $1$             <p class="xs-font">40% Probability in the Z region. 2 people currently responding.</p> #1# *@
-    @*     $1$         </span> #1# *@
-    @*     $1$     </a> #1# *@
-    @*     $1$ </div> #1# *@
-    @* </div> *@
+    @*     *@
 </section>
 
 <section class="section bg-overlay">
@@ -310,7 +275,7 @@
 
 
     <script type="text/javascript">
-    setInterval("$('#events').load('Main')", 30000);
+    setInterval("$('#events').load('RecentEvents')", 30000);
     </script>
 </body>
 </html>
