@@ -1,4 +1,10 @@
-﻿@model List<MapItems>
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@using Frontend.Controllers
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model List<MapItems>
+
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -6,4 +12,11 @@
 @{
     Layout = "_LoginPage";
 }
-@* <partial name="Main" /> *@
+
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+    //
+}
+

@@ -1,8 +1,10 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Frontend.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-    
 namespace Frontend.Controllers;
 
 public class HomeController : Controller
@@ -14,8 +16,11 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+
+
     public IActionResult Index()
     {
+        // return Redirect("/Home/Main");
         return View();
     }
     

@@ -1,8 +1,3 @@
-@using Microsoft.AspNetCore.Identity
-@using Microsoft.AspNetCore.Mvc.TagHelpers
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-@model List<MapItems>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,9 +23,7 @@
     <!-- Bootstrap + Ollie main styles -->
     <link rel="stylesheet" href="assets/css/ollie.css">
 
-</head>  
-
-
+</head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
@@ -42,29 +35,22 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                    
             </ul>
             <partial name="_LoginPartial"/>
         </div>
+        
     </div>
 </nav>
 
-<!-- core  -->
-<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-<!-- bootstrap 3 affix -->
-<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    
-<!-- Owl carousel  -->
-<script src="assets/vendors/owl-carousel/js/owl.carousel.js"></script>
-
+<div class>
+    <h1>Welcome to the next step in technology accelerated animal preservation </h1>
+    <p>In collaboration between ALTEN and Chengeta wildlife we are proud to present the next step in protecting vulnerable wildlife from poachers in national parks throughout Africa. </p>
+    <p></p>
+    <p>If you are a ranger please log in to access the ranger panel for the most current events currently unfolding.</p>
+</div>
 
 @await RenderSectionAsync("Scripts", required: false)
+
 </body>
-
-
-<img src="assets/imgs/welcome.jpg" alt="Italian Trulli">
-
-
 </html>

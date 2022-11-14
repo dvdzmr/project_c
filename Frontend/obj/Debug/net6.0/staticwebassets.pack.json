@@ -545,46 +545,6 @@
       "PackagePath": "staticwebassets/assets/vendors/jquery/jquery-3.4.1.slim.min.map"
     },
     {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/ajax-loader.gif",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/ajax-loader.gif"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.carousel.css",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.carousel.css"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.carousel.min.css",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.carousel.min.css"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.theme.default.css",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.theme.default.css"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.theme.default.min.css",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.theme.default.min.css"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.theme.green.css",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.theme.green.css"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.theme.green.min.css",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.theme.green.min.css"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.video.play.png",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.video.play.png"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/js/owl.carousel.js",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/js/owl.carousel.js"
-    },
-    {
-      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/js/owl.carousel.min.js",
-      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/js/owl.carousel.min.js"
-    },
-    {
       "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/themify-icons/css/themify-icons.css",
       "PackagePath": "staticwebassets/assets/vendors/themify-icons/css/themify-icons.css"
     },
