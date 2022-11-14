@@ -62,7 +62,6 @@ C:/Users/Gebruiker/Desktop/Schoolvakken/Projecten/Project C/project_c-dev/Backen
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Backend.deps.json
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Backend.runtimeconfig.json
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Backend.dll
-/home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/ref/Backend.dll
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Backend.pdb
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/M2Mqtt.Net.dll
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
@@ -88,3 +87,4 @@ C:/Users/Gebruiker/Desktop/Schoolvakken/Projecten/Project C/project_c-dev/Backen
 /home/dvd/Documents/GitHub/project_c/Backend/obj/Debug/net6.0/ref/Backend.dll
 /home/dvd/Documents/GitHub/project_c/Backend/obj/Debug/net6.0/Backend.pdb
 /home/dvd/Documents/GitHub/project_c/Backend/obj/Debug/net6.0/Backend.genruntimeconfig.cache
+/home/dvd/Documents/GitHub/project_c/Backend/obj/Debug/net6.0/refint/Backend.dll

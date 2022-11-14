@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Frontend.Views.Map;
+namespace Frontend.Views.Home;
 
-public class RecentEvents : PageModel
+public class Map : PageModel
 {
     public void OnGet()
     {

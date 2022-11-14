@@ -1,0 +1,869 @@
+{
+  "Files": [
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/projectbundle/Frontend.bundle.scp.css",
+      "PackagePath": "staticwebassets/Frontend.bundle.scp.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/css/events.css",
+      "PackagePath": "staticwebassets/assets/css/events.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/css/ollie.css",
+      "PackagePath": "staticwebassets/assets/css/ollie.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/avatar1.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/avatar1.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/avatar2.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/avatar2.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/avatar3.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/avatar3.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/brand.svg",
+      "PackagePath": "staticwebassets/assets/imgs/brand.svg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/gun.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/gun.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/header.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/header.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-1.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-1.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-2.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-2.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-3.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-3.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-4.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-4.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-5.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-5.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-6.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-6.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-7.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-7.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-8.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-8.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/img-9.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/img-9.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/jeep.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/jeep.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/welcome.jpg",
+      "PackagePath": "staticwebassets/assets/imgs/welcome.jpg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/js/ollie.js",
+      "PackagePath": "staticwebassets/assets/js/ollie.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/abstracts/_mixins.scss",
+      "PackagePath": "staticwebassets/assets/scss/abstracts/_mixins.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/abstracts/_variables.scss",
+      "PackagePath": "staticwebassets/assets/scss/abstracts/_variables.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/base/_typography.scss",
+      "PackagePath": "staticwebassets/assets/scss/base/_typography.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/components/_breadcrumb.scss",
+      "PackagePath": "staticwebassets/assets/scss/components/_breadcrumb.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/components/_button.scss",
+      "PackagePath": "staticwebassets/assets/scss/components/_button.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/components/_card.scss",
+      "PackagePath": "staticwebassets/assets/scss/components/_card.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/components/_code.scss",
+      "PackagePath": "staticwebassets/assets/scss/components/_code.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/components/_dropdowns.scss",
+      "PackagePath": "staticwebassets/assets/scss/components/_dropdowns.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/components/_navbar.scss",
+      "PackagePath": "staticwebassets/assets/scss/components/_navbar.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/components/_pagination.scss",
+      "PackagePath": "staticwebassets/assets/scss/components/_pagination.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/layout/_footer.scss",
+      "PackagePath": "staticwebassets/assets/scss/layout/_footer.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/layout/_header.scss",
+      "PackagePath": "staticwebassets/assets/scss/layout/_header.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/layout/_sections.scss",
+      "PackagePath": "staticwebassets/assets/scss/layout/_sections.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/ollie.scss",
+      "PackagePath": "staticwebassets/assets/scss/ollie.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_alert.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_alert.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_badge.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_badge.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_breadcrumb.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_breadcrumb.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_button-group.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_button-group.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_buttons.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_buttons.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_card.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_card.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_carousel.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_carousel.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_close.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_close.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_code.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_code.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_custom-forms.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_custom-forms.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_dropdown.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_dropdown.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_forms.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_forms.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_functions.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_functions.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_grid.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_grid.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_images.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_images.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_input-group.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_input-group.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_jumbotron.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_jumbotron.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_list-group.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_list-group.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_media.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_media.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_mixins.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_mixins.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_modal.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_modal.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_nav.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_nav.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_navbar.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_navbar.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_pagination.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_pagination.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_popover.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_popover.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_print.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_print.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_progress.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_progress.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_reboot.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_reboot.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_root.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_root.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_spinners.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_spinners.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_tables.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_tables.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_toasts.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_toasts.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_tooltip.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_tooltip.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_transitions.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_transitions.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_type.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_type.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_utilities.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_utilities.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/_variables.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/_variables.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_alert.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_alert.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_background-variant.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_background-variant.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_badge.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_badge.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_border-radius.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_border-radius.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_box-shadow.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_box-shadow.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_breakpoints.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_breakpoints.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_buttons.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_buttons.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_caret.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_caret.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_clearfix.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_clearfix.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_deprecate.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_deprecate.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_float.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_float.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_forms.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_forms.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_gradients.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_gradients.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_grid-framework.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_grid-framework.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_grid.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_grid.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_hover.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_hover.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_image.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_image.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_list-group.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_list-group.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_lists.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_lists.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_nav-divider.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_nav-divider.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_pagination.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_pagination.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_reset-text.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_reset-text.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_resize.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_resize.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_screen-reader.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_screen-reader.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_size.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_size.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_table-row.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_table-row.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_text-emphasis.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_text-emphasis.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_text-hide.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_text-hide.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_text-truncate.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_text-truncate.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_transition.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_transition.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/mixins/_visibility.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/mixins/_visibility.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_align.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_align.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_background.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_background.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_borders.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_borders.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_clearfix.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_clearfix.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_display.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_display.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_embed.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_embed.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_flex.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_flex.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_float.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_float.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_overflow.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_overflow.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_position.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_position.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_screenreaders.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_screenreaders.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_shadows.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_shadows.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_sizing.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_sizing.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_spacing.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_spacing.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_stretched-link.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_stretched-link.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_text.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_text.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/utilities/_visibility.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/utilities/_visibility.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/scss/vendors/bootstrap-4.3.1/vendor/_rfs.scss",
+      "PackagePath": "staticwebassets/assets/scss/vendors/bootstrap-4.3.1/vendor/_rfs.scss"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.affix.js",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.affix.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.js",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.js.map",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.min.js",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/assets/vendors/bootstrap/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/jquery/jquery-3.4.1.js",
+      "PackagePath": "staticwebassets/assets/vendors/jquery/jquery-3.4.1.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/jquery/jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets/assets/vendors/jquery/jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/jquery/jquery-3.4.1.min.map",
+      "PackagePath": "staticwebassets/assets/vendors/jquery/jquery-3.4.1.min.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/jquery/jquery-3.4.1.slim.js",
+      "PackagePath": "staticwebassets/assets/vendors/jquery/jquery-3.4.1.slim.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/jquery/jquery-3.4.1.slim.min.js",
+      "PackagePath": "staticwebassets/assets/vendors/jquery/jquery-3.4.1.slim.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/jquery/jquery-3.4.1.slim.min.map",
+      "PackagePath": "staticwebassets/assets/vendors/jquery/jquery-3.4.1.slim.min.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/ajax-loader.gif",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/ajax-loader.gif"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.carousel.css",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.carousel.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.carousel.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.theme.default.css",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.theme.default.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.theme.default.min.css",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.theme.default.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.theme.green.css",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.theme.green.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.theme.green.min.css",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.theme.green.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/css/owl.video.play.png",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/css/owl.video.play.png"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/js/owl.carousel.js",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/js/owl.carousel.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/owl-carousel/js/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/assets/vendors/owl-carousel/js/owl.carousel.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/themify-icons/css/themify-icons.css",
+      "PackagePath": "staticwebassets/assets/vendors/themify-icons/css/themify-icons.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/themify-icons/fonts/themify.eot",
+      "PackagePath": "staticwebassets/assets/vendors/themify-icons/fonts/themify.eot"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/themify-icons/fonts/themify.svg",
+      "PackagePath": "staticwebassets/assets/vendors/themify-icons/fonts/themify.svg"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/themify-icons/fonts/themify.ttf",
+      "PackagePath": "staticwebassets/assets/vendors/themify-icons/fonts/themify.ttf"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/vendors/themify-icons/fonts/themify.woff",
+      "PackagePath": "staticwebassets/assets/vendors/themify-icons/fonts/themify.woff"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/css/loginstyle.css",
+      "PackagePath": "staticwebassets/css/loginstyle.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.Frontend.props",
+      "PackagePath": "build\\Frontend.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Frontend.props",
+      "PackagePath": "buildMultiTargeting\\Frontend.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Frontend.props",
+      "PackagePath": "buildTransitive\\Frontend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

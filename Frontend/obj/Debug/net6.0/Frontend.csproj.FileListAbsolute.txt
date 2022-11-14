@@ -14,7 +14,6 @@
 /home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.deps.json
 /home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.runtimeconfig.json
 /home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.dll
-/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/ref/Frontend.dll
 /home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Frontend.pdb
 /home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Humanizer.dll
 /home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -64,3 +63,16 @@
 /home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/ref/Frontend.dll
 /home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.pdb
 /home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/Frontend.genruntimeconfig.cache
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Backend.deps.json
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Backend.runtimeconfig.json
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Backend
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Backend.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/M2Mqtt.Net.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/dvd/Documents/GitHub/project_c/Frontend/bin/Debug/net6.0/Backend.pdb
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets/msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets/msbuild.build.Frontend.props
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Frontend.props
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Frontend.props
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/staticwebassets.pack.json
+/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/refint/Frontend.dll

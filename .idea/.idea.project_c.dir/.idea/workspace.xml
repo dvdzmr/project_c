@@ -8,22 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="692c8e82-38bb-4e7a-9d63-1055f27b73de" name="Changes" comment="Added methods that hook into database for easy access by other methods.">
-      <change afterPath="$PROJECT_DIR$/Backend/DBconnection/DBobjects.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Controllers/MapController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Models/Map.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Views/Map/Main.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Views/Map/Main.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Views/Map/RecentEvents.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Views/Map/RecentEvents.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/DBquery/DBquery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/Views/Home/Main.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/Views/Home/Main.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/Views/Home/Map.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/Views/Home/Map.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/Views/Shared/_LoginPage.cshtml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Backend" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Backend.deps.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Backend.dll" afterDir="false" />
@@ -37,24 +27,16 @@
       <change afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/staticwebassets/msbuild.build.Frontend.props" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Frontend.props" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Frontend.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/wwwroot/assets/css/events.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/wwwroot/assets/imgs/welcome.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project_c.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_c.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/.dockerignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/Backend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Backend.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/DBconnection/DBconnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/DBconnection/DBconnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/DBconnection/encryption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/DBconnection/encryption.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.Backend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/Events/eventlistener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Events/eventlistener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/DBconnection/DBobjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/DBquery/DBobjects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend.runtimeconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/bin/Debug/net6.0/ref/Backend.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Backend.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/Backend.csproj.AssemblyReference.cache" afterDir="false" />
@@ -64,13 +46,19 @@
       <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/ref/Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/ref/Backend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/refint/Backend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/Debug/net6.0/refint/Backend.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile.Frontend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Controllers/MapController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/Frontend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Frontend.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Models/Map.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Models/Map.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Views/Map/Main.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Views/Map/Main.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Views/Map/RecentEvents.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Views/Map/RecentEvents.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.dll" afterDir="false" />
@@ -86,8 +74,6 @@
       <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dotnetsecretsadder.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +95,11 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/09678b31ef6f4391bcb44fd67394b87e94de00/e2/177d2eae/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5720390f243746018fe0b3bacdf981ad2b200/78/68a205c7/EmailAddressAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/466243666f48855413374ed6a5b71a91dd58b614444f46c7b8d7b4508a57de/RazorPageOfT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7733bdb26b2be012c4266979a95d3728e74790201f91a02df4529ee6c2f37/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/773bdedb29c5df5de6b76abcb67edb4ade65adb03a4cf9e9f51608763a61a13/HtmlHelperPartialExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/90784d27c36936d603a8d59dec58c6bc04844aeb01925e3652f4714bc1a2fae/Login.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/93bf8ca51564b3532dce6442f8ec6d3856e11622b484427b6e965ca60aba4b1/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f1462b662824b61f018ff653183f3696177c35163307daae01160a42074ac48/SignInManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -137,8 +127,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.24668142",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -148,10 +140,15 @@
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Frontend">
+    <configuration name="Backend + Frontend" type="CompoundRunConfigurationType">
+      <toRun name="Frontend" type="LaunchSettings" />
+      <toRun name="Backend" type="DotNetProject" />
+      <method v="2" />
+    </configuration>
     <configuration name="Backend" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Backend/bin/Debug/net6.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -161,7 +158,7 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net6.0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -255,16 +252,17 @@
       <item itemvalue=".NET Launch Settings Profile.Frontend" />
       <item itemvalue=".NET Launch Settings Profile.Frontend: IIS Express" />
       <item itemvalue=".NET Project.Backend" />
+      <item itemvalue="Compound.Backend + Frontend" />
       <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       <item itemvalue="Shell Script.setup.sh" />
       <item itemvalue="Shell Script.dotnetsecretsadder.sh" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Shell Script.setup.sh" />
         <item itemvalue="Shell Script.dotnetsecretsadder.sh" />
+        <item itemvalue="Shell Script.setup.sh" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Shell Script.setup.sh" />
         <item itemvalue="Shell Script.dotnetsecretsadder.sh" />
       </list>
     </recent_temporary>

@@ -1,5 +1,4 @@
-namespace Backend.DBconnection.CheckUserDB;
-
+namespace Frontend.DBquery;
 public class DBobjects
 {
     public int Id { get; set; }

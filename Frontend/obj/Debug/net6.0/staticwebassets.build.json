@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1eNIPZ1cMr/MCMDZdxBN2Nln8sXiapvbzkyrHoeMHjM=",
+  "Hash": "G8uM0u/EdXVPkNhpEfWthzm4+YbUz5FdL3Ri8RFHHXk=",
   "Source": "Frontend",
   "BasePath": "_content/Frontend",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "/home/dvd/Documents/GitHub/project_c/Frontend/obj/Debug/net6.0/scopedcss/projectbundle/Frontend.bundle.scp.css"
     },
     {
+      "Identity": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/css/events.css",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/css/events.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/css/events.css"
+    },
+    {
       "Identity": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/css/ollie.css",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
@@ -1358,6 +1375,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/imgs/jeep.jpg"
+    },
+    {
+      "Identity": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/imgs/welcome.jpg",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/imgs/welcome.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/imgs/welcome.jpg"
     },
     {
       "Identity": "/home/dvd/Documents/GitHub/project_c/Frontend/wwwroot/assets/js/ollie.js",

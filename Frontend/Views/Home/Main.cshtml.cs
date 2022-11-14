@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Frontend.Views.Map;
+namespace Frontend.Views.Home;
 
 public class Main : PageModel
 {

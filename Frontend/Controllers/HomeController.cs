@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Frontend.Models;
 
+    
 namespace Frontend.Controllers;
 
 public class HomeController : Controller
@@ -17,7 +18,7 @@ public class HomeController : Controller
     {
         return View();
     }
-
+    
     public IActionResult Privacy()
     {
         return View();
@@ -27,5 +28,41 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+    public List<MapItems> GetEvents()
+    {
+        var getEvents = DBquery.DBquery.DbChecker();
+        List<MapItems> test = new List<MapItems>();
+        for (int i = Math.Max(0, getEvents.Count - 5); i < getEvents.Count; i++)
+        {
+            var dbevent = getEvents[i];
+            var allevent = new MapItems()
+            {
+                Id = dbevent.Id,
+                Time = dbevent.Time,
+                Latitude = dbevent.Latitude,
+                Longitude = dbevent.Longitude,
+                Soundtype = dbevent.Soundtype,
+                Probability = dbevent.Probability,
+                Soundfile = dbevent.Soundtype
+            };
+            test.Add(allevent);
+        }
+
+        test.Reverse();
+        return test;
+    }
+
+    public PartialViewResult Map()
+    {
+        var test = GetEvents();
+        //return PartialView("RecentEvents", test);
+        return PartialView(test);
+    }
+    
+    public async Task<IActionResult> Main()
+    {
+        var test = GetEvents();
+        return PartialView(test);
     }
 }

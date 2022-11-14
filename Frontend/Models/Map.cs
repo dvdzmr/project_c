@@ -1,6 +1,6 @@
 namespace Frontend.Models;
 
-public class Map{
+public class MapItems{
 
     public int Id { get; set; }
     public DateTime Time { get; set; }
@@ -9,9 +9,5 @@ public class Map{
     public string Soundtype { get; set; }
     public int Probability { get; set; }
     public string Soundfile { get; set; }
-    // public string imgtype { get; set; }
+
 }
-// public class Map
-// {
-//     public List<Test> mylist { get; set; }
-// }
