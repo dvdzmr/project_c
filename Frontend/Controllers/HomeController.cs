@@ -15,12 +15,13 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-
-
-
+    
     public IActionResult Index()
     {
-        // return Redirect("/Home/Main");
+        if (User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return LocalRedirect("/Home/Main");
+        }
         return View();
     }
     
