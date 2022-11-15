@@ -32,48 +32,5 @@ public static class DBconnection
          await using var reader = await cmd.ExecuteReaderAsync();
     }
     
-    public static async Task AddUserDb(string username, string password)
-    {
-        string encryptedpass = Encryption.Encryptor(password); // stores password with SHA256 encryption to database.
-        await using var conn = new NpgsqlConnection(_dBconstring);
-        await conn.OpenAsync();
-
-        // Inserting data
-        await using var cmd = new NpgsqlCommand("INSERT INTO userdata.logins(name, password) VALUES ($1, $2)", conn)
-        {
-            Parameters =
-            {
-                new() { Value = username },
-                new() { Value = encryptedpass }
-            }
-        };
-        await using var reader = await cmd.ExecuteReaderAsync();
-    }
-    
-    
-    public static bool CheckUserDb(string username, string password)
-    {
-        
-        string query = "SELECT name,password FROM userdata.logins";
-        string encryptedpass = Encryption.Encryptor(password); // Hashes work only 1 way, so we convert the given password to see if the hash matches the saved hash.
-        
-        using var conn = new NpgsqlConnection(_dBconstring);
-        conn.OpenAsync();
-         
-        // Reading data
-        using (NpgsqlCommand command = new NpgsqlCommand(query, conn))
-        {
-            NpgsqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                if (username == reader["name"].ToString() && encryptedpass == reader["password"].ToString())
-                {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-    
     
 }
