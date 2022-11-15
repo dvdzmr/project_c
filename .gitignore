@@ -10,3 +10,19 @@ Frontend/bin/
 Backend/obj/
 Backend/bin/
 
+.idea/.idea.project_c.dir/.idea/workspace.xml
+.idea/.idea.project_c.dir/.idea/workspace.xml
+Backend/obj/Backend.csproj.nuget.dgspec.json
+Backend/obj/Backend.csproj.nuget.g.props
+Backend/obj/Debug/net6.0/Backend.assets.cache
+Backend/obj/Debug/net6.0/Backend.csproj.AssemblyReference.cache
+Backend/obj/Debug/net6.0/Backend.GeneratedMSBuildEditorConfig.editorconfig
+Backend/obj/project.assets.json
+Backend/obj/project.nuget.cache
+Backend/obj/project.packagespec.json
+Backend/obj/rider.project.restore.info
+Frontend/obj/Debug/net6.0/Frontend.GeneratedMSBuildEditorConfig.editorconfig
+Frontend/obj/Frontend.csproj.nuget.dgspec.json
+Frontend/obj/Frontend.csproj.nuget.g.props
+Frontend/obj/project.assets.json
+Frontend/obj/project.packagespec.json
