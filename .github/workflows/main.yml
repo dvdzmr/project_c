@@ -15,10 +15,13 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: 'placeholder'
+      
+  sshkey:
+    runs-on: ubuntu-latest
+    steps:
       - uses: kielabokkie/ssh-key-and-known-hosts-action@v1
       - with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-host: 145.24.222.85
- 
       - name: Deploy with rsync
         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/1027223-ubuntu/projectc/dist/
