@@ -20,9 +20,9 @@ jobs:
           
       - name: Adding Known Hosts
         run: |
-              echo "$KNOWN_HOSTS" >> ~/.ssh/known_hosts
+              echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
               echo ~/.ssh/known_hosts
         
-        
+      
       - name: Deploy with rsync
         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/ubuntu-1027223/projectc/dist/
