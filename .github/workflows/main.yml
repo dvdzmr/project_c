@@ -16,6 +16,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: 'placeholder'
       - name: Adding Known Hosts 
-        run: cat ${{ secrets.SSH_IPPREMADE }} >> ~/.ssh/known_hosts
+        run: ${{ secrets.SSH_IPPREMADE }} >> ~/.ssh/known_hosts
       - name: Deploy with rsync
         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/1027223-ubuntu/projectc/dist/
