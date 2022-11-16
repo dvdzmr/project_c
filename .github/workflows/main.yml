@@ -15,9 +15,10 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: 'placeholder'
-      - name: Creating ssh folder
-        run: touch ~/.ssh/known_hosts
-      - name: Adding Known Hosts
-        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+      - uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+      - with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-host: 145.24.222.85
+ 
       - name: Deploy with rsync
         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/1027223-ubuntu/projectc/dist/
