@@ -23,7 +23,7 @@ jobs:
      
           
       - name: Adding Known Hosts
-        run: ssh-keyscan -H 145.24.222.85 >> ~/.ssh/known_hosts
+        run: echo "$KNOWN_HOSTS" >> ~/.ssh/known_hosts
         
         
         
