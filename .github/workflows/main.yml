@@ -15,12 +15,9 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: 'placeholder'
-      
-  sshkey:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: kielabokkie/ssh-key-and-known-hosts-action@v1
-      - with:
+      - name: Setting SSH key  
+        uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+        with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-host: 145.24.222.85
       - name: Deploy with rsync
