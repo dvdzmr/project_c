@@ -23,4 +23,4 @@ jobs:
           if_key_exists: ignore
 
       - name: Deploy with rsync
-        run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/1027223-ubuntu/projectc/dist/
+        run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/ubuntu-1027223/projectc/dist/
