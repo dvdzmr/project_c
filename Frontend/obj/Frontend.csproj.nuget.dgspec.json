@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/davidzmr/Documents/GitHub/project_c/Frontend/Frontend.csproj": {}
+    "/home/dvd/Documents/GitHub/project_c/Frontend/Frontend.csproj": {}
   },
   "projects": {
-    "/Users/davidzmr/Documents/GitHub/project_c/Frontend/Frontend.csproj": {
+    "/home/dvd/Documents/GitHub/project_c/Backend/Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/Frontend.csproj",
-        "projectName": "Frontend",
-        "projectPath": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/Frontend.csproj",
-        "packagesPath": "/Users/davidzmr/.nuget/packages/",
-        "outputPath": "/Users/davidzmr/Documents/GitHub/project_c/Frontend/obj/",
+        "projectUniqueName": "/home/dvd/Documents/GitHub/project_c/Backend/Backend.csproj",
+        "projectName": "Backend",
+        "projectPath": "/home/dvd/Documents/GitHub/project_c/Backend/Backend.csproj",
+        "packagesPath": "/home/dvd/.nuget/packages/",
+        "outputPath": "/home/dvd/Documents/GitHub/project_c/Backend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/davidzmr/.nuget/NuGet/NuGet.Config"
+          "/home/dvd/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -37,6 +37,36 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "M2Mqtt": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -48,6 +78,111 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/dvd/Documents/GitHub/project_c/Frontend/Frontend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/dvd/Documents/GitHub/project_c/Frontend/Frontend.csproj",
+        "projectName": "Frontend",
+        "projectPath": "/home/dvd/Documents/GitHub/project_c/Frontend/Frontend.csproj",
+        "packagesPath": "/home/dvd/.nuget/packages/",
+        "outputPath": "/home/dvd/Documents/GitHub/project_c/Frontend/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/dvd/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/dvd/Documents/GitHub/project_c/Backend/Backend.csproj": {
+                "projectPath": "/home/dvd/Documents/GitHub/project_c/Backend/Backend.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -56,7 +191,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/davidzmr/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

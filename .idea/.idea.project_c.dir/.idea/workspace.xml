@@ -4,39 +4,99 @@
     <projectFile>Backend/Backend.csproj</projectFile>
     <projectFile profileName="Frontend">Frontend/Frontend.csproj</projectFile>
     <projectFile profileName="IIS Express">Frontend/Frontend.csproj</projectFile>
+    <projectFile profileName="WebApplication1">Frontend/Frontend.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="692c8e82-38bb-4e7a-9d63-1055f27b73de" name="Changes" comment="" />
+    <list default="true" id="692c8e82-38bb-4e7a-9d63-1055f27b73de" name="Changes" comment="Added scaffolding so you can customize behavior and looks of login / identity related features.">
+      <change afterPath="$PROJECT_DIR$/Frontend/Views/Home/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.project_c.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_c.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Areas/Identity/Pages/Account/Login.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Areas/Identity/Pages/Account/Login.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/bin/Debug/net6.0/Frontend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/Frontend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/ref/Frontend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/ref/Frontend.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/refint/Frontend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/obj/Debug/net6.0/refint/Frontend.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="WP-1.2" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/09678b31ef6f4391bcb44fd67394b87e94de00/e2/177d2eae/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5720390f243746018fe0b3bacdf981ad2b200/78/68a205c7/EmailAddressAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f383a308aed443d09e596cac628701116d200/a1/8e1c2b3d/PageModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/466243666f48855413374ed6a5b71a91dd58b614444f46c7b8d7b4508a57de/RazorPageOfT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7733bdb26b2be012c4266979a95d3728e74790201f91a02df4529ee6c2f37/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/773bdedb29c5df5de6b76abcb67edb4ade65adb03a4cf9e9f51608763a61a13/HtmlHelperPartialExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/90784d27c36936d603a8d59dec58c6bc04844aeb01925e3652f4714bc1a2fae/Login.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/93bf8ca51564b3532dce6442f8ec6d3856e11622b484427b6e965ca60aba4b1/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c79faaa49a6f2af6b549e7ec5cbb9ef65d952bfd80a649cbb68672514498981e/AnchorTagHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dd7e65bac822cb61bd60556eab7a57bca648ae6189ed8822e3ba75eb6bfd2b6/ViewDataDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f1462b662824b61f018ff653183f3696177c35163307daae01160a42074ac48/SignInManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Backend/Events/eventlistener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Backend/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Frontend/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.js.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Frontend/wwwroot/assets/vendors/bootstrap/bootstrap.min.js.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FAIe1VGRlR49nJhZtBFYcQNP8p" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.24668142&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Frontend">
+    <configuration name="Backend + Frontend" type="CompoundRunConfigurationType">
+      <toRun name="Frontend" type="LaunchSettings" />
+      <toRun name="Backend" type="DotNetProject" />
+      <method v="2" />
+    </configuration>
     <configuration name="Backend" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Backend/bin/Debug/net6.0/Backend" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Backend/bin/Debug/net6.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -46,7 +106,7 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net6.0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -81,6 +141,79 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Frontend: WebApplication1" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Frontend/Frontend.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="WebApplication1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="dotnetsecretsadder.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/dotnetsecretsadder.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="setup.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/setup.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.Frontend: WebApplication1" />
+      <item itemvalue=".NET Launch Settings Profile.Frontend" />
+      <item itemvalue=".NET Launch Settings Profile.Frontend: IIS Express" />
+      <item itemvalue=".NET Project.Backend" />
+      <item itemvalue="Compound.Backend + Frontend" />
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Shell Script.setup.sh" />
+      <item itemvalue="Shell Script.dotnetsecretsadder.sh" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.dotnetsecretsadder.sh" />
+        <item itemvalue="Shell Script.setup.sh" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Shell Script.setup.sh" />
+        <item itemvalue="Shell Script.dotnetsecretsadder.sh" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,7 +224,43 @@
       <option name="presentableId" value="Default" />
       <updated>1663928556518</updated>
       <workItem from="1663928559343" duration="2658000" />
+      <workItem from="1665159828330" duration="9113000" />
+      <workItem from="1665237848050" duration="4138000" />
+      <workItem from="1668168045902" duration="492000" />
+      <workItem from="1668168746241" duration="19000" />
+      <workItem from="1668169015078" duration="2806000" />
+      <workItem from="1668457747359" duration="784000" />
+      <workItem from="1668463154733" duration="6470000" />
     </task>
+    <task id="LOCAL-00001" summary="Added methods that hook into database for easy access by other methods.">
+      <created>1665167425026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665167425026</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merged WP1.2, it is mostly working but needs polishing. Make sure database is populated before running frontend.">
+      <created>1668452692303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668452692303</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added scaffolding so you can customize behavior and looks of login / identity related features.">
+      <created>1668467143493</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668467143493</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added scaffolding so you can customize behavior and looks of login / identity related features.">
+      <created>1668467255845</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668467255845</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,5 +281,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added methods that hook into database for easy access by other methods." />
+    <MESSAGE value="Merged WP1.2, it is mostly working but needs polishing. Make sure database is populated before running frontend." />
+    <MESSAGE value="Added scaffolding so you can customize behavior and looks of login / identity related features." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added scaffolding so you can customize behavior and looks of login / identity related features." />
   </component>
 </project>

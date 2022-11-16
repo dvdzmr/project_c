@@ -1,0 +1,37 @@
+@model List<MapItems>
+
+
+@{
+    Layout = "_Layout";
+}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Ollie landing page.">
+    <meta name="author" content="Devcrud">
+    <title>PoacherHunter2000</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="~/assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.theme.default.css">
+
+    <!-- Bootstrap + Ollie main styles -->
+    <link rel="stylesheet" href="~/assets/css/ollie.css">
+    <link rel="stylesheet" href="~/assets/css/events.css">
+
+</head>
+<body>
+<section class="section" id="events">
+    <div>
+        @Html.Partial("Map", Model)
+    </div>
+</section>
+
+<script src="~/assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    setInterval("$('#events').load('Map')", 30000);
+    </script>
+</body>

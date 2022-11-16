@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Ollie landing page.">
+    <meta name="author" content="Devcrud">
+    <title>PoacherHunter2000</title>
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
+
+    <!-- Bootstrap + Ollie main styles -->
+    <link rel="stylesheet" href="assets/css/ollie.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/imgs/brand.svg" alt="" class="brand-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+            <partial name="_LoginPartial"/>
+        </div>
+        
+    </div>
+</nav>
+
+
+<div class>
+    <h1>Welcome to the next step in technology accelerated animal preservation </h1>
+    <p>In collaboration between ALTEN and Chengeta wildlife we are proud to present the next step in protecting vulnerable wildlife from poachers in national parks throughout Africa. </p>
+    <p></p>
+    <p>If you are a ranger please log in to access the ranger panel for the most current events currently unfolding.</p>
+</div>
+
+@await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

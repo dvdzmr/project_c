@@ -1,0 +1,26 @@
+.box-event {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #dc3545;
+    border-radius: 4px;
+    padding: 0.5%;
+}
+.box-event:after{
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    height: 100%;
+}
+.myIcon{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    line-height: 75px;
+    width: 75px;
+}
+.viewdetails{
+    vertical-align: middle;
+    text-align: center;
+}
