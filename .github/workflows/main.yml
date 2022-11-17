@@ -11,11 +11,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the stack
         run: docker compose up -d
-      - name: making ssh dir
-        run: mkdir ~/.ssh
-      - name: making known_hosts file
-        run: touch ~/.ssh/known_hosts
-      - name: Known hosts
-        run: echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+     # - name: making ssh dir
+      #  run: mkdir ~/.ssh
+      #- name: making known_hosts file
+       # run: touch ~/.ssh/known_hosts
+      #- name: Known hosts
+      #  run: echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
       - name: Copying to remote
         run: sshpass -p '37!T4nPP6' rsync -e "ssh -o StrictHostKeyChecking=no" -avz ./dist/ ubuntu-1027223@145.24.222.85:/home/ubuntu-1027223/projectc/dist/
