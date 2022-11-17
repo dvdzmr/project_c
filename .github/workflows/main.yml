@@ -10,7 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the stack
         run: docker-compose up -d
-        
+      - name: making known_hosts file
+        run: touch ~/.ssh/known_hosts
       - name: Known hosts
         run: echo "$KNOWN_HOSTS" >> ~/.ssh/known_hosts
       - name: Copying to remote
