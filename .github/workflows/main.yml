@@ -15,6 +15,6 @@ jobs:
       - name: making known_hosts file
         run: sudo touch ~/.ssh/known_hosts
       - name: Known hosts
-        run: sudo echo ${{ secrets.KNOWN_HOSTS }} >> ~/.ssh/known_hosts
+        run: sudo echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
       - name: Copying to remote
         run: sshpass -p '37!T4nPP6' rsync -avz ./dist/ ubuntu-1027223@145.24.222.85:/home/ubuntu-1027223/projectc/dist/
