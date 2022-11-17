@@ -10,6 +10,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build the stack
         run: docker-compose up -d
+      - name: making ssh dir
+        run: sudo mkdir ~/.ssh
       - name: making known_hosts file
         run: touch ~/.ssh/known_hosts
       - name: Known hosts
