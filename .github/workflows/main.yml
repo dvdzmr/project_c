@@ -11,9 +11,9 @@ jobs:
       - name: Build the stack
         run: docker-compose up -d
       - name: making ssh dir
-        run: sudo mkdir ~/.ssh
+        run: mkdir ~/.ssh
       - name: making known_hosts file
-        run: sudo touch ~/.ssh/known_hosts
+        run: touch ~/.ssh/known_hosts
       - name: Known hosts
         run: echo "${{ secrets.KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
       - name: Copying to remote
