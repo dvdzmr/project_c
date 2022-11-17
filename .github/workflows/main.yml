@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the stack
-        run: docker-compose up 
+        run: apt install -y openssh-client
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
