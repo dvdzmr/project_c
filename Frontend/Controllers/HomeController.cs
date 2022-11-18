@@ -12,10 +12,12 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly INotyfService _notyf;
+    private List<MapItems> map;
     public HomeController(ILogger<HomeController> logger, INotyfService notyf)
     {
         _logger = logger;
         _notyf = notyf;
+        map = new List<MapItems>();
     }
     
     
@@ -41,18 +43,11 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-    public List<MapItems> GetEvents(bool lastEvent = false)
+    public List<MapItems> GetEvents(int evenAmounts = 5)
     {
         var getEvents = DBquery.DBquery.DbChecker();
         List<MapItems> test = new List<MapItems>();
-        int count = 5;
-
-        if (lastEvent == true)
-        {
-            count = 1;
-        }
-        
-        for (int i = Math.Max(0, getEvents.Count - count); i < getEvents.Count; i++)
+        for (int i = Math.Max(0, getEvents.Count - evenAmounts); i < getEvents.Count; i++)
         {
             var dbevent = getEvents[i];
             var allevent = new MapItems()
@@ -74,10 +69,13 @@ public class HomeController : Controller
 
     public PartialViewResult Map()
     {
+        // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
+        // the foreach loop
+
         // Notifications must invoked with conditions, in this case we can implement if conditions here by using GetEvents()
         // and having a settings file or something that stores what the filters are to implement here.
         //ex:
-        List<MapItems> lastEvent = GetEvents(true); // only fetches the last event
+        List<MapItems> lastEvent = GetEvents(1); // only fetches the last event
         
         foreach (var Item in lastEvent)
         {
@@ -102,7 +100,7 @@ public class HomeController : Controller
                 _notyf.Custom("Thunder was heard", 5, "whitesmoke", "fa fa-gear");
             }
         }
-        List<MapItems> fiveEvents = GetEvents(); //required data for updating with interval after initial loading 
+        List<MapItems> fiveEvents = GetEvents(5); //required data for updating with interval after initial loading 
         return PartialView(fiveEvents);
     }
     

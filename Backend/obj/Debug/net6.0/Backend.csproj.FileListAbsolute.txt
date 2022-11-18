@@ -97,3 +97,12 @@ C:/Users/Gebruiker/Desktop/Schoolvakken/Projecten/Project C/project_c-dev/Backen
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
 /home/dvd/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/Users/davidzmr/Documents/GitHub/project_c/Backend/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll

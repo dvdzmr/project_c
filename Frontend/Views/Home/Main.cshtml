@@ -1,3 +1,5 @@
+@using Npgsql
+@using System.Dynamic
 @model List<MapItems>
 
 
@@ -26,7 +28,7 @@
 <body>
 <section class="section" id="events">
     <div>
-        @Html.Partial("Map")
+        @await Html.PartialAsync("Map")
     </div>
 </section>
 
@@ -34,4 +36,6 @@
 <script type="text/javascript">
     setInterval("$('#events').load('Map')", 30000);
     </script>
+
+
 </body>
