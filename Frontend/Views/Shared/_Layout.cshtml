@@ -96,6 +96,9 @@
     <!-- Owl carousel  -->
     <script src="assets/vendors/owl-carousel/js/owl.carousel.js"></script>
 
+    @* push notifications *@
+    @await Component.InvokeAsync("Notyf")  
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
