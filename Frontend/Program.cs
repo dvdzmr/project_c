@@ -1,3 +1,5 @@
+using AspNetCoreHero.ToastNotification;
+using AspNetCoreHero.ToastNotification.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Frontend.Data;
@@ -14,6 +16,11 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddNotyf(config=> { config.DurationInSeconds = 10;config.IsDismissable = true;config.Position = NotyfPosition.BottomRight; });
+
+
+
 
 var app = builder.Build();
 
@@ -42,15 +49,17 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
-// app.UseEndpoints(endpoints =>
+// app.Use(async (context, next) =>
 // {
-//     endpoints.MapControllerRoute(
-//         name: "MyArea",
-//         pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-//
-//     endpoints.MapControllerRoute(
-//         name: "default",
-//         pattern: "{controller=Home}/{action=Index}/{id?}");
+//     await next();
+//     if (context.Response.StatusCode == 404)
+//     {
+//         context.Request.Path = "/Home/404/";
+//         await next();
+//     }
 // });
+
+
+app.UseNotyf();
 
 app.Run();
