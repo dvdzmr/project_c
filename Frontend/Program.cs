@@ -20,25 +20,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddNotyf(config=> { config.DurationInSeconds = 10;config.IsDismissable = true;config.Position = NotyfPosition.BottomRight; });
 
 
-
-
 var app = builder.Build();
-
-
-app.Use(async (ctx, next) =>
-{
-    await next();
-
-    if(ctx.Response.StatusCode == 404 && !ctx.Response.HasStarted)
-    {
-        //Re-execute the request so the user gets the error page
-        string originalPath = ctx.Request.Path.Value;
-        ctx.Items["originalPath"] = originalPath;
-        ctx.Request.Path = "/error/404";
-        await next();
-    }
-});
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -64,17 +46,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
-
-// app.Use(async (context, next) =>
-// {
-//     await next();
-//     if (context.Response.StatusCode == 404)
-//     {
-//         context.Request.Path = "/Home/404/";
-//         await next();
-//     }
-// });
-
 
 app.UseNotyf();
 
