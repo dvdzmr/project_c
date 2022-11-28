@@ -5,100 +5,43 @@
         <h3 class="section-title mb-4"><i class="ti-rss-alt"></i> Recent Events</h3>
         @foreach (var eventlisted in Model)
                 {
-                    @if (eventlisted.Soundtype == "gunshot")
-                    {
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-icon">
+                                @if (eventlisted.Soundtype == "gunshot")
+                                {
                                     <i class="myIcon box-event ti-target"></i>
-                                </div>
-                                <div class="col">
-                                    <p> @($"Probability : {eventlisted.Probability}% Time: {eventlisted.Time.ToShortTimeString()}") </p>
-                                    <p> @($" Sound Type: {eventlisted.Soundtype} Date: {eventlisted.Time.ToShortDateString()}") </p>
-                                </div>
-                                <div class="col">
-                                    <a href="javascript:void(0)" class="card border-0 text-dark">
-                                        <p class="viewdetails">View details</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                    else if (eventlisted.Soundtype == "vehicle")
-                    {
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
+                                }
+                                else if (eventlisted.Soundtype == "vehicle")
+                                {
                                     <i class="myIcon box-event ti-car"></i>
-                                </div>
-                                <div class="col">
-                                    <p> @($"Probability : {eventlisted.Probability}% Time: {eventlisted.Time.ToShortTimeString()}") </p>
-                                    <p> @($" Sound Type: {eventlisted.Soundtype} Date: {eventlisted.Time.ToShortDateString()}") </p>
-                                </div>
-                                <div class="col">
-                                    <a href="javascript:void(0)" class="card border-0 text-dark">
-                                        <p class="viewdetails">View details</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                    else if (eventlisted.Soundtype == "animal")
-                    {
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
+                                }
+                                else if (eventlisted.Soundtype == "animal")
+                                {
                                     <i class="myIcon box-event ti-linux"></i>
-                                </div>
-                                <div class="col">
-                                    <p> @($"Probability : {eventlisted.Probability}% Time: {eventlisted.Time.ToShortTimeString()}") </p>
-                                    <p> @($" Sound Type: {eventlisted.Soundtype} Date: {eventlisted.Time.ToShortDateString()}") </p>
-                                </div>
-                                <div class="col">
-                                    <a href="javascript:void(0)" class="card border-0 text-dark">
-                                        <p class="viewdetails">View details</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                    else if (eventlisted.Soundtype == "thunder")
-                    {
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
+                                }
+                                else if (eventlisted.Soundtype == "thunder")
+                                {
                                     <i class="myIcon box-event ti-bolt"></i>
-                                </div>
-                                <div class="col">
-                                    <p> @($"Probability : {eventlisted.Probability}% Time: {eventlisted.Time.ToShortTimeString()}") </p>
-                                    <p> @($" Sound Type: {eventlisted.Soundtype} Date: {eventlisted.Time.ToShortDateString()}") </p>
-                                </div>
-                                <div class="col">
-                                    <a href="javascript:void(0)" class="card border-0 text-dark">
-                                        <p class="viewdetails">View details</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                    else
-                    {
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
+                                }
+                                else
+                                {
                                     <i class="myIcon box-event ti-na"></i>
-                                </div>
-                                <div class="col">
-                                    <p> @($"Probability : {eventlisted.Probability}% Time: {eventlisted.Time.ToShortTimeString()}") </p>
-                                    <p> @($" Sound Type: {eventlisted.Soundtype} Date: {eventlisted.Time.ToShortDateString()}") </p>
-                                </div>
-                                <div class="col">
-                                    <a href="javascript:void(0)" class="card border-0 text-dark">
-                                        <p class="viewdetails">View details</p>
-                                    </a>
-                                </div>
+                                }
+                            </div>
+                            <div class="col">
+                                <p style="margin-bottom: 0; padding-top: 0"> @($"Date: {eventlisted.Time.ToShortDateString()}")</p>
+                                <p style="margin-bottom: 0; padding-top: 0"> @($"Time: {eventlisted.Time.ToShortTimeString()}") </p>
+                                <p style="margin-bottom: 0;"> @($"Sound Type: {eventlisted.Soundtype}")</p>
+                                <p style="margin-bottom: 0; padding-top: 0"> @($"Probability : {eventlisted.Probability}%")</p>
+                            </div>
+                            <div class="col-viewdetails">
+                                <a href="#" onclick="getview(@eventlisted.Id.ToString())" class="box-details viewdetails">
+                                    View Details
+                                </a>
                             </div>
                         </div>
-                    }
+                    </div>
+                    <br/>
                 }
     </div>

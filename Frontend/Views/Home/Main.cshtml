@@ -22,6 +22,8 @@
 
     <!-- Bootstrap + Ollie main styles -->
     <link rel="stylesheet" href="~/assets/css/ollie.css">
+    
+    <!-- Extra's -->
     <link rel="stylesheet" href="~/assets/css/events.css">
 
 </head>
@@ -31,10 +33,20 @@
         @await Html.PartialAsync("Map")
     </div>
 </section>
+<div id="viewdetailsofevent">
+    @Html.Partial("ViewDetailsPartial", Model[0])
+</div>
 
+<!-- core  -->
 <script src="~/assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="~/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="~/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+<script src="~/assets/js/events.js"></script>
 <script type="text/javascript">
-    setInterval("$('#events').load('Map')", 30000);
+    setInterval("$('#events').load('@Url.Action("Map", "Home")')", 30000);
     </script>
 
 

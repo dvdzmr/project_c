@@ -5,6 +5,9 @@ using Frontend.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
 namespace Frontend.Controllers;
 
@@ -109,4 +112,33 @@ public class HomeController : Controller
         var test = GetEvents(); // data for recent events (view Map)
         return View(test);
     }
+    public ActionResult ViewDetailsPartial(int test = 0)
+    {
+        var getEvents = DBquery.DBquery.DbChecker();
+        MapItems tmp = new MapItems()
+        {
+            Id = getEvents[test].Id,
+            Time = getEvents[test].Time,
+            Latitude = getEvents[test].Latitude,
+            Longitude = getEvents[test].Longitude,
+            Soundtype = getEvents[test].Soundtype,
+            Probability = getEvents[test].Probability,
+            Soundfile = getEvents[test].Soundtype
+        };
+        return PartialView(tmp);
+    }
+
+    // public JsonResult ViewDetailsPost(MapItems test)
+    // {
+    //     MapItems mapItems = new MapItems
+    //     {
+    //         Id = test.Id,
+    //         Latitude = test.Latitude,
+    //         Longitude = test.Longitude,
+    //         Probability = test.Probability,
+    //         Soundfile = test.Soundfile,
+    //         Soundtype = test.Soundtype
+    //     };
+    //     return Json(mapItems);
+    // }
 }

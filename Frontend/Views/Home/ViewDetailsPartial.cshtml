@@ -1,0 +1,48 @@
+@model MapItems
+
+@* add css with higher z for overlay *@
+<div>
+    <h1>This is just a temporary place for more details</h1>
+    @* Make icon bigger *@
+    <div class="col-icon">
+        @if (Model.Soundtype == "gunshot")
+        {
+            <i class="myIcon box-event ti-target"></i>
+        }
+        else if (Model.Soundtype == "vehicle")
+        {
+            <i class="myIcon box-event ti-car"></i>
+        }
+        else if (Model.Soundtype == "animal")
+        {
+            <i class="myIcon box-event ti-linux"></i>
+        }
+        else if (Model.Soundtype == "thunder")
+        {
+            <i class="myIcon box-event ti-bolt"></i>
+        }
+        else
+        {
+            <i class="myIcon box-event ti-na"></i>
+            
+        }
+    </div>
+    <div class="soundfile">
+        @* get soundfile *@
+    </div>
+    <div class="details">
+        <p>
+            Probability: @(Model.Probability)
+            <br/>Time of event: @(Model.Time.ToShortTimeString())
+            <br/>Date of event: @(Model.Time.ToShortDateString())
+            <br/>Longitude: @(Model.Longitude)
+            <br/>Latitude: @(Model.Latitude)
+        </p>
+    </div>
+    <div class="closingview">
+        @* close partial *@
+    </div>
+    <div class="downloadtopdf">
+        @* download for offline *@
+    </div>
+</div>
