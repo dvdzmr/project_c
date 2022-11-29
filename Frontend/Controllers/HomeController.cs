@@ -70,7 +70,7 @@ public class HomeController : Controller
         return test;
     }
 
-    public PartialViewResult Map()
+    public PartialViewResult Map(int addevent = 0)
     {
         // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
         // the foreach loop
@@ -103,7 +103,7 @@ public class HomeController : Controller
                 _notyf.Custom("Thunder was heard", 5, "whitesmoke", "fa fa-gear");
             }
         }
-        List<MapItems> fiveEvents = GetEvents(5); //required data for updating with interval after initial loading 
+        List<MapItems> fiveEvents = GetEvents(5+addevent); //required data for updating with interval after initial loading 
         return PartialView(fiveEvents);
     }
     

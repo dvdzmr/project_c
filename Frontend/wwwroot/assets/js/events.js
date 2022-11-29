@@ -23,3 +23,17 @@ function getview(id){
         }
     });
 }
+function moreEvents(currentevents){
+    var addevent = parseInt(currentevents) + 25;
+    $.ajax({
+        url: "/Home/Map?addevent="+addevent,
+        type: "GET",
+        cache: false,
+        success: function (result){
+            $("#events").html(result)
+        },
+        error: function (){
+            console.log("error")
+        }
+    });
+}

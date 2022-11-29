@@ -54,3 +54,11 @@
     content: "";
     height: 100%;
 }
+.testicon {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: white;
+    color: white;
+}
+.testicon:active{
+    background-color: rgba(0,0,0, 0.3);
+}
