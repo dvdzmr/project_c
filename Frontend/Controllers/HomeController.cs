@@ -61,7 +61,7 @@ public class HomeController : Controller
                 Longitude = dbevent.Longitude,
                 Soundtype = dbevent.Soundtype,
                 Probability = dbevent.Probability,
-                Soundfile = dbevent.Soundtype
+                Soundfile = dbevent.Soundfile
             };
             test.Add(allevent);
         }
@@ -123,7 +123,7 @@ public class HomeController : Controller
             Longitude = getEvents[test].Longitude,
             Soundtype = getEvents[test].Soundtype,
             Probability = getEvents[test].Probability,
-            Soundfile = getEvents[test].Soundtype
+            Soundfile = getEvents[test].Soundfile
         };
         return PartialView(tmp);
     }

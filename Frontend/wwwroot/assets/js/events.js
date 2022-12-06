@@ -17,6 +17,7 @@ function getview(id){
         cache: false,
         success: function (result){
             $("#viewdetailsofevent").html(result)
+            openNav()
         },
         error: function (){
             console.log("error")
@@ -31,6 +32,19 @@ function moreEvents(currentevents){
         cache: false,
         success: function (result){
             $("#events").html(result)
+        },
+        error: function (){
+            console.log("error")
+        }
+    });
+}
+function closing(){
+    $.ajax({
+        url: "/Home/Main",
+        type: "GET",
+        cache: false,
+        success: function (result){
+            closeNav()
         },
         error: function (){
             console.log("error")

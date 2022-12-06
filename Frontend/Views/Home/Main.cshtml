@@ -33,8 +33,13 @@
         @await Html.PartialAsync("Map")
     </div>
 </section>
-<div id="viewdetailsofevent">
-    @Html.Partial("ViewDetailsPartial", Model[0])
+<div id="overlaybackgroundcolor" class="overlay-upperpart">
+    <div id="overlaydetails" class="overlay">
+        <div id="viewdetailsofevent" class="overlay-content">
+            @Html.Partial("ViewDetailsPartial", Model[0])
+            @* close partial *@
+        </div>
+    </div>
 </div>
 
 <!-- core  -->
@@ -45,9 +50,17 @@
 <script src="~/assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
 <script src="~/assets/js/events.js"></script>
-<script type="text/javascript">
-    setInterval("$('#events').load('@Url.Action("Map", "Home")')", 30000);
-    </script>
-
-
+<script type="text/javascript" id="reloadjs">
+     setInterval("$('#events').load('@Url.Action("Map", "Home")')", 30000);
+     </script>
+<script>
+function openNav(){
+    document.getElementById('overlaybackgroundcolor').style.display = "block";
+    document.getElementById('overlaydetails').style.display = "block";
+}
+function closeNav(){
+    document.getElementById('overlaybackgroundcolor').style.display = "none";
+    document.getElementById('overlaydetails').style.display = "none";
+}
+</script>
 </body>

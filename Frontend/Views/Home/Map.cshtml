@@ -36,7 +36,7 @@
                                 <p style="margin-bottom: 0; padding-top: 0"> @($"Probability : {eventlisted.Probability}%")</p>
                             </div>
                             <div class="col-viewdetails">
-                                <a href="#" onclick="getview(@eventlisted.Id.ToString())" class="box-details viewdetails">
+                                <a href="javascript:void(0)" onclick="getview(@eventlisted.Id.ToString())" class="box-details viewdetails">
                                     View Details
                                 </a>
                             </div>
@@ -44,7 +44,7 @@
                     </div>
                     <br/>
                 }
-        <button class="col testicon text-center" style="border: none;" onclick="moreEvents(@Model.Count)">
+        <button class="col buttom-seemore text-center" style="border: none;" onclick="moreEvents(@Model.Count)">
             <i class="myIcon ti-angle-double-down"></i>
             </button>
     </div>
