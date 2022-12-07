@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -34,20 +35,20 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/imgs/brand.svg" alt="" class="brand-img"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/imgs/brand.svg" alt="" class="brand-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
                     
-                </ul>
-                <partial name="_LoginPartial"/>
-            </div>
+            </ul>
+            <partial name="_LoginPartial"/>
         </div>
-    </nav>
+    </div>
+</nav>
 
 @if (SignInManager.IsSignedIn(User)) // Can later specify roles here if needed.
 {
