@@ -50,8 +50,33 @@
 <script src="~/assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
 <script src="~/assets/js/events.js"></script>
+<script src="~/assets/js/showEvents.js"></script>
+
+<script id="testing">
+function loadNewEvents(){
+    var i = 0;
+
+    $('.col-icon').each(function(){
+        i += 1;
+        console.log("current:" + i);
+    })
+    events(i)
+}
+</script>
+
+<!-- Test codes, voor nu niet verwijderen - Min En -->  
+@* @{ var currentevents = Model.Count - 5;} *@
+    @* $('#events').load('@Url.Action("Map", "Home", new {addevent = currentevents})') *@
+
+@* <script id="newtest"> *@
+@* function changeFunction(currentevents){ *@
+@*     var scripthtml = $(this).html(); *@
+@*     $("testing").replaceWith('<script>'); *@
+@*     } *@
+@* </script> *@
+
 <script type="text/javascript" id="reloadjs">
-     setInterval("$('#events').load('@Url.Action("Map", "Home")')", 30000);
+     setInterval("loadNewEvents()", 30000);
      </script>
 <script>
 function openNav(){

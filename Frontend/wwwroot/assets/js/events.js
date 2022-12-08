@@ -1,16 +1,4 @@
 function getview(id){
-    // var url = "@Html.Raw(Url.Action('ViewDetailsPartial', 'Home', new {test = "-parameter"}))";
-    // url = url.replace("-parameter", id)
-    // console.log("works");
-
-    // $.ajax({
-    //     url: "/Home/ViewDetailsPost",
-    //     type: "POST",
-    //     data: JSON.stringify(MapItems),
-    //     dataType: "json",
-
-    //      url: url,
-
     $.ajax({
         url: "/Home/ViewDetailsPartial?test="+id,
         type: "GET",
@@ -31,7 +19,18 @@ function moreEvents(currentevents){
         type: "GET",
         cache: false,
         success: function (result){
-            $("#events").html(result)
+            $("#events").html(result);
+            
+            // Code hieronder kan later worden verwijdert (voor nu nog niet) - Min En
+            
+            // var tmp = document.getElementById("testing");
+            // var scripthtml = tmp.innerHTML;
+            // tmp.remove();
+            // var newscript = document.createElement('script');
+            // newscript.id = "testing";
+            // newscript.appendChild(document.createTextNode(scripthtml));
+            // document.body.appendChild(newscript);
+            // console.log("works?")
         },
         error: function (){
             console.log("error")
