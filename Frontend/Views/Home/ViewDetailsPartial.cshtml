@@ -1,0 +1,53 @@
+@model MapItems
+
+@* add css with higher z for overlay *@
+<div class="">
+    @* Make icon bigger *@
+    <div class="">
+        @if (Model.Soundtype == "gunshot")
+        {
+            <i class="viewdetails-icon viewdetails-box ti-target"></i>
+        }
+        else if (Model.Soundtype == "vehicle")
+        {
+            <i class="viewdetails-icon viewdetails-box ti-car"></i>
+        }
+        else if (Model.Soundtype == "animal")
+        {
+            <i class="viewdetails-icon viewdetails-box ti-linux"></i>
+        }
+        else if (Model.Soundtype == "thunder")
+        {
+            <i class="viewdetails-icon viewdetails-box ti-bolt"></i>
+        }
+        else
+        {
+            <i class="viewdetails-icon viewdetails-box ti-na"></i>
+            
+        }
+    </div>
+    <div class="soundfile">
+        @* get soundfile *@
+        <audio controls>
+            <source src="@Model.Soundfile"/>
+        </audio>
+    </div>
+    <div class="details">
+        <p>
+            Event id: @(Model.Id)
+            <br/>Probability: @(Model.Probability)
+            <br/>Time of event: @(Model.Time.ToShortTimeString())
+            <br/>Date of event: @(Model.Time.ToShortDateString())
+            <br/>Longitude: @(Model.Longitude)
+            <br/>Latitude: @(Model.Latitude)
+        </p>
+    </div>
+    <div class="closingview">
+        @* close partial *@
+        <a href="javascript:void(0)" class="closebtn" onclick="closing()">< Return</a> <!-- kan gebruik maken van: &times; inplaats van wireframe button-->
+    </div>
+    <div class="downloadtopdf">
+        @* download for offline *@
+        <a href="Newevent.pdf" class="topdf" download="Recent event.PDF">To PDF</a> <!-- need function to make pdf, maybe <button>?-->
+    </div>
+</div>

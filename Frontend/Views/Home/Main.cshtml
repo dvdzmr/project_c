@@ -22,6 +22,8 @@
 
     <!-- Bootstrap + Ollie main styles -->
     <link rel="stylesheet" href="~/assets/css/ollie.css">
+    
+    <!-- Extra's -->
     <link rel="stylesheet" href="~/assets/css/events.css">
 
 </head>
@@ -31,11 +33,59 @@
         @await Html.PartialAsync("Map")
     </div>
 </section>
+<div id="overlaybackgroundcolor" class="overlay-upperpart">
+    <div id="overlaydetails" class="overlay">
+        <div id="viewdetailsofevent" class="overlay-content">
+            @Html.Partial("ViewDetailsPartial", Model[0])
+            @* close partial *@
+        </div>
+    </div>
+</div>
 
+<!-- core  -->
 <script src="~/assets/vendors/jquery/jquery-3.4.1.js"></script>
-<script type="text/javascript">
-    setInterval("$('#events').load('Map')", 30000);
-    </script>
+<script src="~/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
+<!-- bootstrap 3 affix -->
+<script src="~/assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
+<script src="~/assets/js/events.js"></script>
+<script src="~/assets/js/showEvents.js"></script>
+
+<script id="testing">
+function loadNewEvents(){
+    var i = 0;
+
+    $('.col-icon').each(function(){
+        i += 1;
+        console.log("current:" + i);
+    })
+    events(i)
+}
+</script>
+
+<!-- Test codes, voor nu niet verwijderen - Min En -->  
+@* @{ var currentevents = Model.Count - 5;} *@
+    @* $('#events').load('@Url.Action("Map", "Home", new {addevent = currentevents})') *@
+
+@* <script id="newtest"> *@
+@* function changeFunction(currentevents){ *@
+@*     var scripthtml = $(this).html(); *@
+@*     $("testing").replaceWith('<script>'); *@
+@*     } *@
+@* </script> *@
+
+<script type="text/javascript" id="reloadjs">
+     setInterval("loadNewEvents()", 30000);
+     </script>
+<script>
+function openNav(){
+    document.getElementById('overlaybackgroundcolor').style.display = "block";
+    document.getElementById('overlaydetails').style.display = "block";
+}
+function closeNav(){
+    document.getElementById('overlaybackgroundcolor').style.display = "none";
+    document.getElementById('overlaydetails').style.display = "none";
+}
+</script>
 </body>
