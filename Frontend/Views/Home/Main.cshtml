@@ -7,27 +7,56 @@
     Layout = "_Layout";
 }
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Ollie landing page.">
-    <meta name="author" content="Devcrud">
-    <title>PoacherHunter2000</title>
+    @* <meta charset="utf-8"> *@
+    @* <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> *@
+    @* <meta name="description" content="Start your development with Ollie landing page."> *@
+    @* <meta name="author" content="Devcrud"> *@
+    @* <title>PoacherHunter2000</title> *@
 
     <!-- font icons -->
     <link rel="stylesheet" href="~/assets/vendors/themify-icons/css/themify-icons.css">
 
     <!-- owl carousel -->
-    <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.carousel.css">
-    <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.theme.default.css">
+    @* <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.carousel.css"> *@
+    @* <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.theme.default.css"> *@
 
     <!-- Bootstrap + Ollie main styles -->
     <link rel="stylesheet" href="~/assets/css/ollie.css">
     
     <!-- Extra's -->
     <link rel="stylesheet" href="~/assets/css/events.css">
+    
+    <!-- Background color, etc -->
+    <link rel="stylesheet" href="~/assets/css/layoutsettings.css">
 
 </head>
 <body>
+
+@* <section class="section" id="about"> *@
+    <div class="container">
+        <div class="row align-items-center mr-auto">
+            <div class="col-md-4">
+                <h3 class="section-title">Live Tracking</h3>
+                <p>Here we will put a container that will show on a map the current sightings as reported by the MQTT broker</p>
+                @* <a href="javascript:void(0)">Read more...</a> *@
+            </div>
+            <div class="container">
+                <div id="googleMap" style="width:100%;height:400px"></div>
+            </div>
+            <script>
+             function myMap() {
+             var mapProp= {
+                 center:new google.maps.LatLng(51.508742,-0.120850),
+                 zoom:5,
+             };
+             var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+             }
+         </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIhCB6jZXgL-QVL-6oq4hWQzyX6xDcWeo&callback=myMap"></script>
+        </div>
+    </div>
+@* </section> *@
+
 <section class="section" id="events">
     <div>
         @await Html.PartialAsync("Map")
@@ -44,10 +73,10 @@
 
 <!-- core  -->
 <script src="~/assets/vendors/jquery/jquery-3.4.1.js"></script>
-<script src="~/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-<!-- bootstrap 3 affix -->
-<script src="~/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+@* <script src="~/assets/vendors/bootstrap/bootstrap.bundle.js"></script> *@
+@* *@
+@* <!-- bootstrap 3 affix --> *@
+@* <script src="~/assets/vendors/bootstrap/bootstrap.affix.js"></script> *@
 
 <script src="~/assets/js/events.js"></script>
 <script src="~/assets/js/showEvents.js"></script>
@@ -58,15 +87,15 @@ function loadNewEvents(){
 
     $('.col-icon').each(function(){
         i += 1;
-        console.log("current:" + i);
     })
+    console.log("current:" + i);
     events(i)
 }
 </script>
 
-<!-- Test codes, voor nu niet verwijderen - Min En -->  
+<!-- Test codes, voor nu niet verwijderen - Min En -->
 @* @{ var currentevents = Model.Count - 5;} *@
-    @* $('#events').load('@Url.Action("Map", "Home", new {addevent = currentevents})') *@
+@* $('#events').load('@Url.Action("Map", "Home", new {addevent = currentevents})') *@
 
 @* <script id="newtest"> *@
 @* function changeFunction(currentevents){ *@

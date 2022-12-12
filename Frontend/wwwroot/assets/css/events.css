@@ -17,7 +17,7 @@
     width: 40px;
     height: 40px;
     text-align: center;
-    background-color: #dc3545;
+    background-color: #dc3545!important;
     border-radius: 4px;
     padding: 4px;
 }
@@ -45,7 +45,7 @@
     width: 80px;
     height: 60px;
     text-align: center;
-    background-color: #5a6268;
+    background-color: #5a6268!important;
     padding: 4px;
 }
 .box-details:after{
@@ -55,12 +55,12 @@
     height: 100%;
 }
 .buttom-seemore {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1)!important;
     border-color: white;
     color: white;
 }
 .button-seemore:active{
-    background-color: rgba(0,0,0, 0.3);
+    background-color: rgba(0,0,0, 0.3)!important;
 }
 .overlay{
     position: fixed;
@@ -70,7 +70,7 @@
     z-index: 2;
     left: 0;
     bottom: 0;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255,255,255)!important;
     border-radius: 90px / 30px 30px 0px 0px;
 }
 .overlay-upperpart{
@@ -81,7 +81,7 @@
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(24, 18, 18, 0.8);
+    background-color: rgba(24, 18, 18, 0.8)!important;
 }
 .overlay-content {
     position: relative;
@@ -108,7 +108,7 @@
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: #dc3545;
+    background-color: #dc3545!important;
     border-radius: 50%;
     line-height: 74px;
     padding: 8px;

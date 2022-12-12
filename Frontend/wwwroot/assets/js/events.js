@@ -1,6 +1,6 @@
 function getview(id){
     $.ajax({
-        url: "/Home/ViewDetailsPartial?test="+id,
+        url: "/Home/ViewDetailsPartial?eventid="+id,
         type: "GET",
         cache: false,
         success: function (result){

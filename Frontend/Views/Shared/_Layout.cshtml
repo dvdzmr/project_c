@@ -22,60 +22,61 @@
 
     <!-- Bootstrap + Ollie main styles -->
     <link rel="stylesheet" href="~/assets/css/ollie.css">
-
+    
+    @* <!-- Background color, etc --> *@
+    <link rel="stylesheet" href="~/assets/css/layoutsettings.css">
 </head>  
 
 
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-<nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="~/assets/imgs/brand.svg" alt="" class="brand-img"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav id="scrollspy" class="navbar navbar-dark bg-main navbar-expand-lg fixed-top"> <!-- data-spy="affix" data-offset-top="20"> -->
+    <div class="container">
+        <a class="navbar-brand" href="javascript:void(0)"><img src="~/assets/imgs/brand.svg" alt="" class="brand-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    
-                </ul>
-                <partial name="_LoginPartial"/>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+            <partial name="_LoginPartial"/>
         </div>
-    </nav>
+    </div>
+</nav>
 
 @if (SignInManager.IsSignedIn(User)) // Can later specify roles here if needed.
 {
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row align-items-center mr-auto">
-                <div class="col-md-4">
-                    <h3 class="section-title">Live Tracking</h3>
-                    <p>Here we will put a container that will show on a map the current sightings as reported by the MQTT broker</p>
-                    @* <a href="javascript:void(0)">Read more...</a> *@
-                </div>
-                <div class="container">
-                    <div id="googleMap" style="width:100%;height:400px"></div>
-                </div>
-                <script>
-            function myMap() {
-            var mapProp= {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            }
-        </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIhCB6jZXgL-QVL-6oq4hWQzyX6xDcWeo&callback=myMap"></script>
-            </div>
-        </div>
-    </section> 
+@*     <section class="section" id="about"> *@
+@*         <div class="container"> *@
+@*             <div class="row align-items-center mr-auto"> *@
+@*                 <div class="col-md-4"> *@
+@*                     <h3 class="section-title">Live Tracking</h3> *@
+@*                     <p>Here we will put a container that will show on a map the current sightings as reported by the MQTT broker</p> *@
+@*                     $1$ <a href="javascript:void(0)">Read more...</a> #1# *@
+@*                 </div> *@
+@*                 <div class="container"> *@
+@*                     <div id="googleMap" style="width:100%;height:400px"></div> *@
+@*                 </div> *@
+@*                 <script> *@
+@*             function myMap() { *@
+@*             var mapProp= { *@
+@*                 center:new google.maps.LatLng(51.508742,-0.120850), *@
+@*                 zoom:5, *@
+@*             }; *@
+@*             var map = new google.maps.Map(document.getElementById("googleMap"),mapProp); *@
+@*             } *@
+@*         </script> *@
+@*                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIhCB6jZXgL-QVL-6oq4hWQzyX6xDcWeo&callback=myMap"></script> *@
+@*             </div> *@
+@*         </div> *@
+@*     </section>  *@
     
-    <section class="section">
+    @* <section class="section"> *@
         <div class="container">
               @RenderBody()
                    </div>
-    </section>
+    // </section>
 }
 
 	<!-- core  -->

@@ -1,0 +1,16 @@
+body{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+.bg-main{
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+.bg-nav{
+    color: white!important;
+}
+.bg-sub{
+    background-color: rgb(30, 30, 30);
+}
