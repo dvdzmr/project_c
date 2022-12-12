@@ -8,7 +8,7 @@
 .myIcon{
     vertical-align: middle;
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 74px;
     width: 74px;
 }
@@ -19,7 +19,9 @@
     text-align: center;
     background-color: #dc3545!important;
     border-radius: 4px;
+    padding-right: 5px;
     padding: 4px;
+    
 }
 .box-event:after{
     display: inline-block;
@@ -55,12 +57,12 @@
     height: 100%;
 }
 .buttom-seemore {
-    background-color: rgba(0, 0, 0, 0.1)!important;
+    background-color: rgba(0, 0, 0, 0.5)!important;
     border-color: white;
     color: white;
 }
 .button-seemore:active{
-    background-color: rgba(0,0,0, 0.3)!important;
+    background-color: rgba(0,0,0, 0.8)!important;
 }
 .overlay{
     position: fixed;
