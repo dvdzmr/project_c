@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/davidzmr/Documents/GitHub/project_c/Backend/Backend.csproj": {}
+    "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "/Users/davidzmr/Documents/GitHub/project_c/Backend/Backend.csproj": {
+    "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/davidzmr/Documents/GitHub/project_c/Backend/Backend.csproj",
+        "projectUniqueName": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "/Users/davidzmr/Documents/GitHub/project_c/Backend/Backend.csproj",
-        "packagesPath": "/Users/davidzmr/.nuget/packages/",
-        "outputPath": "/Users/davidzmr/Documents/GitHub/project_c/Backend/obj/",
+        "projectPath": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\ksgan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/davidzmr/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ksgan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,8 +75,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/davidzmr/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
