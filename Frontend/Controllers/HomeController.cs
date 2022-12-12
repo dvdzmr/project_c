@@ -5,6 +5,9 @@ using Frontend.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
 namespace Frontend.Controllers;
 
@@ -58,7 +61,7 @@ public class HomeController : Controller
                 Longitude = dbevent.Longitude,
                 Soundtype = dbevent.Soundtype,
                 Probability = dbevent.Probability,
-                Soundfile = dbevent.Soundtype
+                Soundfile = dbevent.Soundfile
             };
             test.Add(allevent);
         }
@@ -67,7 +70,7 @@ public class HomeController : Controller
         return test;
     }
 
-    public PartialViewResult Map()
+    public PartialViewResult Map(int addevent = 0)
     {
         // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
         // the foreach loop
@@ -100,7 +103,7 @@ public class HomeController : Controller
                 _notyf.Custom("Thunder was heard", 5, "whitesmoke", "fa fa-gear");
             }
         }
-        List<MapItems> fiveEvents = GetEvents(5); //required data for updating with interval after initial loading 
+        List<MapItems> fiveEvents = GetEvents(5+addevent); //required data for updating with interval after initial loading 
         return PartialView(fiveEvents);
     }
     
@@ -109,4 +112,33 @@ public class HomeController : Controller
         var test = GetEvents(); // data for recent events (view Map)
         return View(test);
     }
+    public ActionResult ViewDetailsPartial(int test = 0)
+    {
+        var getEvents = DBquery.DBquery.DbChecker();
+        MapItems tmp = new MapItems()
+        {
+            Id = getEvents[test].Id,
+            Time = getEvents[test].Time,
+            Latitude = getEvents[test].Latitude,
+            Longitude = getEvents[test].Longitude,
+            Soundtype = getEvents[test].Soundtype,
+            Probability = getEvents[test].Probability,
+            Soundfile = getEvents[test].Soundfile
+        };
+        return PartialView(tmp);
+    }
+
+    // public JsonResult ViewDetailsPost(MapItems test)
+    // {
+    //     MapItems mapItems = new MapItems
+    //     {
+    //         Id = test.Id,
+    //         Latitude = test.Latitude,
+    //         Longitude = test.Longitude,
+    //         Probability = test.Probability,
+    //         Soundfile = test.Soundfile,
+    //         Soundtype = test.Soundtype
+    //     };
+    //     return Json(mapItems);
+    // }
 }
