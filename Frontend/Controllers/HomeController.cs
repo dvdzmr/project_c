@@ -112,18 +112,18 @@ public class HomeController : Controller
         var test = GetEvents(); // data for recent events (view Map)
         return View(test);
     }
-    public ActionResult ViewDetailsPartial(int test = 0)
+    public ActionResult ViewDetailsPartial(int eventid = 0)
     {
         var getEvents = DBquery.DBquery.DbChecker();
         MapItems tmp = new MapItems()
         {
-            Id = getEvents[test].Id,
-            Time = getEvents[test].Time,
-            Latitude = getEvents[test].Latitude,
-            Longitude = getEvents[test].Longitude,
-            Soundtype = getEvents[test].Soundtype,
-            Probability = getEvents[test].Probability,
-            Soundfile = getEvents[test].Soundfile
+            Id = getEvents[eventid].Id,
+            Time = getEvents[eventid].Time,
+            Latitude = getEvents[eventid].Latitude,
+            Longitude = getEvents[eventid].Longitude,
+            Soundtype = getEvents[eventid].Soundtype,
+            Probability = getEvents[eventid].Probability,
+            Soundfile = getEvents[eventid].Soundfile
         };
         return PartialView(tmp);
     }
