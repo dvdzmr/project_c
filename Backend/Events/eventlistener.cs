@@ -35,6 +35,7 @@ public static class Eventlistener
         string soundfile = "";
         foreach (KeyValuePair<string, string> types in data)
         {
+            // Console.WriteLine("Key: {0}, Value: {1}", types.Key, types.Value);
             if (types.Key == "time")
             {
                 time = Int64.Parse(types.Value);

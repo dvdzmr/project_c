@@ -48,6 +48,6 @@
     </div>
     <div class="downloadtopdf">
         @* download for offline *@
-        <a href="Newevent.pdf" class="topdf" download="Recent event.PDF">To PDF</a> <!-- need function to make pdf, maybe <button>?-->
+        <a href="Newevent.pdf" onclick="topdf(@Json.Serialize(Model))" class="topdf" download="Recent event.PDF">To PDF</a> <!-- need function to make pdf, maybe <button>?-->
     </div>
 </div>

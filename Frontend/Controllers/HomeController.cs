@@ -70,10 +70,10 @@ public class HomeController : Controller
         return test;
     }
 
-    public PartialViewResult Map(int addevent = 0)
+    public async Task<ActionResult> GetData (int addevent = 0)
     {
         List<MapItems> fiveEvents = GetEvents(5 + addevent);
-        return PartialView(fiveEvents);
+        return Json(fiveEvents);
     }
 
     public PartialViewResult Events(int addevent = 0)

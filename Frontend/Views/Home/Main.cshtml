@@ -39,7 +39,17 @@
 </head>
 <body>
 <div id="map">
-    @await Html.PartialAsync("Map")
+    @* @await Html.PartialAsync("Map") *@
+    <div class="container">
+        <div class="row align-items-center mr-auto">
+            <div class="col-md-4">
+                <h3 class="section-title">Live Tracking</h3>
+            </div>
+            <div class="container">
+                <div id="myLeafletMap" style="width:100%;height:400px;z-index: 0;"></div>
+            </div>
+        </div>
+    </div>
 </div>
 @* $1$ <section class="section" id="about"> #1# *@
 @*     <div class="container"> *@
@@ -95,7 +105,7 @@
      var tmplat = @Model[0].Latitude;
      var tmplong = @Model[0].Longitude;
      
- var map = L.map('map').setView([-2.0163175, 23.31516200], 13);
+ var map = L.map('myLeafletMap').setView([-2.0163175, 23.31516200], 13);
  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
      maxZoom: 19,
      attribution: '&copy; <a href="http:www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -112,7 +122,7 @@
      test_showevents.addTo(map);
  }
  </script>
-
+@* Function give model list *@
  @* // newmap(@Json.Serialize(Model)); *@
 
 
@@ -125,6 +135,9 @@ function loadNewEvents(){
     })
     console.log("current:" + i);
     events(i)
+    
+    // Call ajax for data
+    // getmapdata(i)
 }
 </script>
 
@@ -140,7 +153,7 @@ function loadNewEvents(){
 @* </script> *@
 
 <script type="text/javascript" id="reloadjs">
-     // setInterval("loadNewEvents()", 30000);
+     setInterval("loadNewEvents()", 30000);
      </script>
 <script>
 function openNav(){
