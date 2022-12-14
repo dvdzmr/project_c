@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aI4dU7L7UJuhwLc2fdksNZ2NyWYjnQ5JfyPxITEQ0FQ=",
+  "Hash": "M++4G2f0IytLF78AFn6jGnU1ew2nvpI694LM1L6rD0s=",
   "Source": "Frontend",
   "BasePath": "_content/Frontend",
   "Mode": "Default",
@@ -1156,6 +1156,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\css\\events.css"
     },
     {
+      "Identity": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\assets\\css\\layoutsettings.css",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/css/layoutsettings.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\layoutsettings.css"
+    },
+    {
       "Identity": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\assets\\css\\loginpage.css",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
@@ -1290,6 +1307,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imgs\\header.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\assets\\imgs\\icons8-user-48.png",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/imgs/icons8-user-48.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\imgs\\icons8-user-48.png"
     },
     {
       "Identity": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\assets\\imgs\\img-1.jpg",
@@ -1496,6 +1530,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\imgs\\welcome.jpg"
     },
     {
+      "Identity": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\assets\\js\\events.js",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/js/events.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\events.js"
+    },
+    {
       "Identity": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\assets\\js\\ollie.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
@@ -1511,6 +1562,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\ollie.js"
+    },
+    {
+      "Identity": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\assets\\js\\showEvents.js",
+      "SourceId": "Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\",
+      "BasePath": "_content/Frontend",
+      "RelativePath": "assets/js/showEvents.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\showEvents.js"
     },
     {
       "Identity": "C:\\Users\\ksgan\\Desktop\\School\\INF2G\\Project\\ProjectC\\project_c\\Frontend\\wwwroot\\assets\\scss\\abstracts\\_mixins.scss",
