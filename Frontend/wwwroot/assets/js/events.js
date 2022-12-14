@@ -15,7 +15,7 @@ function getview(id){
 function moreEvents(currentevents){
     var addevent = parseInt(currentevents) + 25;
     $.ajax({
-        url: "/Home/Map?addevent="+addevent,
+        url: "/Home/Events?addevent="+addevent,
         type: "GET",
         cache: false,
         success: function (result){

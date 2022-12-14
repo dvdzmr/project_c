@@ -1,5 +1,6 @@
-@using Npgsql
-@using System.Dynamic
+@using Npgsql;
+@using System.Dynamic;
+@using System.Text.Json.Serialization;
 @model List<MapItems>
 
 
@@ -25,6 +26,10 @@
     <!-- Bootstrap + Ollie main styles -->
     <link rel="stylesheet" href="~/assets/css/ollie.css">
     
+    <!-- Map style + js -->
+    <link rel="stylesheet" href="~/assets/vendors/leaflet/leaflet.css">
+    <script src="~/assets/vendors/leaflet/leaflet.js"></script>
+    
     <!-- Extra's -->
     <link rel="stylesheet" href="~/assets/css/events.css">
     
@@ -33,33 +38,35 @@
 
 </head>
 <body>
-
-@* <section class="section" id="about"> *@
-    <div class="container">
-        <div class="row align-items-center mr-auto">
-            <div class="col-md-4">
-                <h3 class="section-title">Live Tracking</h3>
-                @* <a href="javascript:void(0)">Read more...</a> *@
-            </div>
-            <div class="container">
-                <div id="googleMap" style="width:100%;height:400px"></div>
-            </div>
-            <script>
-             function myMap() {
-             var mapProp= {
-                 center:new google.maps.LatLng(51.508742,-0.120850),
-                 zoom:5,
-             };
-             var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-             }
-         </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIhCB6jZXgL-QVL-6oq4hWQzyX6xDcWeo&callback=myMap"></script>
-        </div>
-    </div>
-@* </section> *@
+<div id="map">
+    @await Html.PartialAsync("Map")
+</div>
+@* $1$ <section class="section" id="about"> #1# *@
+@*     <div class="container"> *@
+@*         <div class="row align-items-center mr-auto"> *@
+@*             <div class="col-md-4"> *@
+@*                 <h3 class="section-title">Live Tracking</h3> *@
+@*                 $1$ <a href="javascript:void(0)">Read more...</a> #1# *@
+@*             </div> *@
+@*             <div class="container"> *@
+@*                 <div id="googleMap" style="width:100%;height:400px"></div> *@
+@*             </div> *@
+@*             <script> *@
+@*              function myMap() { *@
+@*              var mapProp= { *@
+@*                  center:new google.maps.LatLng(51.508742,-0.120850), *@
+@*                  zoom:5, *@
+@*              }; *@
+@*              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp); *@
+@*              } *@
+@*          </script> *@
+@*             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIhCB6jZXgL-QVL-6oq4hWQzyX6xDcWeo&callback=myMap"></script> *@
+@*         </div> *@
+@*     </div> *@
+@* $1$ </section> #1# *@
 <section>
     <div id="events">
-        @await Html.PartialAsync("Map")
+        @await Html.PartialAsync("Events")
     </div>
 </section>
 <div id="overlaybackgroundcolor" class="overlay-upperpart">
@@ -80,6 +87,34 @@
 
 <script src="~/assets/js/events.js"></script>
 <script src="~/assets/js/showEvents.js"></script>
+
+<!-- Map script -->
+<script>
+ function myMap() {
+     // Database Latitude and Longtitude are stored wrong.
+     var tmplat = @Model[0].Latitude;
+     var tmplong = @Model[0].Longitude;
+     
+ var map = L.map('map').setView([-2.0163175, 23.31516200], 13);
+ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+     maxZoom: 19,
+     attribution: '&copy; <a href="http:www.openstreetmap.org/copyright">OpenStreetMap</a>'
+ }).addTo(map);
+ }
+ myMap();
+ function newmap(currentevents){
+     console.log("works");
+     let markers = [];
+     
+     currentevents.forEach((element, i) =>
+     marker[i] = new L.marker([element.latitude, element.longitude]).bindPopup('Soundtype: ${element.soundtype}'));
+     var test_showevents = L.layerGroup([markers]);
+     test_showevents.addTo(map);
+ }
+ </script>
+
+ @* // newmap(@Json.Serialize(Model)); *@
+
 
 <script id="testing">
 function loadNewEvents(){

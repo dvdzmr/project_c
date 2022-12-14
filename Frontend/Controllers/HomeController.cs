@@ -72,6 +72,12 @@ public class HomeController : Controller
 
     public PartialViewResult Map(int addevent = 0)
     {
+        List<MapItems> fiveEvents = GetEvents(5 + addevent);
+        return PartialView(fiveEvents);
+    }
+
+    public PartialViewResult Events(int addevent = 0)
+    {
         // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
         // the foreach loop
 
