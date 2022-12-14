@@ -48,6 +48,15 @@
     </div>
     <div class="downloadtopdf">
         @* download for offline *@
-        <a href="Newevent.pdf" class="topdf" download="Recent event.PDF">To PDF</a> <!-- need function to make pdf, maybe <button>?-->
+        <button class="topdf" onclick="topdf('@Model.Id','@Model.Time.ToShortDateString()','@Model.Time.ToShortTimeString()','@Model.Longitude','@Model.Latitude')" download="Event @Model.Id _ @Model.Time .PDF">To PDF</button> <!-- need function to make pdf, maybe <button>?-->
     </div>
 </div>
+<script  src="html2pdf.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<script  src="Javascript/external/jspdf.plugin.standard_fonts_metrics.js"></script> 
+<script  src="Javascript/external/jspdf.plugin.split_text_to_size.js"></script>               
+<script  src="Javascript/external/jspdf.plugin.from_html.js"></script>
+<script src="Javascript/external/jspdf.debug.js"></script>
+<script src="jspdf.min.js"></script>
+<script src="scriptD.js"></script>
+<script type="text/javascript" src="/js/myimage.js"></script>
