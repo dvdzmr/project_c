@@ -15,6 +15,8 @@
 
     <!-- font icons -->
     <link rel="stylesheet" href="~/assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="~/assets/vendors/fontawesome-free-6.2.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="~/assets/vendors/fontawesome-free-6.2.1-web/css/solid.css">
 
     <!-- owl carousel -->
     @* <link rel="stylesheet" href="~/assets/vendors/owl-carousel/css/owl.carousel.css"> *@
@@ -37,7 +39,6 @@
         <div class="row align-items-center mr-auto">
             <div class="col-md-4">
                 <h3 class="section-title">Live Tracking</h3>
-                <p>Here we will put a container that will show on a map the current sightings as reported by the MQTT broker</p>
                 @* <a href="javascript:void(0)">Read more...</a> *@
             </div>
             <div class="container">
@@ -56,9 +57,8 @@
         </div>
     </div>
 @* </section> *@
-
-<section class="section" id="events">
-    <div>
+<section>
+    <div id="events">
         @await Html.PartialAsync("Map")
     </div>
 </section>
@@ -105,7 +105,7 @@ function loadNewEvents(){
 @* </script> *@
 
 <script type="text/javascript" id="reloadjs">
-     setInterval("loadNewEvents()", 30000);
+     // setInterval("loadNewEvents()", 30000);
      </script>
 <script>
 function openNav(){

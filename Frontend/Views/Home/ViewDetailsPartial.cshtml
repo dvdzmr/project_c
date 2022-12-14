@@ -6,23 +6,23 @@
     <div class="">
         @if (Model.Soundtype == "gunshot")
         {
-            <i class="viewdetails-icon viewdetails-box ti-target"></i>
+            <i class="viewdetails-icon viewdetails-box fa-solid fa-gun fa-fw"></i>
         }
         else if (Model.Soundtype == "vehicle")
         {
-            <i class="viewdetails-icon viewdetails-box ti-car"></i>
+            <i class="viewdetails-icon viewdetails-box fa-solid fa-car fa-fw"></i>
         }
         else if (Model.Soundtype == "animal")
         {
-            <i class="viewdetails-icon viewdetails-box ti-linux"></i>
+            <i class="viewdetails-icon viewdetails-box fa-solid fa-dog fa-fw"></i>
         }
         else if (Model.Soundtype == "thunder")
         {
-            <i class="viewdetails-icon viewdetails-box ti-bolt"></i>
+            <i class="viewdetails-icon viewdetails-box fa-solid fa-cloud-bolt fa-fw"></i>
         }
         else
         {
-            <i class="viewdetails-icon viewdetails-box ti-na"></i>
+            <i class="viewdetails-icon viewdetails-box fa-solid fa-question fa-fw"></i>
             
         }
     </div>
@@ -33,7 +33,7 @@
         </audio>
     </div>
     <div class="details">
-        <p>
+        <p class="text-dark">
             Event id: @(Model.Id)
             <br/>Probability: @(Model.Probability)
             <br/>Time of event: @(Model.Time.ToShortTimeString())

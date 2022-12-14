@@ -85,9 +85,9 @@ public class HomeController : Controller
             if (Item.Soundtype == "gunshot") // Condition
             {
                 _notyf.Custom("Gunshot was heard", 5, "whitesmoke", "fa fa-gear");
-                if (Item.Probability > 50) // If probability is higher than 50%; these can be turned into variables.
+                if (Item.Probability > 30) // If probability is higher than 50%; these can be turned into variables.
                 {
-                    _notyf.Custom("Gunshot was heard with 50% + probability", 5, "whitesmoke", "fa fa-gear");
+                    _notyf.Custom($"Gunshot was heard with {Item.Probability} probability", 5, "whitesmoke", "fa fa-gear");
                 }
             }
             if (Item.Soundtype == "animal") // Condition
