@@ -1,4 +1,5 @@
 using System.Text;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Newtonsoft.Json;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
@@ -33,6 +34,8 @@ public static class Eventlistener
         string soundtype = "";
         int probability = 0;
         string soundfile = "";
+        string jsonStr = Encoding.UTF8.GetString(e.Message);
+        Console.WriteLine(jsonStr);
         foreach (KeyValuePair<string, string> types in data)
         {
             if (types.Key == "time")

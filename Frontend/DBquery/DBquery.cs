@@ -29,7 +29,7 @@ public class DBquery
                         Id = i,
                         Time = DateTime.Parse(reader["time"].ToString()),
                         Latitude = Double.Parse(reader["latitude"].ToString()),
-                        Longitude = Double.Parse(reader["latitude"].ToString()),
+                        Longitude = Double.Parse(reader["longitude"].ToString()),
                         Soundtype = reader["soundtype"].ToString(),
                         Probability = int.Parse(reader["probability"].ToString()),
                         Soundfile = reader["soundfile"].ToString()
