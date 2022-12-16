@@ -46,34 +46,40 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-    public List<MapItems> GetEvents(int evenAmounts = 5)
+    public List<MapItems> GetEvents(int evenAmounts)
     {
         var getEvents = DBquery.DBquery.DbChecker();
         List<MapItems> test = new List<MapItems>();
+        // if (getEvents.Count < evenAmounts)
+        // {
+        //     evenAmounts = getEvents.Count;
+        // }
         for (int i = Math.Max(0, getEvents.Count - evenAmounts); i < getEvents.Count; i++)
-        {
-            var dbevent = getEvents[i];
-            var allevent = new MapItems()
             {
-                Id = dbevent.Id,
-                Time = dbevent.Time,
-                Latitude = dbevent.Latitude,
-                Longitude = dbevent.Longitude,
-                Soundtype = dbevent.Soundtype,
-                Probability = dbevent.Probability,
-                Soundfile = dbevent.Soundfile
-            };
-            test.Add(allevent);
-        }
-
+                var dbevent = getEvents[i];
+                var allevent = new MapItems()
+                {
+                    Id = dbevent.Id,
+                    Time = dbevent.Time,
+                    Latitude = dbevent.Latitude,
+                    Longitude = dbevent.Longitude,
+                    Soundtype = dbevent.Soundtype,
+                    Probability = dbevent.Probability,
+                    Soundfile = dbevent.Soundfile,
+                    Status = dbevent.Status
+                };
+                test.Add(allevent);
+            }
+        
+        // Console.WriteLine("Lat: {0} Long: {1}", test[0].Latitude, test[0].Longitude );
         test.Reverse();
         return test;
     }
 
-    public async Task<ActionResult> GetData (int addevent = 0)
+    public async Task<ActionResult> GetData (int addevent)
     {
-        List<MapItems> fiveEvents = GetEvents(5 + addevent);
-        return Json(fiveEvents);
+        List<MapItems> GetMapData = GetEvents(addevent);
+        return Json(GetMapData);
     }
 
     public PartialViewResult Events(int addevent = 0)
@@ -115,7 +121,7 @@ public class HomeController : Controller
     
     public IActionResult Main()
     {
-        var test = GetEvents(); // data for recent events (view Map)
+        var test = GetEvents(5); // data for recent events (view Map)
         return View(test);
     }
     public ActionResult ViewDetailsPartial(int eventid = 0)
@@ -129,7 +135,8 @@ public class HomeController : Controller
             Longitude = getEvents[eventid].Longitude,
             Soundtype = getEvents[eventid].Soundtype,
             Probability = getEvents[eventid].Probability,
-            Soundfile = getEvents[eventid].Soundfile
+            Soundfile = getEvents[eventid].Soundfile,
+            Status = getEvents[eventid].Status
         };
         return PartialView(tmp);
     }

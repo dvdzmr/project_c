@@ -88,7 +88,7 @@
 <div id="overlaybackgroundcolor" class="overlay-upperpart">
     <div id="overlaydetails" class="overlay">
         <div id="viewdetailsofevent" class="overlay-content">
-            @Html.Partial("ViewDetailsPartial", Model[0])
+            @* @Html.Partial("ViewDetailsPartial", Model[0]) *@
             @* close partial *@
         </div>
     </div>
@@ -106,25 +106,25 @@
 
 <!-- Map script -->
 <script>
- function myMap() {
-     // Database Latitude and Longtitude are stored wrong.
-     var tmplat = @Model[0].Latitude;
-     var tmplong = @Model[0].Longitude;
+ // function myMap() {
      
- var map = L.map('myLeafletMap').setView([-2.0163175, 23.31516200], 13);
+ var map = L.map('myLeafletMap').setView([-2.1188719515300574, 20.706445713722665], 6);
  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
      maxZoom: 19,
      attribution: '&copy; <a href="http:www.openstreetmap.org/copyright">OpenStreetMap</a>'
  }).addTo(map);
- }
- myMap();
- function newmap(currentevents){
+ // }
+ // myMap();
+ addmarkers(@Json.Serialize(Model));
+ function addmarkers(currentevents){
      console.log("works");
+     console.log(currentevents);
      let markers = [];
      
      currentevents.forEach((element, i) =>
-     marker[i] = new L.marker([element.latitude, element.longitude]).bindPopup('Soundtype: ${element.soundtype}'));
-     var test_showevents = L.layerGroup([markers]);
+     markers[i] = new L.marker([element.latitude, element.longitude]).bindPopup('Soundtype: '+element.soundtype));
+     var test_showevents = L.layerGroup(markers);
+     console.log(markers)
      test_showevents.addTo(map);
  }
  </script>
@@ -140,10 +140,14 @@ function loadNewEvents(){
         i += 1;
     })
     console.log("current:" + i);
+    if (i < 5){
+        i += 1;
+    }
+            
     events(i)
     
     // Call ajax for data
-    // getmapdata(i)
+    getmapdata(i)
 }
 </script>
 

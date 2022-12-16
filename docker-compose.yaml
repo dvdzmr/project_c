@@ -1,74 +1,74 @@
 version: '3.7'
-     
-services:
-    backend:
-      container_name: backend
-      entrypoint:
-        - dotnet
-        - Backend.dll
-      environment:
-        - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-        - ASPNETCORE_URLS=http://+:80
-        - DOTNET_RUNNING_IN_CONTAINER=true
-        - DOTNET_VERSION=6.0.9
-      ports:
-        - '80:80'
-        - '445:445'
-      build:
-        context: .
-        dockerfile: Dockerfile.Backend
-      logging:
-        driver: json-file
-        options: {}
-      network_mode: bridge
-      working_dir: /app
-      networks:
-        - dbnetwork
-    frontend:
-      container_name: frontend
-      entrypoint:
-        - dotnet
-        - Frontend.dll
-      environment:
-        - ASPNETCORE_ENVIRONMENT=Development
-        - ASPNETCORE_URLS=https://+:443;http://+:8080
-        - ASPNETCORE_Kestrel__Certificates__Default__Password=projectCPassword
-        - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/projectc.pfx
-      hostname: frontend_mx
-      build:
-        context: .
-        dockerfile: Dockerfile.Frontend
-      ipc: private
-      logging:
-        driver: json-file
-        options: { }
-      ports:
-        - '8080:8080'
-        - '443:443'
-      stdin_open: true
-      tty: true
-      working_dir: /app
-      volumes:
-        - ~/.aspnet/https:/https:ro
-      networks:
-        - dbnetwork
-      network_mode: bridge  
 
-    db:
-      image: postgres
-      restart: always
-      environment:
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: postgres
-      ports:
-        - '5432:5432'
-      volumes:
-        - ./postgres-data:/var/lib/postgresql/data
-        - ./Database/init.sql:/docker-entrypoint-initdb.d/init.sql
-      networks:
-        - dbnetwork
-      network_mode: bridge
-      
-networks:
-  dbnetwork:
-    name: dbnetwork
+services:
+  # backend:
+  #   container_name: backend
+  #   entrypoint:
+  #     - dotnet
+  #     - Backend.dll
+  #   environment:
+  #     - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  #     - ASPNETCORE_URLS=http://+:80
+  #     - DOTNET_RUNNING_IN_CONTAINER=true
+  #     - DOTNET_VERSION=6.0.9
+  #   ports:
+  #     - '80:80'
+  #     - '445:445'
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.Backend
+  #   logging:
+  #     driver: json-file
+  #     options: {}
+  #   network_mode: bridge
+  #   working_dir: /app
+  #   networks:
+  #     - dbnetwork
+  # frontend:
+  #   container_name: frontend
+  #   entrypoint:
+  #     - dotnet
+  #     - Frontend.dll
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - ASPNETCORE_URLS=https://+:443;http://+:8080
+  #     - ASPNETCORE_Kestrel__Certificates__Default__Password=projectCPassword
+  #     - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/projectc.pfx
+  #   hostname: frontend_mx
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.Frontend
+  #   ipc: private
+  #   logging:
+  #     driver: json-file
+  #     options: { }
+  #   ports:
+  #     - '8080:8080'
+  #     - '443:443'
+  #   stdin_open: true
+  #   tty: true
+  #   working_dir: /app
+  #   volumes:
+  #     - ~/.aspnet/https:/https:ro
+  #   networks:
+  #     - dbnetwork
+  #   network_mode: bridge  
+  
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+      - ./Database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    # networks:
+    #   - dbnetwork
+    # network_mode: bridge
+
+# networks:
+#   dbnetwork:
+#     name: dbnetwork

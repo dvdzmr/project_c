@@ -5,9 +5,9 @@ function events(currentevents){
 function getmapdata(currentevents){
     $.ajax({
         type: "GET",
-        url: '@Url.Action("GetData", "Home")', // + currentevents
+        url: "/Home/GetData?addevent="+currentevents, // + currentevents
         dataType: "json",
     }).done(function (data) {
-        newmmap(data);
+        addmarkers(data);
     })
 }

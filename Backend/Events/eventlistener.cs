@@ -29,8 +29,8 @@ public static class Eventlistener
         var data = JsonConvert.DeserializeObject<Dictionary<string, string>>(Encoding.ASCII.GetString(e.Message));
         long time = 0;
         long nodeId = 0;
-        double latitude = 0;
-        double longitude = 0;
+        string latitude = "";
+        string longitude = "";
         string soundtype = "";
         int probability = 0;
         string soundfile = "";
@@ -49,11 +49,11 @@ public static class Eventlistener
             }
             if (types.Key == "latitude")
             {
-                latitude = Convert.ToDouble(types.Value);
+                latitude = types.Value;
             }
             if (types.Key == "longitude")
             {
-                longitude = Convert.ToDouble(types.Value);
+                longitude = types.Value;
             }
             if (types.Key == "sound_type")
             {

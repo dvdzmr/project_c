@@ -20,7 +20,7 @@ function moreEvents(currentevents){
         cache: false,
         success: function (result){
             $("#events").html(result);
-            
+            getmapdata(addevent-5)
             // Code hieronder kan later worden verwijdert (voor nu nog niet) - Min En
             
             // var tmp = document.getElementById("testing");

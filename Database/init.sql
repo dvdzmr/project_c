@@ -6,11 +6,12 @@
 
 CREATE SCHEMA chengeta;
 CREATE TABLE chengeta.sounds (
-    time timestamp NOT NULL,
-    nodeid BIGINT NOT NULL,
-    latitude double precision NOT NULL,
-    longitude double precision NOT NULL,
-    soundtype VARCHAR(200) NOT NULL,
-    probability SMALLINT NOT NULL,
-    soundfile VARCHAR(500) NOT NULL                         
+     time timestamp NOT NULL,
+     nodeid BIGINT NOT NULL,
+     latitude VARCHAR(200) NOT NULL,
+     longitude VARCHAR(200) NOT NULL,
+     soundtype VARCHAR(200) NOT NULL,
+     probability SMALLINT NOT NULL,
+     soundfile VARCHAR(500) NOT NULL,
+     status VARCHAR(100) NOT NULL 
 );

@@ -1,4 +1,6 @@
 using System.Data;
+using System.Globalization;
+using System.Text.RegularExpressions;
 using Npgsql;
 
 namespace Frontend.DBquery;
@@ -9,7 +11,10 @@ public class DBquery
     
     public static List<DBobjects> DbChecker()
     {
-        string query = "SELECT time,latitude, longitude, soundtype, probability, soundfile FROM chengeta.sounds";
+        // get computer cultureinfo
+        var separator = CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
+        
+        string query = "SELECT time,latitude, longitude, soundtype, probability, soundfile, status FROM chengeta.sounds";
         using var conn = new NpgsqlConnection(_dBconstring);
         if (conn.State != ConnectionState.Open && conn.State != null)
         {
@@ -28,13 +33,15 @@ public class DBquery
                     {
                         Id = i,
                         Time = DateTime.Parse(reader["time"].ToString()),
-                        Latitude = Double.Parse(reader["latitude"].ToString()),
-                        Longitude = Double.Parse(reader["longitude"].ToString()),
+                        Latitude = Convert.ToDouble(Regex.Replace(reader["latitude"].ToString(), "[.,]", separator)),
+                        Longitude = Double.Parse(Regex.Replace(reader["longitude"].ToString(), "[.,]", separator)),
                         Soundtype = reader["soundtype"].ToString(),
                         Probability = int.Parse(reader["probability"].ToString()),
-                        Soundfile = reader["soundfile"].ToString()
+                        Soundfile = reader["soundfile"].ToString(),
+                        Status = reader["status"].ToString()
                     }
                 );
+                // Console.WriteLine("test: lat:{0}, long:{1}", Convert.ToDouble(reader["latitude"].ToString()), Double.Parse(reader["longitude"].ToString()));
                 i++;
             }
             return allevent;
