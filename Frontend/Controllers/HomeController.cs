@@ -70,7 +70,13 @@ public class HomeController : Controller
         return test;
     }
 
-    public PartialViewResult Map(int addevent = 0)
+    public async Task<ActionResult> GetData (int addevent = 0)
+    {
+        List<MapItems> fiveEvents = GetEvents(5 + addevent);
+        return Json(fiveEvents);
+    }
+
+    public PartialViewResult Events(int addevent = 0)
     {
         // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
         // the foreach loop
@@ -85,9 +91,9 @@ public class HomeController : Controller
             if (Item.Soundtype == "gunshot") // Condition
             {
                 _notyf.Custom("Gunshot was heard", 5, "whitesmoke", "fa fa-gear");
-                if (Item.Probability > 50) // If probability is higher than 50%; these can be turned into variables.
+                if (Item.Probability > 30) // If probability is higher than 50%; these can be turned into variables.
                 {
-                    _notyf.Custom("Gunshot was heard with 50% + probability", 5, "whitesmoke", "fa fa-gear");
+                    _notyf.Custom($"Gunshot was heard with {Item.Probability} probability", 5, "whitesmoke", "fa fa-gear");
                 }
             }
             if (Item.Soundtype == "animal") // Condition
