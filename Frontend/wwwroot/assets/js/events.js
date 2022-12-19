@@ -71,7 +71,7 @@ function topdf(id,date,time,long,lat){
     // doc.addImage(mapImg, 'JPEG', 36, 170)
     doc.setFontSize(26);
     doc.setTextColor(34,0,224);
-    doc.textWithLink('>>Open the location in Google Maps<<', 15, 180, { url: `https://maps.google.com/?q=${lat},${long}\n` });
+    doc.textWithLink('>>Open the location in Google Maps<<', 15, 180, { url: `https://maps.google.nl/?q=${lat},${long}\n` });
     doc.save(`Event${id}_Date${date}_Time${time}.pdf`)
     doc.download
 }
