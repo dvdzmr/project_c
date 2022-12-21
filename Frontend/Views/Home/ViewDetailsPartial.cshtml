@@ -1,7 +1,7 @@
 @model MapItems
 
 @* add css with higher z for overlay *@
-<div class="">
+<div class="" xmlns="http://www.w3.org/1999/html">
     @* Make icon bigger *@
     <div class="">
         @if (Model.Soundtype == "gunshot")
@@ -35,11 +35,27 @@
     <div class="details">
         <p class="text-dark">
             Event id: @(Model.Id)
+            @{
+                string colortxt = "";
+                if (@Model.Status.ToString() == "Not started")
+                {
+                    colortxt = "#B22222";
+                }
+                else if (@Model.Status.ToString() == "In Progress")
+                {
+                    colortxt = "#FFDF07";
+                }
+                else
+                {
+                    colortxt = "#26FF05";
+                }
+
+            }
             <br/>Probability: @(Model.Probability)
             <br/>Time of event: @(Model.Time.ToShortTimeString())
             <br/>Date of event: @(Model.Time.ToShortDateString())
-            <br/>Latitude: @(Model.Latitude)
-            <br/>Longitude: @(Model.Longitude)
+            <br/>Latitude: @(Model.Latitude) Longitude: @(Model.Longitude)
+            <br>Status: <span style="color: @colortxt" >@(Model.Status)</span></br>
         </p>
     </div>
     <div class="closingview">
