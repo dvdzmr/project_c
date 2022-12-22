@@ -117,15 +117,29 @@
  // myMap();
  addmarkers(@Json.Serialize(Model));
  function addmarkers(currentevents){
-     console.log("works");
-     console.log(currentevents);
+     // console.log("markeradd1: ");
+     // console.log(currentevents);
      let markers = [];
-     
+     try {
+     $(".leaflet-popup-pane").empty();
+     $(".leaflet-marker-pane").empty();
+     $(".leaflet-shadow-pane").empty();
+     }
+     catch (err){
+     console.log("No layer found");    
+     }
+     finally {
      currentevents.forEach((element, i) =>
-     markers[i] = new L.marker([element.latitude, element.longitude]).bindPopup('Soundtype: '+element.soundtype));
+     markers[i] = new L.marker([element.latitude, element.longitude]).bindPopup(
+         "Id: "+ element.id +"</br>Soundtype: "+ element.soundtype + "</br>Probability: " + element.probability));
      var test_showevents = L.layerGroup(markers);
-     console.log(markers)
+     // console.log("markeradd2: ");
+     // console.log(markers);
      test_showevents.addTo(map);
+     // console.log("markeradd3: ");
+     // console.log(test_showevents.getLayers());
+     }
+     
  }
  </script>
 @* Function give model list *@
