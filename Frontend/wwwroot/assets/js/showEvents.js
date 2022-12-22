@@ -1,4 +1,7 @@
 function events(currentevents){
+    if (currentevents < 5){
+        currentevents = 5;
+    }
     var addevent = parseInt(currentevents) - 5;
     $('#events').load('Events?addevent='+addevent);
 }

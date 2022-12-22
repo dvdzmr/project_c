@@ -50,10 +50,11 @@ public class HomeController : Controller
     {
         var getEvents = DBquery.DBquery.DbChecker();
         List<MapItems> test = new List<MapItems>();
-        // if (getEvents.Count < evenAmounts)
-        // {
-        //     evenAmounts = getEvents.Count;
-        // }
+        
+        if (getEvents.Count() < evenAmounts)
+        {
+            evenAmounts = getEvents.Count();
+        }
         for (int i = Math.Max(0, getEvents.Count - evenAmounts); i < getEvents.Count; i++)
             {
                 var dbevent = getEvents[i];
@@ -94,7 +95,7 @@ public class HomeController : Controller
         
         foreach (var Item in lastEvent)
         {
-            if (Item.Soundtype == "gunshot") // Condition
+            if (Item.Soundtype == "Gunshot") // Condition
             {
                 _notyf.Custom("Gunshot was heard", 5, "whitesmoke", "fa fa-gear");
                 if (Item.Probability > 30) // If probability is higher than 50%; these can be turned into variables.
@@ -102,15 +103,15 @@ public class HomeController : Controller
                     _notyf.Custom($"Gunshot was heard with {Item.Probability} probability", 5, "whitesmoke", "fa fa-gear");
                 }
             }
-            if (Item.Soundtype == "animal") // Condition
+            if (Item.Soundtype == "Animal") // Condition
             {
                 _notyf.Custom("Animal was heard", 5, "whitesmoke", "fa fa-gear");
             }
-            if (Item.Soundtype == "vehicle") // Condition
+            if (Item.Soundtype == "Vehicle") // Condition
             {
                 _notyf.Custom("A Vehicle was heard", 5, "whitesmoke", "fa fa-gear");
             }
-            if (Item.Soundtype == "thunder") // Condition
+            if (Item.Soundtype == "Thunder") // Condition
             {
                 _notyf.Custom("Thunder was heard", 5, "whitesmoke", "fa fa-gear");
             }
