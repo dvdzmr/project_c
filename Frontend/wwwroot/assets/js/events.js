@@ -14,13 +14,17 @@ function getview(id){
 }
 function moreEvents(currentevents){
     var addevent = parseInt(currentevents) + 25;
+    var getfiltersoundtype = document.getElementById("filtersoundtype");
+    var value1 = getfiltersoundtype.value;
+    var slider = document.getElementById("myRange");
+    var value2 = slider.value;
     $.ajax({
-        url: "/Home/Events?addevent="+addevent,
+        url: "/Home/Events?addevent="+addevent+"&value1="+value1+"&value2="+value2,
         type: "GET",
         cache: false,
         success: function (result){
             $("#events").html(result);
-            getmapdata(addevent-5)
+            getmapdata(addevent-5,value1,value2)
             // Code hieronder kan later worden verwijdert (voor nu nog niet) - Min En
             
             // var tmp = document.getElementById("testing");

@@ -16,6 +16,7 @@ public class HomeController : Controller
     private readonly ILogger<HomeController> _logger;
     private readonly INotyfService _notyf;
     private List<MapItems> map;
+    
     public HomeController(ILogger<HomeController> logger, INotyfService notyf)
     {
         _logger = logger;
@@ -46,50 +47,88 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-    public List<MapItems> GetEvents(int evenAmounts)
+    public List<MapItems> GetEvents(int evenAmounts, string value1 = "All", string value2 = "1")
     {
         var getEvents = DBquery.DBquery.DbChecker();
-        List<MapItems> test = new List<MapItems>();
+        List<MapItems> events = new List<MapItems>();
+        int val2 = int.Parse(value2);
+        
+        var dict = new Dictionary<int, Tuple<string, string>>()
+        {
+            { 1, new Tuple<string, string>("00:00", "23:00") },
+            { 2, new Tuple<string, string>("00:00", "01:00") },
+            { 3, new Tuple<string, string>("01:00", "02:00") },
+            { 4, new Tuple<string, string>("02:00", "03:00") },
+            { 5, new Tuple<string, string>("03:00", "04:00") },
+            { 6, new Tuple<string, string>("04:00", "05:00") },
+            { 7, new Tuple<string, string>("05:00", "06:00") },
+            { 8, new Tuple<string, string>("06:00", "07:00") },
+            { 9, new Tuple<string, string>("07:00", "08:00") },
+            { 10, new Tuple<string, string>("08:00", "09:00") },
+            { 11, new Tuple<string, string>("09:00", "10:00") },
+            { 12, new Tuple<string, string>("10:00", "11:00") },
+            { 13, new Tuple<string, string>("11:00", "12:00") },
+            { 14, new Tuple<string, string>("12:00", "13:00") },
+            { 15, new Tuple<string, string>("13:00", "14:00") },
+            { 16, new Tuple<string, string>("14:00", "15:00") },
+            { 17, new Tuple<string, string>("15:00", "16:00") },
+            { 18, new Tuple<string, string>("16:00", "17:00") },
+            { 19, new Tuple<string, string>("17:00", "18:00") },
+            { 20, new Tuple<string, string>("18:00", "19:00") },
+            { 21, new Tuple<string, string>("19:00", "20:00") },
+            { 22, new Tuple<string, string>("20:00", "21:00") },
+            { 23, new Tuple<string, string>("21:00", "22:00") },
+            { 24, new Tuple<string, string>("22:00", "23:00") },
+            { 25, new Tuple<string, string>("23:00", "24:00") },
+        };
         
         if (getEvents.Count() < evenAmounts)
         {
             evenAmounts = getEvents.Count();
         }
-        for (int i = Math.Max(0, getEvents.Count - evenAmounts); i < getEvents.Count; i++)
+        int j = 0;
+        for (int i = 0; i < getEvents.Count && j < evenAmounts; i++)
             {
                 var dbevent = getEvents[i];
-                var allevent = new MapItems()
+                var dateTime1 = DateTime.ParseExact(dict[val2].Item1, "H:mm", null,
+                    System.Globalization.DateTimeStyles.None);
+                var dateTime2 = DateTime.ParseExact(dict[val2].Item2, "H:mm", null,
+                    System.Globalization.DateTimeStyles.None);
+                if ((value1 == "All" || value1 == dbevent.Soundtype) && (value2 == "1" || (dateTime1.TimeOfDay <= dbevent.Time.TimeOfDay && dateTime2.TimeOfDay > dbevent.Time.TimeOfDay)))
                 {
-                    Id = dbevent.Id,
-                    Time = dbevent.Time,
-                    Latitude = dbevent.Latitude,
-                    Longitude = dbevent.Longitude,
-                    Soundtype = dbevent.Soundtype,
-                    Probability = dbevent.Probability,
-                    Soundfile = dbevent.Soundfile,
-                    Status = dbevent.Status
-                };
-                test.Add(allevent);
+                    var allevent = new MapItems()
+                    {
+                        Id = dbevent.Id,
+                        Time = dbevent.Time,
+                        Latitude = dbevent.Latitude,
+                        Longitude = dbevent.Longitude,
+                        Soundtype = dbevent.Soundtype,
+                        Probability = dbevent.Probability,
+                        Soundfile = dbevent.Soundfile,
+                        Status = dbevent.Status
+                    };
+                    events.Add(allevent);
+                    j++;
+                }
             }
         
         // Console.WriteLine("Lat: {0} Long: {1}", test[0].Latitude, test[0].Longitude );
-        test.Reverse();
-        return test;
+        return events;
     }
 
-    public async Task<ActionResult> GetData (int addevent)
+    public async Task<ActionResult> GetData (int addevent, string value1 = "All", string value2 = "2")
     {
-        List<MapItems> GetMapData = GetEvents(addevent);
-        return Json(GetMapData);
+        List<MapItems> getmapdata = GetEvents(addevent, value1, value2);
+        return Json(getmapdata);
     }
 
-    public async Task<ActionResult> GiveNotification()
+    public async Task<ActionResult> GiveNotification(string value1 = "All", string value2 = "2")
     {
 
         // Notifications must invoked with conditions, in this case we can implement if conditions here by using GetEvents()
         // and having a settings file or something that stores what the filters are to implement here.
         //ex:
-        List<MapItems> lastEvent = GetEvents(1); // only fetches the last event
+        List<MapItems> lastEvent = GetEvents(1, value1, value2); // only fetches the last event
         
         foreach (var Item in lastEvent)
         {
@@ -116,11 +155,11 @@ public class HomeController : Controller
         }
         return Json(1);
     }
-    public PartialViewResult Events(int addevent = 0)
+    public PartialViewResult Events(int addevent = 0, string value1 = "all", string value2 = "2")
     {
         // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
         // the foreach loop
-        List<MapItems> fiveEvents = GetEvents(5+addevent); //required data for updating with interval after initial loading 
+        List<MapItems> fiveEvents = GetEvents(5+addevent, value1, value2); //required data for updating with interval after initial loading 
         return PartialView(fiveEvents);
     }
     

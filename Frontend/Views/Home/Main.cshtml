@@ -80,6 +80,31 @@
 @*         </div> *@
 @*     </div> *@
 @* $1$ </section> #1# *@
+<div id="filters" class="container" style="padding-top: 10px">
+    <button onclick="showfilter()" class="filtercon" style="color: #dc3545"><i class="fa-solid fa-filter"></i>Filter</button>
+    <div id="filtershowmore" class="container" style="display: none; padding-top: 10px; background-color: #282828;">
+        <div class="row">
+            <div class="col">
+                <label for="filter1" style="display: block">Sort sound</label>
+                <select id="filtersoundtype" name="filter1">
+                    <option data-count="1" value="All">All</option>
+                    <option data-count="2" value="Gunshot">Gunshot</option>
+                    <option data-count="3" value="Vehicle">Vehicle</option>
+                    <option data-count="4" value="Animal">Animal</option>
+                    <option data-count="5" value="Thunder">Thunder</option>
+                    <option data-count="6" value="Unknown">Unkown</option>
+                </select>
+            </div>
+            <div class="col slidecontainer">
+                <label for="filter2" style="display: block">Time</label>
+                <input type="range" min="1" max="25" value="1" class="slider" id="myRange"/>
+                <p>Time in GMT: <span id="demo"></span></p>
+            </div>
+        </div>
+        <button onclick="applied()" class="filtercon applybtn" style="color: white">Apply</button>
+    </div>
+</div>
+
 <section>
     <div id="events">
         @await Html.PartialAsync("Events")
@@ -118,7 +143,7 @@
  addmarkers(@Json.Serialize(Model));
  function addmarkers(currentevents){
      // console.log("markeradd1: ");
-     // console.log(currentevents);
+     console.log(currentevents);
      let markers = [];
      try {
      $(".leaflet-popup-pane").empty();
@@ -148,11 +173,19 @@
 
 <script id="testing">
 function refresh(){
+    var getfiltersoundtype = document.getElementById("filtersoundtype");
+    var slider = document.getElementById("myRange");
     loadNewEvents()
-    getnotifs()    
+    getnotifs(getfiltersoundtype.value, slider.value)    
 }
 refresh()
 function loadNewEvents(){
+    var getfiltersoundtype = document.getElementById("filtersoundtype");
+    var value1 = getfiltersoundtype.value;
+        // console.log(value);
+    var slider = document.getElementById("myRange");
+    var value2 = slider.value;
+    
     var i = 0;
 
     $('.col-icon').each(function(){
@@ -162,11 +195,70 @@ function loadNewEvents(){
     if (i < 5){
         i += 1;
     }
-    events(i)
+    events(i, value1, value2)
     
     // Call ajax for data
-    getmapdata(i)
+    getmapdata(i, value1, value2)
 }
+</script>
+<script>
+
+    function showfilter(){
+        if (document.getElementById("filtershowmore").style.display ==  "none"){
+            document.getElementById("filtershowmore").style.display = "block";
+        }
+        else{
+            document.getElementById("filtershowmore").style.display = "none";
+        }
+    }
+    var getfiltersoundtype = document.getElementById("filtersoundtype");
+    function filtersoundtypechange(){
+        // var value = getfiltersoundtype.value;
+        loadNewEvents()
+        // console.log(value);
+    }
+    getfiltersoundtype.onchange = filtersoundtypechange;
+    filtersoundtypechange();
+    
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    
+    var dict = {
+        1: "All",
+        2: "00:00 - 01:00",
+        3: "01:00 - 02:00",
+        4: "02:00 - 03:00",
+        5: "03:00 - 04:00",
+        6: "04:00 - 05:00",
+        7: "05:00 - 06:00",
+        8: "06:00 - 07:00",
+        9: "07:00 - 08:00",
+        10: "08:00 - 09:00",
+        11: "09:00 - 10:00",
+        12: "10:00 - 11:00",
+        13: "11:00 - 12:00",
+        14: "12:00 - 13:00",
+        15: "13:00 - 14:00",
+        16: "14:00 - 15:00",
+        17: "15:00 - 16:00",
+        18: "16:00 - 17:00",
+        19: "17:00 - 18:00",
+        20: "18:00 - 19:00",
+        21: "19:00 - 20:00",
+        22: "20:00 - 21:00",
+        23: "21:00 - 22:00",
+        24: "22:00 - 23:00",
+        25: "23:00 - 00:00",
+    }
+    
+    output.innerHTML = dict[slider.value];
+    
+    slider.oninput = function (){
+        output.innerHTML = dict[this.value];
+    }
+    function applied(){
+        loadNewEvents()
+    }
 </script>
 
 <!-- Test codes, voor nu niet verwijderen - Min En -->

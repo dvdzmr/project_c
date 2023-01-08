@@ -15,7 +15,7 @@ public class DBquery
         // get computer cultureinfo
         var separator = CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
         
-        string query = "SELECT id, time, latitude, longitude, soundtype, probability, soundfile, status FROM chengeta.sounds ORDER BY id";
+        string query = "SELECT id, time, latitude, longitude, soundtype, probability, soundfile, status FROM chengeta.sounds ORDER BY id DESC";
         using var conn = new NpgsqlConnection(_dBconstring);
         if (conn.State != ConnectionState.Open && conn.State != null)
         {
