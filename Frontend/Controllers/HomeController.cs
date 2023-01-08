@@ -83,7 +83,7 @@ public class HomeController : Controller
         return Json(GetMapData);
     }
 
-    public PartialViewResult Events(int addevent = 0)
+    public Task<ActionResult> GiveNotification()
     {
         // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
         // the foreach loop
@@ -116,6 +116,10 @@ public class HomeController : Controller
                 _notyf.Custom("Thunder was heard", 5, "whitesmoke", "fa fa-gear");
             }
         }
+        return null;
+    }
+    public PartialViewResult Events(int addevent = 0)
+    {
         List<MapItems> fiveEvents = GetEvents(5+addevent); //required data for updating with interval after initial loading 
         return PartialView(fiveEvents);
     }
@@ -141,7 +145,13 @@ public class HomeController : Controller
         };
         return PartialView(tmp);
     }
-
+    public async Task<ActionResult> PushStatus (string mainkey, string status)
+    {
+        
+        return Json(mainkey);
+    }
+    
+    
     // public JsonResult ViewDetailsPost(MapItems test)
     // {
     //     MapItems mapItems = new MapItems

@@ -30,29 +30,56 @@
                                 }
                             </div>
                             <div class="col">
-                                @{
-                                            string color = "";
-                                            if (@eventlisted.Status.ToString() == "Not started")
-                                            {
-                                                color = "#B22222";
-                                            }
-                                            else if (@eventlisted.Status.ToString() == "In Progress")
-                                            {
-                                                color = "#FFDF07";
-                                            }
-                                            else
-                                            {
-                                                color = "#26FF05";
-                                            }
-                                    
-                                        }
-                                <p style="margin-bottom: 0; padding-top: 0"> @($"Date: {eventlisted.Time.ToShortDateString()}")</p>
-                                <p style="margin-bottom: 0; padding-top: 0"> @($"Time: {eventlisted.Time.ToShortTimeString()}") </p>
-                                <p style="margin-bottom: 0;"> @($"Sound Type: {eventlisted.Soundtype}")</p>
-                                <p style="margin-bottom: 0; padding-top: 0"> @($"Probability : {eventlisted.Probability}%")</p>
-                                <p style="margin-bottom: 0; padding-top: 0">Status : <span style="color: @color">@eventlisted.Status</span></p>
+                                @* @{ *@
+                                @*             string color = ""; *@
+                                @*             if (@eventlisted.Status.ToString() == "Not started") *@
+                                @*             { *@
+                                @*                 color = "#B22222"; *@
+                                @*             } *@
+                                @*             else if (@eventlisted.Status.ToString() == "In Progress") *@
+                                @*             { *@
+                                @*                 color = "#FFDF07"; *@
+                                @*             } *@
+                                @*             else *@
+                                @*             { *@
+                                @*                 color = "#26FF05"; *@
+                                @*             } *@
+                                @*      *@
+                                @* } *@
+                                <p>
+                                    Id: @(eventlisted.Id)
+                                    <br/>Date: @(eventlisted.Time.ToShortDateString())
+                                    <br/>Time: @(eventlisted.Time.ToShortTimeString())
+                                    <br/>Sound Type: @(eventlisted.Soundtype)
+                                    <br/>Probability: @(eventlisted.Probability)%
+                                    @* <br/>Status: <span style="color: @color">@(eventlisted.Status)</span> *@
+                                </p>
+                                
+                                @* <p style="margin-bottom: 0; padding-top: 0"> @($"Date: {eventlisted.Time.ToShortDateString()}")</p> *@
+                                @* <p style="margin-bottom: 0; padding-top: 0"> @($"Time: {eventlisted.Time.ToShortTimeString()}") </p> *@
+                                @* <p style="margin-bottom: 0;"> @($"Sound Type: {eventlisted.Soundtype}")</p> *@
+                                @* <p style="margin-bottom: 0; padding-top: 0"> @($"Probability : {eventlisted.Probability}%")</p> *@
+                                @* <p style="margin-bottom: 0; padding-top: 0">Status : <span style="color: @color">@eventlisted.Status</span></p> *@
                             </div>
                             <div class="col-viewdetails">
+                                @{
+                                    string color = "";
+                                    if (@eventlisted.Status.ToString() == "Not started")
+                                    {
+                                        color = "#B22222";
+                                    }
+                                    else if (@eventlisted.Status.ToString() == "In Progress")
+                                    {
+                                        color = "#FFDF07";
+                                    }
+                                    else
+                                    {
+                                        color = "#26FF05";
+                                    }
+                                }
+                                <button class="status-mainp" style="background-color: @color">
+                                    @(eventlisted.Status)
+                                </button>
                                 <a href="javascript:void(0)" onclick="getview(@eventlisted.Id.ToString())" class="box-details viewdetails">
                                     View Details
                                 </a>

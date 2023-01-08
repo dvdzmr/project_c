@@ -131,7 +131,7 @@
      finally {
      currentevents.forEach((element, i) =>
      markers[i] = new L.marker([element.latitude, element.longitude]).bindPopup(
-         "Id: "+ element.id +"</br>Soundtype: "+ element.soundtype + "</br>Probability: " + element.probability));
+         "Id: "+ element.id +"</br>Soundtype: "+ element.soundtype + "</br>Probability: " + element.probability + "%"));
      var test_showevents = L.layerGroup(markers);
      // console.log("markeradd2: ");
      // console.log(markers);
@@ -177,7 +177,7 @@ function loadNewEvents(){
 @* </script> *@
 
 <script type="text/javascript" id="reloadjs">
-     setInterval("loadNewEvents()", 30000);
+     // setInterval("loadNewEvents()", 30000);
      </script>
 <script>
 function openNav(){
