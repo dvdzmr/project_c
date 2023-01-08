@@ -6,6 +6,7 @@
 
 CREATE SCHEMA chengeta;
 CREATE TABLE chengeta.sounds (
+     id integer primary key,
      time timestamp NOT NULL,
      nodeid BIGINT NOT NULL,
      latitude VARCHAR(200) NOT NULL,
@@ -13,5 +14,5 @@ CREATE TABLE chengeta.sounds (
      soundtype VARCHAR(200) NOT NULL,
      probability SMALLINT NOT NULL,
      soundfile VARCHAR(500) NOT NULL,
-     status VARCHAR(100) NOT NULL 
+     status VARCHAR(100) NOT NULL
 );

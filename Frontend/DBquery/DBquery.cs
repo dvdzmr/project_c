@@ -2,6 +2,7 @@ using System.Data;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using Npgsql;
+using NpgsqlTypes;
 
 namespace Frontend.DBquery;
 
@@ -14,7 +15,7 @@ public class DBquery
         // get computer cultureinfo
         var separator = CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
         
-        string query = "SELECT time,latitude, longitude, soundtype, probability, soundfile, status FROM chengeta.sounds";
+        string query = "SELECT id, time, latitude, longitude, soundtype, probability, soundfile, status FROM chengeta.sounds ORDER BY id";
         using var conn = new NpgsqlConnection(_dBconstring);
         if (conn.State != ConnectionState.Open && conn.State != null)
         {
@@ -25,21 +26,12 @@ public class DBquery
         var allevent = new List<DBobjects>();
         using (NpgsqlCommand command = new NpgsqlCommand(query, conn))
         {
-            bool test = true;
-            int i = 0;
             var reader = command.ExecuteReader();
             while (reader.Read())
             {
-                if (test)
-                {
-                    Console.WriteLine(reader["time"]);
-                    Console.WriteLine(reader["time"].ToString());
-                    Console.WriteLine(DateTime.Parse(reader["time"].ToString()));
-                    test = false;
-                }
                 allevent.Add(new DBobjects()
                     {
-                        Id = i,
+                        Id = int.Parse(reader["id"].ToString()),
                         Time = DateTime.Parse(reader["time"].ToString()),
                         Latitude = Convert.ToDouble(Regex.Replace(reader["latitude"].ToString(), "[.,]", separator)),
                         Longitude = Double.Parse(Regex.Replace(reader["longitude"].ToString(), "[.,]", separator)),
@@ -50,15 +42,27 @@ public class DBquery
                     }
                 );
                 // Console.WriteLine("test: lat:{0}, long:{1}", Convert.ToDouble(reader["latitude"].ToString()), Double.Parse(reader["longitude"].ToString()));
-                i++;
             }
             return allevent;
         }
     }
 
-    public static List<DBobjects> DbStatusPush(string pkey, string tochange)
+    public static List<DBobjects> DbStatusPush(int pkey, string tochange)
     {
-        string query = "UPDATE chengeta.sounds SET status = tochange WHERE time = ";
+        Console.WriteLine(pkey+ tochange);
+        string query = "";
+        if (tochange == "Not started")
+        {
+            query = "UPDATE chengeta.sounds SET status = 'In progress' WHERE id = "+pkey ;
+        }
+        else if (tochange == "In progress")
+        {
+            query = "UPDATE chengeta.sounds SET status = 'Completed' WHERE id = "+pkey ;
+        }
+        else
+        {
+            query = "UPDATE chengeta.sounds SET status = 'Not started' WHERE id = "+pkey ;
+        }
         
         using var conn = new NpgsqlConnection(_dBconstring);
         if (conn.State != ConnectionState.Open && conn.State != null)
@@ -66,6 +70,14 @@ public class DBquery
             conn.Close();
         }
         conn.Open();
+        NpgsqlCommand command = new NpgsqlCommand(query, conn);
+        command.ExecuteNonQuery();
+        conn.Close();
+        // command.Parameters.Add(new NpgsqlParameter("tochange", NpgsqlTypes.NpgsqlDbType.Text));
+        // command.Parameters[0].Value = tochange.Text;
+        // NpgsqlParameter p = new NpgsqlParameter("pkey", NpgsqlDbType.Integer);
+        // p.Value = pkey;
+        // command.Parameters.Add(p);
         return null;
     }
 }

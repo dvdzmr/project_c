@@ -5,6 +5,15 @@ function events(currentevents){
     var addevent = parseInt(currentevents) - 5;
     $('#events').load('Events?addevent='+addevent);
 }
+function getnotifs(){
+    $.ajax({
+        type: "GET",
+        url: "/Home/GiveNotification",
+        dataType: "json",
+    }).done(function (data){
+        }
+    )
+}
 function getmapdata(currentevents){
     $.ajax({
         type: "GET",

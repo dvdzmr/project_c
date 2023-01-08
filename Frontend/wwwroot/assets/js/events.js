@@ -50,6 +50,15 @@ function closing(){
         }
     });
 }
+function pushstatusdatatodb(pkey, tochange){
+    $.ajax({
+        type: "GET",
+        url: "/Home/PushStatus?mainkey="+pkey+"&status="+tochange,
+        dataType: "json",
+    }).done(function (data){
+        loadNewEvents()
+    })
+}
 function topdf(id,date,time,long,lat){
     var doc = new jsPDF()
     doc.setFontSize(33);

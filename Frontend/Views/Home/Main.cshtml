@@ -147,6 +147,11 @@
 
 
 <script id="testing">
+function refresh(){
+    loadNewEvents()
+    getnotifs()    
+}
+refresh()
 function loadNewEvents(){
     var i = 0;
 
@@ -157,7 +162,6 @@ function loadNewEvents(){
     if (i < 5){
         i += 1;
     }
-            
     events(i)
     
     // Call ajax for data
@@ -177,7 +181,7 @@ function loadNewEvents(){
 @* </script> *@
 
 <script type="text/javascript" id="reloadjs">
-     // setInterval("loadNewEvents()", 30000);
+     setInterval("refresh()", 30000);
      </script>
 <script>
 function openNav(){

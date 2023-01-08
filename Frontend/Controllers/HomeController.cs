@@ -83,10 +83,8 @@ public class HomeController : Controller
         return Json(GetMapData);
     }
 
-    public Task<ActionResult> GiveNotification()
+    public async Task<ActionResult> GiveNotification()
     {
-        // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
-        // the foreach loop
 
         // Notifications must invoked with conditions, in this case we can implement if conditions here by using GetEvents()
         // and having a settings file or something that stores what the filters are to implement here.
@@ -116,10 +114,12 @@ public class HomeController : Controller
                 _notyf.Custom("Thunder was heard", 5, "whitesmoke", "fa fa-gear");
             }
         }
-        return null;
+        return Json(1);
     }
     public PartialViewResult Events(int addevent = 0)
     {
+        // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
+        // the foreach loop
         List<MapItems> fiveEvents = GetEvents(5+addevent); //required data for updating with interval after initial loading 
         return PartialView(fiveEvents);
     }
@@ -129,8 +129,9 @@ public class HomeController : Controller
         var test = GetEvents(5); // data for recent events (view Map)
         return View(test);
     }
-    public ActionResult ViewDetailsPartial(int eventid = 0)
+    public ActionResult ViewDetailsPartial(int eventid = 1)
     {
+        eventid -= 1;
         var getEvents = DBquery.DBquery.DbChecker();
         MapItems tmp = new MapItems()
         {
@@ -145,10 +146,10 @@ public class HomeController : Controller
         };
         return PartialView(tmp);
     }
-    public async Task<ActionResult> PushStatus (string mainkey, string status)
+    public async Task<ActionResult> PushStatus (int mainkey, string status)
     {
-        
-        return Json(mainkey);
+        DBquery.DBquery.DbStatusPush(mainkey, status);
+        return Json(1);
     }
     
     

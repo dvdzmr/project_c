@@ -28,22 +28,22 @@
     </div>
     <div class="status">
         @{
-             string color = "";
-             if (@Model.Status.ToString() == "Not started")
-             {
-                 color = "#B22222";
-             }
-             else if (@Model.Status.ToString() == "In Progress")
-             {
-                 color = "#FFDF07";
-             }
-             else
-             {
-                 color = "#26FF05";
-             }
+            string color = "";
+            if (@Model.Status.ToString() == "Not started")
+            {
+                color = "#B22222";
+            }
+            else if (@Model.Status.ToString() == "In progress")
+            {
+                color = "#FFDF07";
+            }
+            else
+            {
+                color = "#26FF05";
+            }
         }
-        <button class="status-subp" style="background-color: @color">
-            @(@Model.Status)
+        <button class="status-subp" onclick="pushstatusdatatodb('@Model.Id', '@Model.Status')" style="background-color: @color">
+            @(Model.Status)
         </button>
     </div>
     <div class="soundfile">
@@ -55,28 +55,11 @@
     <div class="details">
         <p class="text-dark">
             Event id: @(Model.Id)
-            @* @{ *@
-            @*     string colortxt = ""; *@
-            @*     if (@Model.Status.ToString() == "Not started") *@
-            @*     { *@
-            @*         colortxt = "#B22222"; *@
-            @*     } *@
-            @*     else if (@Model.Status.ToString() == "In Progress") *@
-            @*     { *@
-            @*         colortxt = "#FFDF07"; *@
-            @*     } *@
-            @*     else *@
-            @*     { *@
-            @*         colortxt = "#26FF05"; *@
-            @*     } *@
-            @* *@
-            @* } *@
             <br/>Probability: @(Model.Probability)%
-            <br/>Time of event: @(Model.Time.ToShortTimeString())
+            <br/>Time of event: @(Model.Time.ToShortTimeString()) GMT
             <br/>Date of event: @(Model.Time.ToShortDateString())
             <br/>Latitude: @(Model.Latitude) 
             <br/>Longitude: @(Model.Longitude)
-            @* <br>Status: <span style="color: @colortxt" >@(Model.Status)</span> *@
         </p>
     </div>
     <div class="closingview">
