@@ -1,22 +1,22 @@
 @model MapItems
 
 @* add css with higher z for overlay *@
-<div class="">
+<div class="" xmlns="http://www.w3.org/1999/html">
     @* Make icon bigger *@
     <div class="">
-        @if (Model.Soundtype == "gunshot")
+        @if (Model.Soundtype == "Gunshot")
         {
             <i class="viewdetails-icon viewdetails-box fa-solid fa-gun fa-fw"></i>
         }
-        else if (Model.Soundtype == "vehicle")
+        else if (Model.Soundtype == "Vehicle")
         {
             <i class="viewdetails-icon viewdetails-box fa-solid fa-car fa-fw"></i>
         }
-        else if (Model.Soundtype == "animal")
+        else if (Model.Soundtype == "Animal")
         {
             <i class="viewdetails-icon viewdetails-box fa-solid fa-dog fa-fw"></i>
         }
-        else if (Model.Soundtype == "thunder")
+        else if (Model.Soundtype == "Thunder")
         {
             <i class="viewdetails-icon viewdetails-box fa-solid fa-cloud-bolt fa-fw"></i>
         }
@@ -25,6 +25,26 @@
             <i class="viewdetails-icon viewdetails-box fa-solid fa-question fa-fw"></i>
             
         }
+    </div>
+    <div class="status">
+        @{
+            string color = "";
+            if (@Model.Status.ToString() == "Not started")
+            {
+                color = "#B22222";
+            }
+            else if (@Model.Status.ToString() == "In progress")
+            {
+                color = "#FFDF07";
+            }
+            else
+            {
+                color = "#26FF05";
+            }
+        }
+        <button class="status-subp" onclick="pushstatusdatatodb('@Model.Id', '@Model.Status')" style="background-color: @color">
+            @(Model.Status)
+        </button>
     </div>
     <div class="soundfile">
         @* get soundfile *@
@@ -35,10 +55,10 @@
     <div class="details">
         <p class="text-dark">
             Event id: @(Model.Id)
-            <br/>Probability: @(Model.Probability)
-            <br/>Time of event: @(Model.Time.ToShortTimeString())
+            <br/>Probability: @(Model.Probability)%
+            <br/>Time of event: @(Model.Time.ToShortTimeString()) GMT
             <br/>Date of event: @(Model.Time.ToShortDateString())
-            <br/>Latitude: @(Model.Latitude)
+            <br/>Latitude: @(Model.Latitude) 
             <br/>Longitude: @(Model.Longitude)
         </p>
     </div>
@@ -48,6 +68,7 @@
     </div>
     <div class="downloadtopdf">
         @* download for offline *@
-        <button class="topdf" onclick="topdf('@Model.Id','@Model.Time.ToShortDateString()','@Model.Time.ToShortTimeString()',`@Model.Latitude`,`@Model.Longitude`)" download="Event @Model.Id _ @Model.Time .PDF">To PDF</button> <!-- need function to make pdf, maybe <button>?-->
+        
+        <button class="topdf" onclick="topdf('@Model.Id','@Model.Time.ToShortDateString()','@Model.Time.ToShortTimeString()',`@Model.Longitude.ToString("", System.Globalization.CultureInfo.InvariantCulture)`,`@Model.Latitude.ToString("", System.Globalization.CultureInfo.InvariantCulture)`)" download="Event @Model.Id _ @Model.Time .PDF">To PDF</button> <!-- need function to make pdf, maybe <button>?-->
     </div>
 </div>

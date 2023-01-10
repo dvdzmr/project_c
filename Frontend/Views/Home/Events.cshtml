@@ -8,19 +8,19 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-icon">
-                                @if (eventlisted.Soundtype == "gunshot")
+                                @if (eventlisted.Soundtype == "Gunshot")
                                 {
                                     <i class="myIcon box-event fa-solid fa-gun fa-fw"></i>
                                 }
-                                else if (eventlisted.Soundtype == "vehicle")
+                                else if (eventlisted.Soundtype == "Vehicle")
                                 {
                                     <i class="myIcon box-event fa-solid fa-car fa-fw"></i>
                                 }
-                                else if (eventlisted.Soundtype == "animal")
+                                else if (eventlisted.Soundtype == "Animal")
                                 {
                                     <i class="myIcon box-event fa-solid fa-dog fa-fw"></i>
                                 }
-                                else if (eventlisted.Soundtype == "thunder")
+                                else if (eventlisted.Soundtype == "Thunder")
                                 {
                                     <i class="myIcon box-event fa-solid fa-cloud-bolt fa-fw"></i>
                                 }
@@ -30,12 +30,39 @@
                                 }
                             </div>
                             <div class="col">
-                                <p style="margin-bottom: 0; padding-top: 0"> @($"Date: {eventlisted.Time.ToShortDateString()}")</p>
-                                <p style="margin-bottom: 0; padding-top: 0"> @($"Time: {eventlisted.Time.ToShortTimeString()}") </p>
-                                <p style="margin-bottom: 0;"> @($"Sound Type: {eventlisted.Soundtype}")</p>
-                                <p style="margin-bottom: 0; padding-top: 0"> @($"Probability : {eventlisted.Probability}%")</p>
+                                <p>
+                                    Id: @(eventlisted.Id)
+                                    <br/>Date: @(eventlisted.Time.ToShortDateString())
+                                    <br/>Time: @(eventlisted.Time.ToShortTimeString()) GMT
+                                    <br/>Sound Type: @(eventlisted.Soundtype)
+                                    <br/>Probability: @(eventlisted.Probability)%
+                                </p>
+                                
+                                @* <p style="margin-bottom: 0; padding-top: 0"> @($"Date: {eventlisted.Time.ToShortDateString()}")</p> *@
+                                @* <p style="margin-bottom: 0; padding-top: 0"> @($"Time: {eventlisted.Time.ToShortTimeString()}") </p> *@
+                                @* <p style="margin-bottom: 0;"> @($"Sound Type: {eventlisted.Soundtype}")</p> *@
+                                @* <p style="margin-bottom: 0; padding-top: 0"> @($"Probability : {eventlisted.Probability}%")</p> *@
+                                @* <p style="margin-bottom: 0; padding-top: 0">Status : <span style="color: @color">@eventlisted.Status</span></p> *@
                             </div>
                             <div class="col-viewdetails">
+                                @{
+                                    string color = "";
+                                    if (@eventlisted.Status.ToString() == "Not started")
+                                    {
+                                        color = "#B22222";
+                                    }
+                                    else if (@eventlisted.Status.ToString() == "In progress")
+                                    {
+                                        color = "#FFDF07";
+                                    }
+                                    else
+                                    {
+                                        color = "#26FF05";
+                                    }
+                                }
+                                <button class="status-mainp" onclick="pushstatusdatatodb('@eventlisted.Id', '@eventlisted.Status')" style="background-color: @color">
+                                    @(eventlisted.Status)
+                                </button>
                                 <a href="javascript:void(0)" onclick="getview(@eventlisted.Id.ToString())" class="box-details viewdetails">
                                     View Details
                                 </a>

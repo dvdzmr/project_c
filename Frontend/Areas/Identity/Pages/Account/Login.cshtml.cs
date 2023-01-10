@@ -14,6 +14,9 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Text;
+using System.Text.Encodings.Web;
+using Microsoft.AspNetCore.WebUtilities;
 
 namespace Frontend.Areas.Identity.Pages.Account
 {
@@ -21,11 +24,26 @@ namespace Frontend.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
-
-        public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger)
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly IUserStore<IdentityUser> _userStore;
+        private readonly IUserEmailStore<IdentityUser> _emailStore;
+        private readonly IEmailSender _emailSender;
+        public LoginModel(
+            SignInManager<IdentityUser> signInManager,
+            ILogger<LoginModel> logger, 
+            IUserStore<IdentityUser> userStore,
+            RoleManager<IdentityRole> roleManager, 
+            UserManager<IdentityUser> userManager,
+            IEmailSender emailSender)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _userStore = userStore;
+            _roleManager = roleManager;
+            _userManager = userManager;
+            _emailStore = GetEmailStore();
+            _emailSender = emailSender;
         }
 
         /// <summary>
@@ -90,6 +108,7 @@ namespace Frontend.Areas.Identity.Pages.Account
             {
                 ModelState.AddModelError(string.Empty, ErrorMessage);
             }
+            await CreateRolesandUsers();
 
             returnUrl ??= Url.Content("~/");
 
@@ -106,7 +125,7 @@ namespace Frontend.Areas.Identity.Pages.Account
             returnUrl ??= Url.Content("~/Home/Main"); //redirect URL > Main.cshtml
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-
+            
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout
@@ -135,6 +154,59 @@ namespace Frontend.Areas.Identity.Pages.Account
 
             // If we got this far, something failed, redisplay form
             return Page();
+        }
+        
+        private async Task CreateRolesandUsers(string returnUrl = null)
+        {
+            returnUrl ??= Url.Content("~/");
+            bool x = await _roleManager.RoleExistsAsync("Admin");
+            if (!x)
+            {
+                // first we create Admin role    
+                var role = new IdentityRole();
+                role.Name = "Admin";
+                await _roleManager.CreateAsync(role);
+
+                //Here we create a Admin super user who will maintain the website                    
+
+                var user = new IdentityUser();
+                var email = "default@default.com";
+
+                await _userStore.SetUserNameAsync(user, email, CancellationToken.None);
+                await _emailStore.SetEmailAsync(user, email, CancellationToken.None);
+                
+                string userPWD = "Somepassword1!";
+                
+                Console.WriteLine(user);
+                Console.WriteLine($"{user.UserName} MIDDLEBREAKER {user.Email}");
+                
+                IdentityResult chkUser = await _userManager.CreateAsync(user, userPWD);
+
+                Console.WriteLine(chkUser.ToString());
+                
+                //Add default User to Role Admin    
+                if (chkUser.Succeeded)
+                {
+                    var result1 = await _userManager.AddToRoleAsync(user, "Admin");
+                }
+            }
+
+            // creating Employee role     
+            x = await _roleManager.RoleExistsAsync("Employee");
+            if (!x)
+            {
+                var role = new IdentityRole();
+                role.Name = "Employee";
+                await _roleManager.CreateAsync(role);
+            }
+        }
+        private IUserEmailStore<IdentityUser> GetEmailStore()
+        {
+            if (!_userManager.SupportsUserEmail)
+            {
+                throw new NotSupportedException("The default UI requires a user store with email support.");
+            }
+            return (IUserEmailStore<IdentityUser>)_userStore;
         }
     }
 }

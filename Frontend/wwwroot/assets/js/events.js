@@ -14,13 +14,17 @@ function getview(id){
 }
 function moreEvents(currentevents){
     var addevent = parseInt(currentevents) + 25;
+    var getfiltersoundtype = document.getElementById("filtersoundtype");
+    var value1 = getfiltersoundtype.value;
+    var slider = document.getElementById("myRange");
+    var value2 = slider.value;
     $.ajax({
-        url: "/Home/Events?addevent="+addevent,
+        url: "/Home/Events?addevent="+addevent+"&value1="+value1+"&value2="+value2,
         type: "GET",
         cache: false,
         success: function (result){
             $("#events").html(result);
-            
+            getmapdata(addevent-5,value1,value2)
             // Code hieronder kan later worden verwijdert (voor nu nog niet) - Min En
             
             // var tmp = document.getElementById("testing");
@@ -50,6 +54,15 @@ function closing(){
         }
     });
 }
+function pushstatusdatatodb(pkey, tochange){
+    $.ajax({
+        type: "GET",
+        url: "/Home/PushStatus?mainkey="+pkey+"&status="+tochange,
+        dataType: "json",
+    }).done(function (data){
+        loadNewEvents()
+    })
+}
 function topdf(id,date,time,long,lat){
     var doc = new jsPDF()
     doc.setFontSize(33);
@@ -71,7 +84,7 @@ function topdf(id,date,time,long,lat){
     // doc.addImage(mapImg, 'JPEG', 36, 170)
     doc.setFontSize(26);
     doc.setTextColor(34,0,224);
-    doc.textWithLink('>>Open the location in Google Maps<<', 15, 180, { url: `https://maps.google.com/?q=${lat},${long}\n` });
+    doc.textWithLink('>>Open the location in Google Maps<<', 15, 180, { url: `https://maps.google.nl/?q=${lat},${long}\n` });
     doc.save(`Event${id}_Date${date}_Time${time}.pdf`)
     doc.download
 }
