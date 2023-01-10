@@ -1,10 +1,12 @@
 ﻿@page
 @model RegisterModel
+@inject SignInManager<IdentityUser> SignInManager
 @{
     ViewData["Title"] = "Register";
 }
 
-
+@if (User.IsInRole("Admin"))
+{
 <div class="row">
     <div class="col-md-4">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
@@ -31,11 +33,20 @@
                 <input asp-for="Input.ConfirmPassword" class="form-control bg-white" autocomplete="new-password" aria-required="true" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
+            <div>
+                <div class="checkbox" style="margin: 5px 0  0px 21px;">
+                    <label asp-for="Input.AdminRole" class="form-label" align="left" >
+                        <input class="form-check-input" asp-for="Input.AdminRole"/>
+                        @Html.DisplayNameFor(m => m.Input.AdminRole)
+                    </label>
+                </div>
+            </div>
             <br/>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
         </form>
     </div>
 </div>
+}
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
