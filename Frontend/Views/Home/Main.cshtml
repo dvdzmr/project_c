@@ -173,10 +173,8 @@
 
 <script id="testing">
 function refresh(){
-    var getfiltersoundtype = document.getElementById("filtersoundtype");
-    var slider = document.getElementById("myRange");
     loadNewEvents()
-    getnotifs(getfiltersoundtype.value, slider.value)    
+    getnotifs()    
 }
 refresh()
 function loadNewEvents(){
@@ -199,6 +197,9 @@ function loadNewEvents(){
     
     // Call ajax for data
     getmapdata(i, value1, value2)
+}
+function refreshviewdetails(id){
+    getview(id)
 }
 </script>
 <script>

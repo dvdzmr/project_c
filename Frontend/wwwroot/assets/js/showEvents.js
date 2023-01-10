@@ -5,10 +5,10 @@ function events(currentevents, value1, value2){
     var addevent = parseInt(currentevents) - 5;
     $('#events').load('Events?addevent='+addevent+'&value1='+value1+'&value2='+value2);
 }
-function getnotifs(value1,value2){
+function getnotifs(){
     $.ajax({
         type: "GET",
-        url: "/Home/GiveNotification?value1="+value1+"&value2="+value2,
+        url: "/Home/GiveNotification",
         dataType: "json",
     }).done(function (data){
         }

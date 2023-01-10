@@ -42,7 +42,7 @@
                 color = "#26FF05";
             }
         }
-        <button class="status-subp" onclick="pushstatusdatatodb('@Model.Id', '@Model.Status')" style="background-color: @color">
+        <button class="status-subp" onclick="pushstatusdatatodb2('@Model.Id', '@Model.Status', '@Model.Id')" style="background-color: @color">
             @(Model.Status)
         </button>
     </div>

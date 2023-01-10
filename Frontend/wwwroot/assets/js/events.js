@@ -5,6 +5,7 @@ function getview(id){
         cache: false,
         success: function (result){
             $("#viewdetailsofevent").html(result)
+            console.log(id)
             openNav()
         },
         error: function (){
@@ -61,6 +62,16 @@ function pushstatusdatatodb(pkey, tochange){
         dataType: "json",
     }).done(function (data){
         loadNewEvents()
+    })
+}
+function pushstatusdatatodb2(pkey, tochange, id){
+    $.ajax({
+        type:"GET",
+        url: "/Home/PushStatus?mainkey="+pkey+"&status="+tochange,
+        dataType: "json",
+    }).done(function (data){
+        loadNewEvents(),
+        refreshviewdetails(id)
     })
 }
 function topdf(id,date,time,long,lat){

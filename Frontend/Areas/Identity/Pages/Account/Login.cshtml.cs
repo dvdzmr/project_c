@@ -177,8 +177,8 @@ namespace Frontend.Areas.Identity.Pages.Account
                 
                 string userPWD = "Somepassword1!";
                 
-                Console.WriteLine(user);
-                Console.WriteLine($"{user.UserName} MIDDLEBREAKER {user.Email}");
+                // Console.WriteLine(user);
+                // Console.WriteLine($"{user.UserName} MIDDLEBREAKER {user.Email}");
                 
                 IdentityResult chkUser = await _userManager.CreateAsync(user, userPWD);
 

@@ -116,15 +116,16 @@ public class HomeController : Controller
         return events;
     }
 
-    public async Task<ActionResult> GetData (int addevent, string value1 = "All", string value2 = "2")
+    public async Task<ActionResult> GetData (int addevent, string value1 = "All", string value2 = "1")
     {
         List<MapItems> getmapdata = GetEvents(addevent, value1, value2);
         return Json(getmapdata);
     }
 
-    public async Task<ActionResult> GiveNotification(string value1 = "All", string value2 = "2")
+    public async Task<ActionResult> GiveNotification()
     {
-
+        string value1 = "All";
+        string value2 = "1";
         // Notifications must invoked with conditions, in this case we can implement if conditions here by using GetEvents()
         // and having a settings file or something that stores what the filters are to implement here.
         //ex:
@@ -155,7 +156,7 @@ public class HomeController : Controller
         }
         return Json(1);
     }
-    public PartialViewResult Events(int addevent = 0, string value1 = "all", string value2 = "2")
+    public PartialViewResult Events(int addevent = 0, string value1 = "all", string value2 = "1")
     {
         // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
         // the foreach loop
@@ -172,6 +173,7 @@ public class HomeController : Controller
     {
         eventid -= 1;
         var getEvents = DBquery.DBquery.DbChecker();
+        getEvents.Reverse();
         MapItems tmp = new MapItems()
         {
             Id = getEvents[eventid].Id,
