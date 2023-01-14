@@ -35,7 +35,7 @@ public static class Eventlistener
         int probability = 0;
         string soundfile = "";
         string jsonStr = Encoding.UTF8.GetString(e.Message);
-        Console.WriteLine(jsonStr);
+        // Console.WriteLine(jsonStr);
         foreach (KeyValuePair<string, string> types in data)
         {
             // Console.WriteLine("Key: {0}, Value: {1}", types.Key, types.Value);

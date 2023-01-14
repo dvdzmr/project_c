@@ -166,6 +166,10 @@ public class HomeController : Controller
     
     public IActionResult Main()
     {
+        // if (!User.Identity.IsAuthenticated)
+        // {
+        //     return LocalRedirect("/Error");
+        // }
         var test = GetEvents(5); // data for recent events (view Map)
         return View(test);
     }

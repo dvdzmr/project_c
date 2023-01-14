@@ -55,7 +55,7 @@ public static class DBconnection
             NpgsqlCommand command = new NpgsqlCommand(query, conn);
             var getcount = command.ExecuteScalar();
             conn.Close();
-            Console.WriteLine(getcount);
+            // Console.WriteLine(getcount);
             return int.Parse(getcount.ToString())+ 1 ;
         }
         catch
