@@ -191,6 +191,24 @@ public class HomeController : Controller
         };
         return PartialView(tmp);
     }
+    public async Task<ActionResult> getviewdata (int eventid = 1)
+    {
+        eventid -= 1;
+        var getEvents = DBquery.DBquery.DbChecker();
+        getEvents.Reverse();
+        MapItems tmp = new MapItems()
+        {
+            Id = getEvents[eventid].Id,
+            Time = getEvents[eventid].Time,
+            Latitude = getEvents[eventid].Latitude,
+            Longitude = getEvents[eventid].Longitude,
+            Soundtype = getEvents[eventid].Soundtype,
+            Probability = getEvents[eventid].Probability,
+            Soundfile = getEvents[eventid].Soundfile,
+            Status = getEvents[eventid].Status
+        };
+        return Json(tmp);
+    }
     public async Task<ActionResult> PushStatus (int mainkey, string status)
     {
         DBquery.DBquery.DbStatusPush(mainkey, status);

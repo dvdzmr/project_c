@@ -55,7 +55,7 @@
     <div class="details">
         <p class="text-dark">
             Event id: @(Model.Id)
-            <br/>Probability: @(Model.Probability)%
+            <br/>Probability of event: @(Model.Probability)%
             <br/>Time of event: @(Model.Time.ToShortTimeString()) GMT
             <br/>Date of event: @(Model.Time.ToShortDateString())
             <br/>Latitude: @(Model.Latitude) 
@@ -68,7 +68,7 @@
     </div>
     <div class="downloadtopdf">
         @* download for offline *@
-        
-        <button class="topdf" onclick="topdf('@Model.Id','@Model.Time.ToShortDateString()','@Model.Time.ToShortTimeString()',`@Model.Longitude.ToString("", System.Globalization.CultureInfo.InvariantCulture)`,`@Model.Latitude.ToString("", System.Globalization.CultureInfo.InvariantCulture)`)" download="Event @Model.Id _ @Model.Time .PDF">To PDF</button> <!-- need function to make pdf, maybe <button>?-->
+        @* <button class="topdf" onclick="topdf(@Json.Serialize(Model)" download="Event @Model.Id _ @Model.Time .PDF">To PDF</button> <!-- need function to make pdf, maybe <button>?--> *@
+        <button class="topdf" onclick="topdf(`@Model.Soundtype`,`@Model.Probability`,'@Model.Id','@Model.Time.ToShortDateString()','@Model.Time.ToShortTimeString()',`@Model.Longitude.ToString("", System.Globalization.CultureInfo.InvariantCulture)`,`@Model.Latitude.ToString("", System.Globalization.CultureInfo.InvariantCulture)`)" download="Event @Model.Id _ @Model.Time .PDF">To PDF</button> <!-- need function to make pdf, maybe <button>?-->
     </div>
 </div>
