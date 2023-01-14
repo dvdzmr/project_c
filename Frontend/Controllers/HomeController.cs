@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using AspNetCoreHero.ToastNotification.Helpers;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Frontend.Controllers;
 
@@ -30,9 +32,7 @@ public class HomeController : Controller
     {
         if (User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
         {
-            
             return LocalRedirect("/Home/Main");
-            
         }
         return View();
     }
@@ -118,12 +118,24 @@ public class HomeController : Controller
 
     public async Task<ActionResult> GetData (int addevent, string value1 = "All", string value2 = "1")
     {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
         List<MapItems> getmapdata = GetEvents(addevent, value1, value2);
         return Json(getmapdata);
     }
 
     public async Task<ActionResult> GiveNotification()
     {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
         string value1 = "All";
         string value2 = "1";
         // Notifications must invoked with conditions, in this case we can implement if conditions here by using GetEvents()
@@ -166,15 +178,19 @@ public class HomeController : Controller
     
     public IActionResult Main()
     {
-        // if (!User.Identity.IsAuthenticated)
-        // {
-        //     return LocalRedirect("/Error");
-        // }
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
         var test = GetEvents(5); // data for recent events (view Map)
         return View(test);
     }
     public ActionResult ViewDetailsPartial(int eventid = 1)
     {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
         eventid -= 1;
         var getEvents = DBquery.DBquery.DbChecker();
         getEvents.Reverse();
@@ -193,6 +209,10 @@ public class HomeController : Controller
     }
     public async Task<ActionResult> getviewdata (int eventid = 1)
     {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
         eventid -= 1;
         var getEvents = DBquery.DBquery.DbChecker();
         getEvents.Reverse();
@@ -211,10 +231,13 @@ public class HomeController : Controller
     }
     public async Task<ActionResult> PushStatus (int mainkey, string status)
     {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
         DBquery.DBquery.DbStatusPush(mainkey, status);
         return Json(1);
     }
-    
     
     // public JsonResult ViewDetailsPost(MapItems test)
     // {
