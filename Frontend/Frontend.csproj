@@ -12,7 +12,9 @@
     <ItemGroup>
       <ProjectReference Include="..\Backend\Backend.csproj" />
     </ItemGroup>
-
+	<ItemGroup>
+		<InternalsVisibleTo Include="FrontendTest"/>
+	</ItemGroup>
     
     <ItemGroup>
       <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />

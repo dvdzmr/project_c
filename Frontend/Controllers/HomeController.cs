@@ -34,6 +34,7 @@ public class HomeController : Controller
         {
             return LocalRedirect("/Home/Main");
         }
+        // Console.WriteLine(HttpContext);
         return View();
     }
     
@@ -122,10 +123,6 @@ public class HomeController : Controller
         {
             return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
         }
-        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
-        {
-            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
-        }
         List<MapItems> getmapdata = GetEvents(addevent, value1, value2);
         return Json(getmapdata);
     }
@@ -182,6 +179,7 @@ public class HomeController : Controller
         {
             return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
         }
+        Console.WriteLine(HttpContext.User.Identity.Name);
         var test = GetEvents(5); // data for recent events (view Map)
         return View(test);
     }
