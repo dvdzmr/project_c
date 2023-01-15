@@ -1,7 +1,10 @@
+using System.Collections;
 using Frontend.Controllers;
 using Frontend.Models;
+using FrontendTest;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +19,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Principal;
 using System.Security.Claims;
+using Xunit.Abstractions;
+
 
 
 
@@ -23,6 +28,12 @@ namespace FrontendTest
 {
     public class UnitTest1
     {
+        private readonly ITestOutputHelper output;
+
+        public UnitTest1(ITestOutputHelper output)
+        {
+            this.output = output;
+        }
         public ILogger<HomeController> Tmp()
         {
             var serviceProvider = new ServiceCollection()
@@ -76,6 +87,7 @@ namespace FrontendTest
 
             var result = controller.Events();
             Assert.NotNull(result);
+            Assert.IsType<List<MapItems>>(result.ViewData.Model);
         }
         [Fact]
         public void ControllerGetEventTest()
@@ -102,8 +114,11 @@ namespace FrontendTest
             var context = GetFakeAdminUser();
             controller.ControllerContext = context;
 
-            var result = await controller.GetData(0);
-            Assert.NotNull(result);
+            var result = await controller.GetData(5);
+
+            var resultObject = Assert.IsType<JsonResult>(result);
+            var items = (List<MapItems>)resultObject.Value;
+            Assert.Equal(5, items.Count);
         }
         [Fact]
         public async void ControllerGetNotificationTest()
@@ -118,6 +133,9 @@ namespace FrontendTest
 
             var result = await controller.GiveNotification();
             Assert.NotNull(result);
+            var resultObject = Assert.IsType<JsonResult>(result);
+            var items = (int)resultObject.Value;
+            Assert.Equal(1, items);
         }
 
         [Fact]
@@ -133,6 +151,9 @@ namespace FrontendTest
 
             var result = await controller.getviewdata();
             Assert.NotNull(result);
+            var resultObject = Assert.IsType<JsonResult>(result);
+            var items = (MapItems)resultObject.Value;
+            Assert.IsType<MapItems>(items);
         }
         [Fact]
         public async void ControllerPushStatusTest()
@@ -147,6 +168,9 @@ namespace FrontendTest
 
             var result = await controller.PushStatus(1, "Completed");
             Assert.NotNull(result);
+            var resultObject = Assert.IsType<JsonResult>(result);
+            var items = (int)resultObject.Value;
+            Assert.Equal(1, items);
         }
         
 
