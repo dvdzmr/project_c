@@ -30,13 +30,17 @@ function moreEvents(currentevents){
     var value1 = getfiltersoundtype.value;
     var slider = document.getElementById("myRange");
     var value2 = slider.value;
+    var sliderProb = document.getElementById("myProbRange")
+    var value3 = sliderProb.value;
+    
     $.ajax({
-        url: "/Home/Events?addevent="+addevent+"&value1="+value1+"&value2="+value2,
+        url: "/Home/Events?addevent="+addevent+"&value1="+value1+"&value2="+value2+"&value3"+value3,
         type: "GET",
         cache: false,
         success: function (result){
             $("#events").html(result);
-            getmapdata(addevent-5,value1,value2)
+            // getmapdata(addevent-5,value1,value2,value3)
+            loadNewEvents();
             // Code hieronder kan later worden verwijdert (voor nu nog niet) - Min En
             
             // var tmp = document.getElementById("testing");
