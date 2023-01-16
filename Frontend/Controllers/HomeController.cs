@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using AspNetCoreHero.ToastNotification.Helpers;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Frontend.Controllers;
 
@@ -30,10 +32,9 @@ public class HomeController : Controller
     {
         if (User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
         {
-            
             return LocalRedirect("/Home/Main");
-            
         }
+        // Console.WriteLine(HttpContext);
         return View();
     }
     
@@ -47,11 +48,26 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-    public List<MapItems> GetEvents(int evenAmounts, string value1 = "All", string value2 = "1")
+    public List<MapItems> GetEvents(int evenAmounts, string value1 = "All", string value2 = "1", string value3 = "1")
     {
         var getEvents = DBquery.DBquery.DbChecker();
         List<MapItems> events = new List<MapItems>();
         int val2 = int.Parse(value2);
+        int val3 = int.Parse(value3);
+        var dictprob = new Dictionary<int, Tuple<int, int>>()
+        {
+            {1, new Tuple<int, int>(0, 0)},
+            {2, new Tuple<int, int>(0, 10)},
+            {3, new Tuple<int, int>(10, 20)},
+            {4, new Tuple<int, int>(20, 30)},
+            {5, new Tuple<int, int>(30, 40)},
+            {6, new Tuple<int, int>(40, 50)},
+            {7, new Tuple<int, int>(50, 60)},
+            {8, new Tuple<int, int>(60, 70)},
+            {9, new Tuple<int, int>(70, 80)},
+            {10, new Tuple<int, int>(80, 90)},
+            {11, new Tuple<int, int>(90, 100)}
+        };
         
         var dict = new Dictionary<int, Tuple<string, string>>()
         {
@@ -94,7 +110,13 @@ public class HomeController : Controller
                     System.Globalization.DateTimeStyles.None);
                 var dateTime2 = DateTime.ParseExact(dict[val2].Item2, "H:mm", null,
                     System.Globalization.DateTimeStyles.None);
-                if ((value1 == "All" || value1 == dbevent.Soundtype) && (value2 == "1" || (dateTime1.TimeOfDay <= dbevent.Time.TimeOfDay && dateTime2.TimeOfDay > dbevent.Time.TimeOfDay)))
+
+                var prob1 = dictprob[val3].Item1;
+                var prob2 = dictprob[val3].Item2;
+                
+                if ((value1 == "All" || value1 == dbevent.Soundtype) && 
+                    (value2 == "1" || (dateTime1.TimeOfDay <= dbevent.Time.TimeOfDay && dateTime2.TimeOfDay > dbevent.Time.TimeOfDay)) &&
+                    (value3 == "1" || (prob1 <= dbevent.Probability && prob2 > dbevent.Probability)))
                 {
                     var allevent = new MapItems()
                     {
@@ -116,15 +138,24 @@ public class HomeController : Controller
         return events;
     }
 
-    public async Task<ActionResult> GetData (int addevent, string value1 = "All", string value2 = "2")
+    public async Task<ActionResult> GetData (int addevent, string value1 = "All", string value2 = "1", string value3 = "1")
     {
-        List<MapItems> getmapdata = GetEvents(addevent, value1, value2);
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
+        List<MapItems> getmapdata = GetEvents(addevent, value1, value2, value3);
         return Json(getmapdata);
     }
 
-    public async Task<ActionResult> GiveNotification(string value1 = "All", string value2 = "2")
+    public async Task<ActionResult> GiveNotification()
     {
-
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
+        string value1 = "All";
+        string value2 = "1";
         // Notifications must invoked with conditions, in this case we can implement if conditions here by using GetEvents()
         // and having a settings file or something that stores what the filters are to implement here.
         //ex:
@@ -155,23 +186,33 @@ public class HomeController : Controller
         }
         return Json(1);
     }
-    public PartialViewResult Events(int addevent = 0, string value1 = "all", string value2 = "2")
+    public PartialViewResult Events(int addevent = 0, string value1 = "all", string value2 = "1", string value3 = "1")
     {
         // Maybe cache the last time GetEvents was ran and compare what is different to decide what to put into
         // the foreach loop
-        List<MapItems> fiveEvents = GetEvents(5+addevent, value1, value2); //required data for updating with interval after initial loading 
+        List<MapItems> fiveEvents = GetEvents(5+addevent, value1, value2, value3); //required data for updating with interval after initial loading 
         return PartialView(fiveEvents);
     }
     
     public IActionResult Main()
     {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
+        Console.WriteLine(HttpContext.User.Identity.Name);
         var test = GetEvents(5); // data for recent events (view Map)
         return View(test);
     }
     public ActionResult ViewDetailsPartial(int eventid = 1)
     {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
         eventid -= 1;
         var getEvents = DBquery.DBquery.DbChecker();
+        getEvents.Reverse();
         MapItems tmp = new MapItems()
         {
             Id = getEvents[eventid].Id,
@@ -185,12 +226,37 @@ public class HomeController : Controller
         };
         return PartialView(tmp);
     }
+    public async Task<ActionResult> getviewdata (int eventid = 1)
+    {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
+        eventid -= 1;
+        var getEvents = DBquery.DBquery.DbChecker();
+        getEvents.Reverse();
+        MapItems tmp = new MapItems()
+        {
+            Id = getEvents[eventid].Id,
+            Time = getEvents[eventid].Time,
+            Latitude = getEvents[eventid].Latitude,
+            Longitude = getEvents[eventid].Longitude,
+            Soundtype = getEvents[eventid].Soundtype,
+            Probability = getEvents[eventid].Probability,
+            Soundfile = getEvents[eventid].Soundfile,
+            Status = getEvents[eventid].Status
+        };
+        return Json(tmp);
+    }
     public async Task<ActionResult> PushStatus (int mainkey, string status)
     {
+        if (!User.Identity.IsAuthenticated) //Redirect to main if user is logged in.
+        {
+            return RedirectToAction("NoAcces", "ErrorNoAcces", new {area = ""});
+        }
         DBquery.DBquery.DbStatusPush(mainkey, status);
         return Json(1);
     }
-    
     
     // public JsonResult ViewDetailsPost(MapItems test)
     // {

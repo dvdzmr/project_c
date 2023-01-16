@@ -50,3 +50,4 @@ app.MapRazorPages();
 app.UseNotyf();
 
 app.Run();
+public partial class Program { }

@@ -68,7 +68,7 @@
 .overlay{
     position: fixed;
     display: none;
-    height: 50%;
+    height: 45%;
     width: 100%;
     z-index: 2;
     left: 0;
@@ -84,7 +84,7 @@
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(24, 18, 18, 0.8)!important;
+    background-color: rgba(24, 18, 18, 0.9);
 }
 .overlay-content {
     position: relative;
@@ -174,5 +174,5 @@
 }
 .applybtn{
     position: relative;
-    left: 70%;
+    /*left: 70%;*/
 }

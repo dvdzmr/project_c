@@ -5,12 +5,24 @@ function getview(id){
         cache: false,
         success: function (result){
             $("#viewdetailsofevent").html(result)
+            console.log(id)
             openNav()
+            getviewmapdata(id)
         },
         error: function (){
             console.log("error")
         }
     });
+}
+function getviewmapdata(id){
+    $.ajax({
+        type: "GET",
+        url: "/Home/getviewdata?eventid="+id,
+        dataType: "json" ,
+    }).done(function (data){
+        console.log(data)
+        loadsmallmap(data)
+    })
 }
 function moreEvents(currentevents){
     var addevent = parseInt(currentevents) + 25;
@@ -18,13 +30,17 @@ function moreEvents(currentevents){
     var value1 = getfiltersoundtype.value;
     var slider = document.getElementById("myRange");
     var value2 = slider.value;
+    var sliderProb = document.getElementById("myProbRange")
+    var value3 = sliderProb.value;
+    
     $.ajax({
-        url: "/Home/Events?addevent="+addevent+"&value1="+value1+"&value2="+value2,
+        url: "/Home/Events?addevent="+addevent+"&value1="+value1+"&value2="+value2+"&value3"+value3,
         type: "GET",
         cache: false,
         success: function (result){
             $("#events").html(result);
-            getmapdata(addevent-5,value1,value2)
+            // getmapdata(addevent-5,value1,value2,value3)
+            loadNewEvents();
             // Code hieronder kan later worden verwijdert (voor nu nog niet) - Min En
             
             // var tmp = document.getElementById("testing");
@@ -63,7 +79,17 @@ function pushstatusdatatodb(pkey, tochange){
         loadNewEvents()
     })
 }
-function topdf(id,date,time,long,lat){
+function pushstatusdatatodb2(pkey, tochange, id){
+    $.ajax({
+        type:"GET",
+        url: "/Home/PushStatus?mainkey="+pkey+"&status="+tochange,
+        dataType: "json",
+    }).done(function (data){
+        loadNewEvents(),
+        refreshviewdetails(id)
+    })
+}
+function topdf(soundtype,probability,id,date,time,lat,long){
     var doc = new jsPDF()
     doc.setFontSize(33);
     doc.setTextColor(255,255,255)
@@ -76,15 +102,17 @@ function topdf(id,date,time,long,lat){
     doc.addImage(toplayer, 'JPEG', 0, 0,400,60)
     doc.addImage(lowlayer, 'JPEG',0,60,400,240)
     doc.text(`Event id: ${id}` , 5, 70)
-    doc.text(`Date of event: ${date}` , 5, 90)
-    doc.text(`Time of event: ${time}` , 5, 110)
-    doc.text(`Latitude: ${lat}` , 5, 130)
-    doc.text(`Longitude: ${long}` , 5, 150)
+    doc.text(`Event sound type: ${soundtype}`, 5, 90)
+    doc.text(`Probability of event: ${probability}%`, 5, 110)
+    doc.text(`Date of event: ${date}` , 5, 130)
+    doc.text(`Time of event: ${time}` , 5, 150)
+    doc.text(`Latitude: ${lat}` , 5, 170)
+    doc.text(`Longitude: ${long}` , 5, 190)
     doc.addImage(imgData, 'JPEG', 36, 5,135,50)
     // doc.addImage(mapImg, 'JPEG', 36, 170)
     doc.setFontSize(26);
     doc.setTextColor(34,0,224);
-    doc.textWithLink('>>Open the location in Google Maps<<', 15, 180, { url: `https://maps.google.nl/?q=${lat},${long}\n` });
+    doc.textWithLink('>>Open the location in Google Maps<<', 15, 220, { url: `https://maps.google.nl/?q=${lat},${long}\n` });
     doc.save(`Event${id}_Date${date}_Time${time}.pdf`)
     doc.download
 }

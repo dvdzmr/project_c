@@ -49,7 +49,7 @@ public class DBquery
 
     public static List<DBobjects> DbStatusPush(int pkey, string tochange)
     {
-        Console.WriteLine(pkey+ tochange);
+        // Console.WriteLine(pkey+ tochange);
         string query = "";
         if (tochange == "Not started")
         {
