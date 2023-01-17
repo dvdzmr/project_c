@@ -29,6 +29,7 @@
                     @* <label asp-for="Input.Email" class="form-label"></label> *@
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
+                <br/>
                 <div class="form-floating">
 
                     <p class="text-light">Password</p>
@@ -36,25 +37,28 @@
                     @* <label asp-for="Input.Password" class="form-label"></label> *@
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
-                <div>
-                    <div class="checkbox" style="margin: 5px 0  0px 21px;">
-                        <label asp-for="Input.RememberMe" class="form-label" align="left" >
-                            <input class="form-check-input" asp-for="Input.RememberMe"/>
-                            @Html.DisplayNameFor(m => m.Input.RememberMe)
-                        </label>
-                    </div>
-                </div>
+                @* <br/> *@
+                @* <div> *@
+                @*     <div class="checkbox" style="margin: 5px 0  0px 21px;"> *@
+                @*         <label asp-for="Input.RememberMe" class="form-label" align="left" > *@
+                @*             <input class="form-check-input" asp-for="Input.RememberMe"/> *@
+                @*             @Html.DisplayNameFor(m => m.Input.RememberMe) *@
+                @*         </label> *@
+                @*     </div> *@
+                @* </div> *@
+                <br/>
                 <div>
                     <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
                 </div>
-                <div style="padding-top: 15px">
+                <br/>
+                <div>
                     <p style="text-align: center">
                         <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
                     <p style="text-align: center"/>
-                    <p style="text-align: center">
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                    <p style="text-align: center"/>
-                </div>
+                @*     <p style="text-align: center"> *@
+                @*         <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a> *@
+                @*     <p style="text-align: center"/> *@
+                </div> 
             </form>
         </section>
     </div>
